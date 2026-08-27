@@ -1,0 +1,14 @@
+name: Feature Delivery
+id: feature-delivery
+version: 1.0.0
+description: >
+  Controlled feature delivery through research, implementation, validation,
+  independent review, and bounded fix loops. Agent-agnostic with
+  machine-checked state validation.
+category: software-engineering
+agents:
+  - generic
+requires:
+  git: true
+  python: true
+entrypoint: START_FEATURE_PROMPT.md
