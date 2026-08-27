@@ -1,0 +1,78 @@
+{
+  "$comment": "Machine-checkable active workflow state. Keep synchronized with STATE.md.",
+  "schemaVersion": 1,
+  "feature": {
+    "name": null,
+    "slug": null
+  },
+  "status": "IDLE",
+  "risk": "UNASSESSED",
+  "workflowPath": [],
+  "actors": {
+    "router": null,
+    "researcher": null,
+    "architect": null,
+    "builder": null,
+    "integrator": null,
+    "reviewer": null
+  },
+  "baseline": {
+    "repositoryRoot": null,
+    "baseBranch": null,
+    "baseCommit": null,
+    "preExistingChanges": [],
+    "allowedPaths": []
+  },
+  "change": {
+    "currentSnapshot": null,
+    "changedFiles": []
+  },
+  "gates": {
+    "G0_SCOPE": "NOT_RUN",
+    "G1_RESEARCH": "NOT_RUN",
+    "G2_DESIGN": "NOT_RUN",
+    "G3_BUILD": "NOT_RUN",
+    "G4_INTEGRATION": "NOT_RUN",
+    "G5_VALIDATION": "NOT_RUN",
+    "G6_REVIEW": "NOT_RUN",
+    "G7_HUMAN": "NOT_RUN",
+    "G8_SHIP_READY": "NOT_RUN"
+  },
+  "gateEvidence": {
+    "G0_SCOPE": [],
+    "G1_RESEARCH": [],
+    "G2_DESIGN": [],
+    "G3_BUILD": [],
+    "G4_INTEGRATION": [],
+    "G5_VALIDATION": [],
+    "G6_REVIEW": [],
+    "G7_HUMAN": [],
+    "G8_SHIP_READY": []
+  },
+  "validation": [],
+  "review": {
+    "artifact": ".active/REVIEW.md",
+    "reviewedSnapshot": null,
+    "reviewer": null,
+    "independent": false,
+    "specVerdict": "NOT_REVIEWED",
+    "qualityVerdict": "NOT_REVIEWED",
+    "verdict": "NOT_REVIEWED",
+    "openFindings": {
+      "blocker": 0,
+      "major": 0,
+      "minor": 0,
+      "nit": 0
+    }
+  },
+  "humanApproval": {
+    "required": "UNKNOWN",
+    "status": "NOT_REQUESTED",
+    "evidence": null
+  },
+  "shipEvidence": null,
+  "fixCycles": 0,
+  "maxFixCycles": 2,
+  "fixCycleOverrideEvidence": null,
+  "nextAction": "Initialize one feature."
+}
