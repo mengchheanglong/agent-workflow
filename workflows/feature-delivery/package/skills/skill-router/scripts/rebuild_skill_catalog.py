@@ -1,0 +1,226 @@
+#!/usr/bin/env python
+"""Generate a complete, profile-local catalog from every installed SKILL.md."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+import re
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any
+
+try:
+    import yaml
+except ImportError as exc:  # pragma: no cover - environment failure
+    raise SystemExit("PyYAML is required: python -m pip install pyyaml") from exc
+
+FRONTMATTER_RE = re.compile(r"\A---\s*\n(.*?)\n---\s*\n", re.DOTALL)
+SPACE_RE = re.compile(r"\s+")
+
+
+def default_skills_root() -> Path:
+    # .../skills/productivity/skill-router/scripts/this_file.py
+    return Path(__file__).resolve().parents[3]
+
+
+def as_list(value: Any) -> list[str]:
+    if value is None:
+        return []
+    if isinstance(value, (list, tuple, set)):
+        result: list[str] = []
+        for item in value:
+            result.extend(as_list(item))
+        return result
+    if isinstance(value, dict):
+        return [f"{key}: {value[key]}" for key in sorted(value)]
+    text = SPACE_RE.sub(" ", str(value)).strip()
+    return [text] if text else []
+
+
+def unique(items: list[str]) -> list[str]:
+    seen: set[str] = set()
+    output: list[str] = []
+    for item in items:
+        key = item.casefold()
+        if key not in seen:
+            seen.add(key)
+            output.append(item)
+    return output
+
+
+def read_skill(path: Path, skills_root: Path) -> dict[str, Any] | None:
+    try:
+        content = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return None
+    match = FRONTMATTER_RE.match(content)
+    if not match:
+        return None
+    try:
+        frontmatter = yaml.safe_load(match.group(1)) or {}
+    except yaml.YAMLError:
+        return None
+    if not isinstance(frontmatter, dict):
+        return None
+
+    name = SPACE_RE.sub(" ", str(frontmatter.get("name", ""))).strip()
+    description = SPACE_RE.sub(" ", str(frontmatter.get("description", ""))).strip()
+    if not name or not description:
+        return None
+
+    metadata = frontmatter.get("metadata") or {}
+    hermes = metadata.get("hermes") if isinstance(metadata, dict) else {}
+    hermes = hermes if isinstance(hermes, dict) else {}
+
+    rel = path.relative_to(skills_root)
+    parent_parts = rel.parent.parts
+    category = "/".join(parent_parts[:-1]) if len(parent_parts) > 1 else "root"
+
+    tags = unique(as_list(frontmatter.get("tags")) + as_list(hermes.get("tags")))
+    triggers = unique(
+        as_list(frontmatter.get("trigger"))
+        + as_list(frontmatter.get("triggers"))
+        + as_list(hermes.get("trigger_phrases"))
+    )
+    related = unique(as_list(hermes.get("related_skills")))
+    prerequisites = unique(
+        as_list(frontmatter.get("prerequisites"))
+        + as_list(frontmatter.get("dependencies"))
+        + as_list(frontmatter.get("required_credential_files"))
+        + as_list(hermes.get("requires_toolsets"))
+    )
+    platforms = unique(as_list(frontmatter.get("platforms")) + as_list(frontmatter.get("environments")))
+
+    lowered = description.casefold()
+    retired = any(marker in lowered for marker in ("retired", "do not route", "do not use"))
+
+    return {
+        "name": name,
+        "description": description,
+        "category": category,
+        "path": rel.as_posix(),
+        "tags": tags,
+        "trigger_phrases": triggers,
+        "related_skills": related,
+        "prerequisites": prerequisites,
+        "platforms": platforms,
+        "retired_or_negative_default": retired,
+        "disable_model_invocation": bool(frontmatter.get("disable-model-invocation", False)),
+        "user_invocable": frontmatter.get("user-invocable"),
+        "content_sha256": hashlib.sha256(content.encode("utf-8")).hexdigest(),
+    }
+
+
+def build_catalog(skills_root: Path) -> dict[str, Any]:
+    skills_root = skills_root.resolve()
+    skills: list[dict[str, Any]] = []
+    for path in skills_root.rglob("SKILL.md"):
+        rel = path.relative_to(skills_root)
+        if any(part.startswith(".") or part == ".bak" for part in rel.parts):
+            continue
+        entry = read_skill(path, skills_root)
+        if entry:
+            skills.append(entry)
+    skills.sort(key=lambda item: (item["category"].casefold(), item["name"].casefold()))
+
+    categories: dict[str, int] = {}
+    for entry in skills:
+        categories[entry["category"]] = categories.get(entry["category"], 0) + 1
+
+    return {
+        "schema_version": 1,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "skills_root": skills_root.as_posix(),
+        "skill_count": len(skills),
+        "category_counts": dict(sorted(categories.items())),
+        "skills": skills,
+    }
+
+
+def escape_cell(value: Any) -> str:
+    text = SPACE_RE.sub(" ", str(value)).strip()
+    return text.replace("|", "\\|")
+
+
+def render_markdown(catalog: dict[str, Any]) -> str:
+    lines = [
+        "# Complete Installed Skill Catalog",
+        "",
+        "> Generated by `scripts/rebuild_skill_catalog.py`; do not edit manually.",
+        "> This is discovery context. Load shortlisted skills with `skill_view` before routing.",
+        "",
+        f"Installed skill files: **{catalog['skill_count']}**",
+        "",
+    ]
+    current = None
+    for skill in catalog["skills"]:
+        if skill["category"] != current:
+            current = skill["category"]
+            lines.extend([
+                f"## {current}",
+                "",
+                "| Skill | Description | Tags / triggers | Path |",
+                "|---|---|---|---|",
+            ])
+        context = unique(skill["tags"] + skill["trigger_phrases"])
+        lines.append(
+            "| `{name}` | {description} | {context} | `{path}` |".format(
+                name=escape_cell(skill["name"]),
+                description=escape_cell(skill["description"]),
+                context=escape_cell(", ".join(context)),
+                path=escape_cell(skill["path"]),
+            )
+        )
+    lines.append("")
+    return "\n".join(lines)
+
+
+def write_catalog(catalog: dict[str, Any], json_path: Path, markdown_path: Path) -> None:
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    markdown_path.parent.mkdir(parents=True, exist_ok=True)
+    json_path.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    markdown_path.write_text(render_markdown(catalog), encoding="utf-8")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--skills-root", type=Path, default=default_skills_root())
+    default_refs = Path(__file__).resolve().parents[1] / "references"
+    parser.add_argument("--json-path", type=Path, default=default_refs / "skill-catalog.json")
+    parser.add_argument("--markdown-path", type=Path, default=default_refs / "skill-catalog.md")
+    parser.add_argument("--check", action="store_true", help="Fail when generated files are missing or stale.")
+    args = parser.parse_args()
+
+    catalog = build_catalog(args.skills_root)
+    json_text = json.dumps(catalog, indent=2, ensure_ascii=False) + "\n"
+    markdown_text = render_markdown(catalog)
+
+    if args.check:
+        current_json = args.json_path.read_text(encoding="utf-8") if args.json_path.exists() else ""
+        current_md = args.markdown_path.read_text(encoding="utf-8") if args.markdown_path.exists() else ""
+        # generated_at is intentionally volatile; compare meaningful catalog payloads.
+        try:
+            current_payload = json.loads(current_json)
+            current_payload["generated_at"] = catalog["generated_at"]
+            same_json = current_payload == catalog
+        except (json.JSONDecodeError, TypeError):
+            same_json = False
+        same_md = current_md.split("Installed skill files:", 1)[-1] == markdown_text.split("Installed skill files:", 1)[-1]
+        if not (same_json and same_md):
+            print("Skill catalog is stale. Run: python scripts/rebuild_skill_catalog.py", file=sys.stderr)
+            return 1
+        print(f"Skill catalog is current: {catalog['skill_count']} skill(s).")
+        return 0
+
+    write_catalog(catalog, args.json_path, args.markdown_path)
+    print(f"Generated catalog for {catalog['skill_count']} skill(s).")
+    print(f"JSON: {args.json_path}")
+    print(f"Markdown: {args.markdown_path}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

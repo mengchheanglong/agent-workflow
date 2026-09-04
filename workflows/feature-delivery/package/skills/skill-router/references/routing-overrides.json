@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "never_default": [
+    "opencode",
+    "opencode-model-audit",
+    "two-phase-spec-system"
+  ],
+  "phrase_boosts": [
+    {"phrases": ["landing page", "conversion page", "sales page"], "skills": {"landing-page-design": 35}},
+    {"phrases": ["animate", "animation", "micro-interaction", "motion"], "skills": {"animate": 30}},
+    {"phrases": ["awwwards", "cinematic website", "scroll storytelling", "premium interactive site"], "skills": {"build-awwwards-quality-sites": 40}},
+    {"phrases": ["reference video", "video walkthrough", "video to prompt", "superprompt"], "skills": {"video-to-superprompt": 40}},
+    {"phrases": ["critique screenshot", "critique screen", "review this screen", "rendered screen"], "skills": {"critique-screen": 40}},
+    {"phrases": ["review ui diff", "review interface change", "interface review", "ui pull request", "ui changes", "interface changes", "ui regressions"], "skills": {"interface-review": 45}},
+    {"phrases": ["spacing problem", "layout problem", "alignment problem", "responsive layout"], "skills": {"better-layout": 30}},
+    {"phrases": ["perception law", "gestalt", "fitts law", "hicks law", "von restorff"], "skills": {"perception-laws": 35}},
+    {"phrases": ["generic ai ui", "ai slop", "match this vibe", "extract the look"], "skills": {"tastemaker": 40}},
+    {"phrases": ["polish component", "ui polish", "component craft", "ui component", "interaction details"], "skills": {"emil-design-eng": 40}},
+    {"phrases": ["browser prototype", "web artifact", "major visual redesign", "browser dashboard", "dashboard prototype"], "skills": {"web-design-engineer": 38}},
+
+    {"phrases": ["real problem", "validate problem", "does this problem exist", "external validation"], "skills": {"external-validation-research": 40}},
+    {"phrases": ["pursue or park", "founder decision", "hard call"], "skills": {"founder-thinking-mode": 35}},
+    {"phrases": ["product analytics", "business kpi", "dashboard metrics"], "skills": {"question-first-product-analytics": 35}},
+    {"phrases": ["stakeholder prd", "product requirements", "requirements document"], "skills": {"stakeholder-product-requirements": 35}},
+
+    {"phrases": ["authenticated smoke", "test login", "owner login"], "skills": {"authenticated-web-smoke": 35}},
+    {"phrases": ["admin mutation", "admin crud", "stateful admin"], "skills": {"stateful-web-admin-qa": 35}},
+    {"phrases": ["form flow", "login form", "server action form"], "skills": {"web-form-flow-debugging": 35}},
+    {"phrases": ["root cause", "debug bug", "systematic debugging"], "skills": {"systematic-debugging": 35}},
+    {"phrases": ["test driven", "tdd", "red green refactor"], "skills": {"test-driven-development": 35}},
+    {"phrases": ["github pull request", "open pr", "merge pr"], "skills": {"github-pr-workflow": 35}},
+    {"phrases": ["consolidate repositories", "merge repositories", "monorepo", "umbrella workspace"], "skills": {"repository-consolidation": 40}},
+
+    {"phrases": ["extract action items", "document obligations", "document deadlines", "obligations and deadlines", "contract obligations"], "skills": {"document-to-action-items": 45}},
+    {"phrases": ["create excel", "excel workbook", "xlsx"], "skills": {"xlsx": 40}},
+    {"phrases": ["create word document", "word template", "docx"], "skills": {"docx": 40}},
+    {"phrases": ["create powerpoint", "slide deck", "pptx"], "skills": {"powerpoint": 40}},
+    {"phrases": ["edit pdf typo", "change pdf text"], "skills": {"nano-pdf": 40}},
+    {"phrases": ["ocr scan", "scanned pdf", "extract text from scan"], "skills": {"ocr-and-documents": 40}},
+    {"phrases": ["send email", "send message", "verify delivery"], "skills": {"outbound-communication-operations": 35}},
+
+    {"phrases": ["what happened in our conversation", "find previous session", "past conversation"], "skills": {"skill-router": -20}},
+    {"phrases": ["hermes setup", "hermes config", "hermes gateway", "hermes tools"], "skills": {"hermes-agent": 40}},
+    {"phrases": ["drive desktop", "click app", "use browser ui"], "skills": {"computer-use": 40}},
+    {"phrases": ["windows slow", "disk 100", "high memory windows"], "skills": {"windows-system-diagnostics": 40}},
+    {"phrases": ["second brain", "project memory", "agent readable context"], "skills": {"project-second-brain": 40}}
+  ]
+}

@@ -1,0 +1,5293 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-04T05:26:05.362279+00:00",
+  "skills_root": "C:/Users/User/AppData/Local/hermes/profiles/dev/skills",
+  "skill_count": 209,
+  "category_counts": {
+    "apple": 5,
+    "autonomous-ai-agents": 7,
+    "business": 7,
+    "creative": 37,
+    "cybersecurity": 6,
+    "data-science": 2,
+    "desktop": 1,
+    "devops": 8,
+    "email": 1,
+    "gaming": 2,
+    "github": 9,
+    "mcp": 1,
+    "media": 6,
+    "mlops": 1,
+    "mlops/evaluation": 2,
+    "mlops/inference": 3,
+    "mlops/models": 2,
+    "mlops/research": 1,
+    "note-taking": 1,
+    "product-management": 1,
+    "productivity": 22,
+    "red-teaming": 1,
+    "research": 15,
+    "root": 6,
+    "security": 1,
+    "smart-home": 1,
+    "social-media": 1,
+    "software-development": 59
+  },
+  "skills": [
+    {
+      "name": "apple-notes",
+      "description": "Manage Apple Notes via memo CLI: create, search, edit.",
+      "category": "apple",
+      "path": "apple/apple-notes/SKILL.md",
+      "tags": [
+        "Notes",
+        "Apple",
+        "macOS",
+        "note-taking"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "obsidian"
+      ],
+      "prerequisites": [
+        "commands: ['memo']"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "1ba042cb17e3aca06a68415526e926ada464bf873c8592c3326125cd72cb397f"
+    },
+    {
+      "name": "apple-reminders",
+      "description": "Apple Reminders via remindctl: add, list, complete.",
+      "category": "apple",
+      "path": "apple/apple-reminders/SKILL.md",
+      "tags": [
+        "Reminders",
+        "tasks",
+        "todo",
+        "macOS",
+        "Apple"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['remindctl']"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "ee5084f2d7ec196488bef2c74248fb3d8328d1b2e3277ddda3f0de9da6fc7131"
+    },
+    {
+      "name": "findmy",
+      "description": "Track Apple devices/AirTags via FindMy.app on macOS.",
+      "category": "apple",
+      "path": "apple/findmy/SKILL.md",
+      "tags": [
+        "FindMy",
+        "AirTag",
+        "location",
+        "tracking",
+        "macOS",
+        "Apple"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "19ec56e3b7f9f0be13c26d99948ed5684d8fb1f9c478da078c19356b5df63f57"
+    },
+    {
+      "name": "imessage",
+      "description": "Send and receive iMessages/SMS via the imsg CLI on macOS.",
+      "category": "apple",
+      "path": "apple/imessage/SKILL.md",
+      "tags": [
+        "iMessage",
+        "SMS",
+        "messaging",
+        "macOS",
+        "Apple"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['imsg']"
+      ],
+      "platforms": [
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "bc68b1648e301409bc25b1084ec26766213ca9f3c1b2fd3d3d6ebe3dbde9e967"
+    },
+    {
+      "name": "macos-computer-use",
+      "description": "Drive the macOS desktop in the background — screenshots, mouse, keyboard, scroll, drag — without stealing the user's cursor, keyboard focus, or Space. Works with any tool-capable model. Load this skill whenever the `computer_use` tool is available.",
+      "category": "apple",
+      "path": "apple/macos-computer-use/SKILL.md",
+      "tags": [
+        "computer-use",
+        "macos",
+        "desktop",
+        "automation",
+        "gui"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "browser"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "08b4bb4647d983d1c56994c175829e8e4d4189a0bdffd44ff9db57c78451c90a"
+    },
+    {
+      "name": "autonomous-ai-agents",
+      "description": "Skills for spawning and orchestrating autonomous AI coding agents and multi-agent workflows — running independent agent processes, delegating tasks, and coordinating parallel workstreams.",
+      "category": "autonomous-ai-agents",
+      "path": "autonomous-ai-agents/autonomous-ai-agents/SKILL.md",
+      "tags": [
+        "agent-swarm",
+        "orchestration",
+        "delegation",
+        "worktree",
+        "cron",
+        "tmux"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "codex",
+        "opencode",
+        "claude-code",
+        "subagent-driven-development",
+        "writing-plans"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "a2055952474a2c69e388aab9a670c5fc9dcd63ad0e61b18305d7db5387074867"
+    },
+    {
+      "name": "claude-code",
+      "description": "Delegate coding to Claude Code CLI (features, PRs).",
+      "category": "autonomous-ai-agents",
+      "path": "autonomous-ai-agents/claude-code/SKILL.md",
+      "tags": [
+        "Coding-Agent",
+        "Claude",
+        "Anthropic",
+        "Code-Review",
+        "Refactoring",
+        "PTY",
+        "Automation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "codex",
+        "hermes-agent",
+        "opencode"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "f04207897a5353add84a3b5839513e541d5c7eeb4dbcc7c8732dbf6240efc274"
+    },
+    {
+      "name": "codex",
+      "description": "Use Codex CLI as software orchestrator, task manager, reviewer, and DevOps/test/ship controller; Grok 4.5 via xAI OAuth (`xai-oauth`, `grok-4.5`) is the implementation worker.",
+      "category": "autonomous-ai-agents",
+      "path": "autonomous-ai-agents/codex/SKILL.md",
+      "tags": [
+        "Coding-Agent",
+        "Codex",
+        "OpenAI",
+        "Code-Review",
+        "Refactoring"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "claude-code",
+        "hermes-agent"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "91debf3ccda866c49ac475bca4db8031caeb146c015a627ae1f8b9ec699cda32"
+    },
+    {
+      "name": "computer-use",
+      "description": "Drive the user's desktop in the background — clicking, typing, scrolling, dragging — without stealing the cursor, keyboard focus, or switching virtual desktops / Spaces. Cross-platform: macOS, Windows, Linux. Works with any tool-capable model. Load this skill whenever the `computer_use` tool is available.",
+      "category": "autonomous-ai-agents",
+      "path": "autonomous-ai-agents/computer-use/SKILL.md",
+      "tags": [
+        "computer-use",
+        "desktop",
+        "automation",
+        "gui",
+        "cross-platform"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "macos",
+        "windows",
+        "linux"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "9ac7c6de890c332f1be5228460c80215318221fce2c99f7e4434868cd25fe6f0"
+    },
+    {
+      "name": "hermes-agent",
+      "description": "Configure, extend, or contribute to Hermes Agent.",
+      "category": "autonomous-ai-agents",
+      "path": "autonomous-ai-agents/hermes-agent/SKILL.md",
+      "tags": [
+        "hermes",
+        "setup",
+        "configuration",
+        "multi-agent",
+        "spawning",
+        "cli",
+        "gateway",
+        "development"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "claude-code",
+        "codex",
+        "opencode"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "18ac36b15465aa6475b5b6746dc986db4022982cad61f98e8b016a82d0fe16e4"
+    },
+    {
+      "name": "kanban-codex-lane",
+      "description": "Use when a Hermes Kanban worker wants to run Codex CLI as an isolated implementation lane while Hermes keeps ownership of task lifecycle, reconciliation, testing, and handoff.",
+      "category": "autonomous-ai-agents",
+      "path": "autonomous-ai-agents/kanban-codex-lane/SKILL.md",
+      "tags": [
+        "kanban",
+        "codex",
+        "worktrees",
+        "autonomous-agents",
+        "prediction-market-bot"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "kanban-worker",
+        "codex",
+        "hermes-agent"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "ca946e1f7968f767a7b235a12c7847d2befe4c1121e2ba4b2c0f0ab309ae6dfe"
+    },
+    {
+      "name": "opencode",
+      "description": "Retired for this user. Do not route or execute OpenCode.",
+      "category": "autonomous-ai-agents",
+      "path": "autonomous-ai-agents/opencode/SKILL.md",
+      "tags": [
+        "retired",
+        "opencode"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": true,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "92a4ea82c338793fa8a261e9501fa7a019b17b13da7b1330fa77284d5704badd"
+    },
+    {
+      "name": "founder-thinking-mode",
+      "description": "Use for Founder Thinking Mode, stress-tests, and hard calls.",
+      "category": "business",
+      "path": "business/founder-thinking-mode/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "2db6da557db96e71526951ced5f7ce9e27b468a6a1e4e75bae0406e88e6339dc"
+    },
+    {
+      "name": "hackathon-competition-playbook",
+      "description": "Prepare and postmortem university hackathon/startup pitches: idea selection, proof, storytelling, team delivery, Q&A, and judge dynamics based on HuskPack lessons.",
+      "category": "business",
+      "path": "business/hackathon-competition-playbook/SKILL.md",
+      "tags": [
+        "hackathon",
+        "pitch",
+        "startup",
+        "demo-day",
+        "validation",
+        "q-and-a",
+        "competition",
+        "retrospective"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "8473af72c7fe4c42cba0f6c190a0fce3c23a1c040db53829cb7e3bdd44308aec"
+    },
+    {
+      "name": "menui",
+      "description": "Use for Menui repo work: git flow, QA seed, UX rules.",
+      "category": "business",
+      "path": "business/menui/SKILL.md",
+      "tags": [
+        "menui",
+        "nextjs",
+        "supabase",
+        "git",
+        "ux",
+        "telegram"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "180f537f78e1dd73fdf49ed716d44256ca7f709030106a40d85ede557e12dc81"
+    },
+    {
+      "name": "question-first-product-analytics",
+      "description": "Plan seller, product, and operational analytics from atomic business questions before selecting KPIs or dashboard layouts. Use for KPI discovery, business-owner dashboards, analytics requirement reviews, and stakeholder-verifiable metric specifications.",
+      "category": "business",
+      "path": "business/question-first-product-analytics/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "dc183bda70394f8866842a1df31cec7691ddfdfad80d64a81ab4632eee995bc7"
+    },
+    {
+      "name": "simpleweb-kh",
+      "description": "Manage SimpleWeb KH — the Facebook web design business targeting Cambodian clients. File organization, prompt pipeline, pricing, content strategy.",
+      "category": "business",
+      "path": "business/simpleweb-kh/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [
+        "User mentions SimpleWeb KH, Facebook page, web design business, portfolio demos, pricing posts, content calendar for the business",
+        "User asks about managing or growing the Facebook web design business",
+        "User references the C:\\Users\\User\\business directory"
+      ],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "7042c8685f949904b563bf446ea852c420a354f76b086be1daf9336347dd38d3"
+    },
+    {
+      "name": "social-commerce-trust-systems",
+      "description": "Design reusable trust/order/payment-proof/reputation layers for Facebook/Telegram/KHQR-native social commerce, B2B, agriculture, services, and marketplace projects.",
+      "category": "business",
+      "path": "business/social-commerce-trust-systems/SKILL.md",
+      "tags": [
+        "trust",
+        "social-commerce",
+        "telegram",
+        "facebook",
+        "khqr",
+        "marketplace",
+        "cambodia",
+        "reputation",
+        "b2b"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "4dc4dc4d43fd58957a9e063f06a0f5c0496639b4b8c9f76b9eed0476d9754979"
+    },
+    {
+      "name": "unipreneur-season4-form",
+      "description": "Fill and critique UniPreneur Season 4 submission-form ideas using locked category fit, Rule of ONE, Cambodia-first evidence, and judge-safe wording.",
+      "category": "business",
+      "path": "business/unipreneur-season4-form/SKILL.md",
+      "tags": [
+        "hackathon",
+        "unipreneur",
+        "cambodia",
+        "startup",
+        "submission-form",
+        "idea-critique"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "1921776da49d397e34b66bde747345f918352fe959bd0ed7e4cb72357b540c1d"
+    },
+    {
+      "name": "animate",
+      "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
+      "category": "creative",
+      "path": "creative/animate/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3369f2678fdbf9cb0569f1a6ea99d11c0e08963412f0049c463355117e9b4bd3"
+    },
+    {
+      "name": "architecture-diagram",
+      "description": "Dark-themed SVG architecture/cloud/infra diagrams as HTML.",
+      "category": "creative",
+      "path": "creative/architecture-diagram/SKILL.md",
+      "tags": [
+        "architecture",
+        "diagrams",
+        "SVG",
+        "HTML",
+        "visualization",
+        "infrastructure",
+        "cloud"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "concept-diagrams",
+        "excalidraw"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "0e7e2736aafe052e409c2ad27863d51ef3007c116711e584033787ccb5d99d3f"
+    },
+    {
+      "name": "ascii-art",
+      "description": "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.",
+      "category": "creative",
+      "path": "creative/ascii-art/SKILL.md",
+      "tags": [
+        "ASCII",
+        "Art",
+        "Banners",
+        "Creative",
+        "Unicode",
+        "Text-Art",
+        "pyfiglet",
+        "figlet",
+        "cowsay",
+        "boxes"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "excalidraw"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "b69fdd300045a3e68b4886c5c5c714f904c9277ac40b2da371bf9e156fd9fa88"
+    },
+    {
+      "name": "ascii-video",
+      "description": "ASCII video: convert video/audio to colored ASCII MP4/GIF.",
+      "category": "creative",
+      "path": "creative/ascii-video/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "1d4f84e0eacc0d8adfaee62e0f2ab947dd79302ebbf55d5cd07d94a92c92cb95"
+    },
+    {
+      "name": "baoyu-article-illustrator",
+      "description": "Article illustrations: type × style × palette consistency.",
+      "category": "creative",
+      "path": "creative/baoyu-article-illustrator/SKILL.md",
+      "tags": [
+        "article-illustration",
+        "creative",
+        "image-generation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "9de0861d5fe4da97d053aa972baffc68d7271c0bc13344161ab36f9f67827aa3"
+    },
+    {
+      "name": "baoyu-comic",
+      "description": "Knowledge comics (知识漫画): educational, biography, tutorial.",
+      "category": "creative",
+      "path": "creative/baoyu-comic/SKILL.md",
+      "tags": [
+        "comic",
+        "knowledge-comic",
+        "creative",
+        "image-generation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "39daa86a4c9737a51c2734455a4b27f3fd35eb80ae2a70820093d4354a1e2de2"
+    },
+    {
+      "name": "baoyu-infographic",
+      "description": "Infographics: 21 layouts x 21 styles (信息图, 可视化).",
+      "category": "creative",
+      "path": "creative/baoyu-infographic/SKILL.md",
+      "tags": [
+        "infographic",
+        "visual-summary",
+        "creative",
+        "image-generation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "89e25da6d8ea1cac79b18d9e6c4c3b8d7a522df2eef559f151f19c6ce5b2a002"
+    },
+    {
+      "name": "better-layout",
+      "description": "Layout structure for web interfaces. Use when structuring a page or component, deciding what collapses at small sizes, or reviewing frontend code for layout. Triggers on layout, spacing, alignment, grouping, whitespace, visual hierarchy, reading order, progressive disclosure, breakpoints, container queries, safe area, full-bleed, layout margins, RTL layout, logical properties.",
+      "category": "creative",
+      "path": "creative/better-layout/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "abaa2ed2f811ee0459671bab85d4517aedcc46e3d15d327535ac59613bc9cbc4"
+    },
+    {
+      "name": "build-awwwards-quality-sites",
+      "description": "Art-direct and implement distinctive, motion-rich marketing, editorial, portfolio, and landing websites with original reference-inspired imagery, standout heroes, GSAP choreography, one smooth-scroll engine, optional Three.js shaders, honest icon and logo sourcing, photo avatars, accessibility, and performance safeguards. Use when a user asks for an Awwwards-quality, premium, cinematic, interactive, high-concept, or motion-led website, or explicitly requests this visual and motion system.",
+      "category": "creative",
+      "path": "creative/build-awwwards-quality-sites/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "1568e003d112e72df0ea2ec925829a5039b762c27174e063c192d7ccf7f4f9e6"
+    },
+    {
+      "name": "claude-design",
+      "description": "Design one-off HTML artifacts (landing, deck, prototype).",
+      "category": "creative",
+      "path": "creative/claude-design/SKILL.md",
+      "tags": [
+        "design",
+        "html",
+        "prototype",
+        "ux",
+        "ui",
+        "creative",
+        "artifact",
+        "deck",
+        "motion",
+        "design-system"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "design-md",
+        "popular-web-designs",
+        "excalidraw",
+        "architecture-diagram"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "1582b0d49e48bdf937b2f555098484e0979cdfa285c6cc9fa329ba8e416d347a"
+    },
+    {
+      "name": "comfyui",
+      "description": "Generate images, video, and audio via diffusion workflows.",
+      "category": "creative",
+      "path": "creative/comfyui/SKILL.md",
+      "tags": [
+        "comfyui",
+        "image-generation",
+        "stable-diffusion",
+        "flux",
+        "sd3",
+        "wan-video",
+        "hunyuan-video",
+        "creative",
+        "generative-ai",
+        "video-generation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "stable-diffusion-image-generation"
+      ],
+      "prerequisites": [
+        "commands: ['python3']"
+      ],
+      "platforms": [
+        "macos",
+        "linux",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "f8fb7c879411f3942cf7c5cdae011a84af13e26279216782d7c27778d0e76f1f"
+    },
+    {
+      "name": "copywriting-agent-workflow",
+      "description": "Structured creative workflow for producing professional, audience-aware copy via an agent. Covers research, framework selection, drafting discipline, self-review with rationale, iteration, and deliverable compilation.",
+      "category": "creative",
+      "path": "creative/copywriting-agent-workflow/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [
+        "When the user gives a copywriting brief (website copy, landing page, email sequence, tagline, brand messaging, or any marketing/sales copy project)."
+      ],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "6a0e7e3ea977379454f77c10686a7bb225ed547c78cc3e3f069f7524ad2e9eed"
+    },
+    {
+      "name": "critique-screen",
+      "description": "Use when critiquing a rendered interface screen.",
+      "category": "creative",
+      "path": "creative/critique-screen/SKILL.md",
+      "tags": [
+        "design-critique",
+        "screen-review",
+        "hierarchy",
+        "typography",
+        "color",
+        "affordance"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "interface-review",
+        "better-layout",
+        "perception-laws"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "e63e31aaf1a7b9eb1e01b56a6f1a1361840f88bc81b264b94d84fce474e5b341"
+    },
+    {
+      "name": "design-md",
+      "description": "Author/validate/export Google's DESIGN.md token spec files.",
+      "category": "creative",
+      "path": "creative/design-md/SKILL.md",
+      "tags": [
+        "design",
+        "design-system",
+        "tokens",
+        "ui",
+        "accessibility",
+        "wcag",
+        "tailwind",
+        "dtcg",
+        "google"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "popular-web-designs",
+        "claude-design",
+        "excalidraw",
+        "architecture-diagram"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "7ed56bba40ffc9573fa51b33b2424f37fb5f774e9ecb7e76e737797afd0b62ae"
+    },
+    {
+      "name": "emil-design-eng",
+      "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+      "category": "creative",
+      "path": "creative/emil-design-eng/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "e71de849347050c2c573c1cf24d742d5a13459557ecffa6e562f08006f46b5b7"
+    },
+    {
+      "name": "excalidraw",
+      "description": "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).",
+      "category": "creative",
+      "path": "creative/excalidraw/SKILL.md",
+      "tags": [
+        "Excalidraw",
+        "Diagrams",
+        "Flowcharts",
+        "Architecture",
+        "Visualization",
+        "JSON"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "cb0558445251fc1087a99dd85b445b83565a98aef6d3e0874641000f7e89e253"
+    },
+    {
+      "name": "humanizer",
+      "description": "Humanize text: strip AI-isms and add real voice.",
+      "category": "creative",
+      "path": "creative/humanizer/SKILL.md",
+      "tags": [
+        "writing",
+        "editing",
+        "humanize",
+        "anti-ai-slop",
+        "voice",
+        "prose",
+        "text"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "songwriting-and-ai-music"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "887d5e3467a682da9b166e5293007f8bbbc299f8a6718ae00f26161b7d062b04"
+    },
+    {
+      "name": "ideation",
+      "description": "Generate project ideas via creative constraints.",
+      "category": "creative",
+      "path": "creative/creative-ideation/SKILL.md",
+      "tags": [
+        "Creative",
+        "Ideation",
+        "Projects",
+        "Brainstorming",
+        "Inspiration"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "a49cebff5098b5c1d493fade6b37b847d165b58c9f4da772b3f5efc5e9523c3b"
+    },
+    {
+      "name": "interface-review",
+      "description": "Interface review of a change rather than a screen: uncommitted work, the current branch, or a pull request. Covers interface quality, not correctness, tests, or security.",
+      "category": "creative",
+      "path": "creative/interface-review/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": true,
+      "user_invocable": null,
+      "content_sha256": "b40877172c7dd047f225b5fe4b5c25b827a3c31e76d316a6a29ad70815da37b1"
+    },
+    {
+      "name": "iterative-ux-review",
+      "description": "Screenshot→analyze→fix loop for refining existing UI.",
+      "category": "creative",
+      "path": "creative/iterative-ux-review/SKILL.md",
+      "tags": [
+        "ux-review",
+        "visual-qa",
+        "screenshot",
+        "iteration",
+        "polish",
+        "refinement"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "web-design-engineer",
+        "critique-screen",
+        "interface-review"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "5caaec90c2b64acebf20c74238c25bcf2b47116c632b8a28a3ca9f840e414b8c"
+    },
+    {
+      "name": "landing-page-design",
+      "description": "Complete system for building high converting landing pages: intake questions, page structure, layout selection, conversion copywriting, SEO, plus strict visual rules for typography, spacing, corner radius, backgrounds, hero layout, icons, and motion. Use this skill whenever building, editing, styling, reviewing, or writing copy for ANY landing page, marketing site, web UI, page section, component, or prototype, even when the user does not mention design, conversion, tokens, or a design system. Always consult it before choosing page sections, headlines, CTAs, fonts, font sizes, spacing values, border radii, background colors, icons, or transitions.",
+      "category": "creative",
+      "path": "creative/landing-page-design/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3aae79f3d33ea293491fe6251f9fee56ee0cbb7aa66d41b3f29cfc662e4bbdd6"
+    },
+    {
+      "name": "live-pitch-scripting",
+      "description": "Turn pitch transcripts and project evidence into a natural, founder-led 4–5 minute spoken pitch with story, rhythm, proof, and judge-safe claims.",
+      "category": "creative",
+      "path": "creative/live-pitch-scripting/SKILL.md",
+      "tags": [
+        "pitch",
+        "startup",
+        "script",
+        "hackathon",
+        "presentation",
+        "storytelling",
+        "founder-voice"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "8c9ad6c422520603cd0e2da3884d53b9be8066bc6aef2646c99294fceb1435a7"
+    },
+    {
+      "name": "manim-video",
+      "description": "Manim CE animations: 3Blue1Brown math/algo videos.",
+      "category": "creative",
+      "path": "creative/manim-video/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3459a6af999f0c9bfd61eb867836c8de90b33253493eb1b6aa4118d82fd320f4"
+    },
+    {
+      "name": "p5js",
+      "description": "p5.js sketches: gen art, shaders, interactive, 3D.",
+      "category": "creative",
+      "path": "creative/p5js/SKILL.md",
+      "tags": [
+        "creative-coding",
+        "generative-art",
+        "p5js",
+        "canvas",
+        "interactive",
+        "visualization",
+        "webgl",
+        "shaders",
+        "animation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "ascii-video",
+        "manim-video",
+        "excalidraw"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "6a9722e2633ecdb3736e304f56c646258c5e777fd2c15a59c0d2b3ffa91b665a"
+    },
+    {
+      "name": "perception-laws",
+      "description": "Use when applying perception laws to interface design.",
+      "category": "creative",
+      "path": "creative/perception-laws/SKILL.md",
+      "tags": [
+        "perception",
+        "gestalt",
+        "hierarchy",
+        "interaction-design",
+        "ui-design"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "critique-screen",
+        "better-layout",
+        "web-design-engineer"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "2505794d902af8555d612958d850091e1917d83b4a12386fc4d9134d546c6d3b"
+    },
+    {
+      "name": "phone-first-pwa-ux",
+      "description": "Use when redesigning or reviewing a phone-first PWA/mobile app UI. Applies Apple HIG, Material 3, NN/g mobile UX, Airbnb/Spotify design-system lessons, and habit-app patterns to produce reusable mobile UX direction, audit checklists, and implementation prompts.",
+      "category": "creative",
+      "path": "creative/phone-first-pwa-ux/SKILL.md",
+      "tags": [
+        "mobile",
+        "pwa",
+        "ux",
+        "ui",
+        "design-system",
+        "phone-first",
+        "responsive",
+        "accessibility"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "popular-web-designs",
+        "claude-design",
+        "web-research"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3c81d85dec9444c95955a7eb6d57ec432f7c8e5d45b33d29308da58c70873aa5"
+    },
+    {
+      "name": "pixel-art",
+      "description": "Pixel art w/ era palettes (NES, Game Boy, PICO-8).",
+      "category": "creative",
+      "path": "creative/pixel-art/SKILL.md",
+      "tags": [
+        "creative",
+        "pixel-art",
+        "arcade",
+        "snes",
+        "nes",
+        "gameboy",
+        "retro",
+        "image",
+        "video"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "01f351726675bb5ec258ca891bcd03ad6dbb51d4c16fe8e4ed25621ec2f1de04"
+    },
+    {
+      "name": "popular-web-designs",
+      "description": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+      "category": "creative",
+      "path": "creative/popular-web-designs/SKILL.md",
+      "tags": [
+        "design",
+        "css",
+        "html",
+        "ui",
+        "web-development",
+        "design-systems",
+        "templates"
+      ],
+      "trigger_phrases": [
+        "build a page that looks like",
+        "make it look like stripe",
+        "design like linear",
+        "vercel style",
+        "create a UI",
+        "web design",
+        "landing page",
+        "dashboard design",
+        "website styled like"
+      ],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "cd89bdb86008bb30b35d9bdd30e06587f75ee54055c54e1a79afb20418264b3d"
+    },
+    {
+      "name": "pretext",
+      "description": "Build creative browser demos with DOM-free text layout.",
+      "category": "creative",
+      "path": "creative/pretext/SKILL.md",
+      "tags": [
+        "creative-coding",
+        "typography",
+        "pretext",
+        "ascii-art",
+        "canvas",
+        "generative",
+        "text-layout",
+        "kinetic-typography"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "p5js",
+        "claude-design",
+        "excalidraw",
+        "architecture-diagram"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "7aaa3691739fe96dab4947ad5c59419af162bcca5cdea30dec2edf39ba2ecf05"
+    },
+    {
+      "name": "sketch",
+      "description": "Throwaway HTML mockups: 2-3 design variants to compare.",
+      "category": "creative",
+      "path": "creative/sketch/SKILL.md",
+      "tags": [
+        "sketch",
+        "mockup",
+        "design",
+        "ui",
+        "prototype",
+        "html",
+        "variants",
+        "exploration",
+        "wireframe",
+        "comparison"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "spike",
+        "claude-design",
+        "popular-web-designs",
+        "excalidraw"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "c9472691dbd91b31710d9ace3d05a81a5cedcf524a1707f8b3e410b27ed0a243"
+    },
+    {
+      "name": "songwriting-and-ai-music",
+      "description": "Songwriting craft and Suno AI music prompts.",
+      "category": "creative",
+      "path": "creative/songwriting-and-ai-music/SKILL.md",
+      "tags": [
+        "songwriting",
+        "music",
+        "suno",
+        "parody",
+        "lyrics",
+        "creative"
+      ],
+      "trigger_phrases": [
+        "writing a song",
+        "song lyrics",
+        "music prompt",
+        "suno prompt",
+        "parody song",
+        "adapting a song",
+        "AI music generation"
+      ],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "496b6c13d2b029711f310842f3af49f2060952f6f6aa4d5201d18a309ac92946"
+    },
+    {
+      "name": "standalone-html-ui-artifacts",
+      "description": "Build and verify standalone HTML UI prototypes/artifacts when protected design skills cannot be edited.",
+      "category": "creative",
+      "path": "creative/standalone-html-ui-artifacts/SKILL.md",
+      "tags": [
+        "html",
+        "ui",
+        "prototype",
+        "design",
+        "verification",
+        "artifacts"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "claude-design",
+        "popular-web-designs"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "30e6a2890dee3d24c6d953a36f49fc8da96ead3d19285ca5179a149806d1a84e"
+    },
+    {
+      "name": "tastemaker",
+      "description": "Generate genuinely beautiful, on-brand UI instead of generic \"AI slop\" — use whenever the user asks to build, design, style, or improve a UI, landing page, dashboard, app screen, or component, whenever a PRD/spec needs a design pass before implementation, whenever the user pastes reference images/Pinterest/Dribbble links and wants the app to look like them, or whenever the user complains the AI-generated UI looks generic, boring, cookie-cutter, or \"like every other AI app.\" Make sure to trigger this even if the user doesn't say \"design\" explicitly — phrases like \"make this look good\", \"build the frontend for X\", \"this looks like every other SaaS site\", or \"match this vibe\" all qualify. Also triggers on two verbs, \"study\"/\"extract the look of\" a reference screenshot or URL, and \"audit\"/\"review\"/\"why does this look AI-generated\" for critiquing existing UI.",
+      "category": "creative",
+      "path": "creative/tastemaker/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "9f9a053805a4dd2d98e0cd111402e0c58470e24569d8bbd20e90a45d63eea94b"
+    },
+    {
+      "name": "touchdesigner-mcp",
+      "description": "Control TouchDesigner via twozero MCP.",
+      "category": "creative",
+      "path": "creative/touchdesigner-mcp/SKILL.md",
+      "tags": [
+        "TouchDesigner",
+        "MCP",
+        "twozero",
+        "creative-coding",
+        "real-time-visuals",
+        "generative-art",
+        "audio-reactive",
+        "VJ",
+        "installation",
+        "GLSL"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "ascii-video",
+        "manim-video"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "925c387c16a3a0752e4670d48ab9bde94f930cd3dd27fe08cefda2e05c0765e9"
+    },
+    {
+      "name": "uxpeak-ux-ui-design",
+      "description": "UX/UI design audit and redesign skill synthesized from UX Peak's YouTube channel: psychology, conversion, mobile navigation, visual hierarchy, ecommerce, Figma prototyping, 3D/AI visual workflows.",
+      "category": "creative",
+      "path": "creative/uxpeak-ux-ui-design/SKILL.md",
+      "tags": [
+        "ux",
+        "ui",
+        "product-design",
+        "conversion",
+        "mobile",
+        "ecommerce",
+        "psychology",
+        "figma",
+        "prototyping",
+        "animation",
+        "ai-design"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "phone-first-pwa-ux",
+        "popular-web-designs",
+        "claude-design",
+        "standalone-html-ui-artifacts"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "eb52124965d49ac89a1bc264c72148ac1d02b9e68f7b01b8a57b263d4e20ce24"
+    },
+    {
+      "name": "video-to-superprompt",
+      "description": "Turn a reference video into a super detailed recreation or inspiration prompt. Use when the user provides, mentions, uploads, links, or points to a video and asks to analyze the design, UI, animations, transitions, scroll interactions, typography, colors, assets, WebGL/Three.js, storytelling, section-by-section behavior, or to create a prompt/article that recreates the page, app, interaction, or motion system.",
+      "category": "creative",
+      "path": "creative/video-to-superprompt/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "2b0db0096fb715f9e5c6be419f2be5caf0df5e1991ac019308185e2d72c2f950"
+    },
+    {
+      "name": "web-design-engineer",
+      "description": "Build or redesign polished browser-rendered visual artifacts with HTML/CSS/JavaScript/React: pages, dashboards, prototypes, slide decks, animations, UI mockups, and data visualizations. Use for visual front-end creation, design-system exploration, design critique, or explicit browser acceptance / QA of a web artifact. Not for back-end, CLI, non-visual coding, source-to-longform article conversion, or narration-driven click-through video presentations.",
+      "category": "creative",
+      "path": "creative/web-design-engineer/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "00633aa430281e9921c35bb181ab233879d2a21e999d605fc330258a54e26df1"
+    },
+    {
+      "name": "cybersec-ai-skills",
+      "description": "754 structured cybersecurity skills for AI agents (15K stars). Mapped to MITRE ATT&CK and NIST CSF 2 frameworks.",
+      "category": "cybersecurity",
+      "path": "cybersecurity/cybersec-ai-skills/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "8b0ddfa9304e212f5cd6de1efe430887084ea8aafadc5382e47f58aad6070efb"
+    },
+    {
+      "name": "safeline-waf",
+      "description": "Self-hosted WAF / reverse proxy (21K stars). Web application firewall for protecting web apps.",
+      "category": "cybersecurity",
+      "path": "cybersecurity/safeline-waf/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "f61393de72971466d8f61d73559ced7b35517a0a89b66bce06792c5adde4bc48"
+    },
+    {
+      "name": "security-checklist",
+      "description": "300+ digital security tips (21K stars). Comprehensive security hygiene framework for individuals and teams.",
+      "category": "cybersecurity",
+      "path": "cybersecurity/security-checklist/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "df95a7e21fd358aa56ca0f0a014d380579404be8059c52040c416a68861cb299"
+    },
+    {
+      "name": "wazuh-xdr-siem",
+      "description": "Thin operational wrapper for the Directive Kernel-managed Wazuh capability. Open-source XDR/SIEM platform for threat detection, incident response, and security monitoring.",
+      "category": "cybersecurity",
+      "path": "cybersecurity/wazuh-xdr-siem/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "646d9eb7587937170ae56bc274e865006901b6433828b49ff63b12b06b4d111f"
+    },
+    {
+      "name": "windows-installer-extraction",
+      "description": "Safely extract and inspect Windows installer packages (MSI, InstallShield, Inno, NSIS) without executing them.",
+      "category": "cybersecurity",
+      "path": "cybersecurity/windows-installer-extraction/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "957e7a93ddda4f5f462e42e3a0bc6875d889a19b368c9f1bf310e11f18f868fc"
+    },
+    {
+      "name": "x64dbg-debugger",
+      "description": "Open-source Windows debugger (48K stars). Reverse engineering and malware analysis capability.",
+      "category": "cybersecurity",
+      "path": "cybersecurity/x64dbg-debugger/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "43e6dab3e19e647011ce9f0ce65183067507bee58031bc783c281b17c44e1fc0"
+    },
+    {
+      "name": "data-analytics",
+      "description": "Use when analyzing data for decisions; hard-stop vague requests before analysis.",
+      "category": "data-science",
+      "path": "data-science/data-analytics/SKILL.md",
+      "tags": [
+        "analytics",
+        "eda",
+        "statistics",
+        "visualization",
+        "storytelling",
+        "business-intelligence"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "question-first-product-analytics",
+        "jupyter-live-kernel"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "8c31cc520bfea062731c9bdbc7dbd94d888f08ad74924ee2a438b5781f6ab000"
+    },
+    {
+      "name": "jupyter-live-kernel",
+      "description": "Iterative Python via live Jupyter kernel (hamelnb).",
+      "category": "data-science",
+      "path": "data-science/jupyter-live-kernel/SKILL.md",
+      "tags": [
+        "jupyter",
+        "notebook",
+        "repl",
+        "data-science",
+        "exploration",
+        "iterative"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "d93c4b4f50e66c0c074d49e43e28bf5ab87531eaa48884d0083568db827f5869"
+    },
+    {
+      "name": "cua-driver-windows",
+      "description": "Windows cua-driver QA workarounds.",
+      "category": "desktop",
+      "path": "desktop/cua-driver-windows/SKILL.md",
+      "tags": [
+        "computer-use",
+        "windows",
+        "qa",
+        "cua-driver",
+        "automation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "computer-use",
+        "dogfood"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "5bc0e6e412fa5c5c660588636f27328c0de3860f83d122bbf9f9b7084ad26218"
+    },
+    {
+      "name": "container-host-network-debugging",
+      "description": "Diagnose container-to-host endpoint identity, port ownership, DNS fallback, protocol, and readiness failures before blaming the application framework.",
+      "category": "devops",
+      "path": "devops/container-host-network-debugging/SKILL.md",
+      "tags": [
+        "docker",
+        "networking",
+        "debugging",
+        "ports",
+        "windows",
+        "containers"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "systematic-debugging",
+        "windows-system-diagnostics"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "d444506cd2f4cf1e64d7640ecd46d8c7e562a2d643207044996e83e64f69e295"
+    },
+    {
+      "name": "kanban-orchestrator",
+      "description": "Decomposition playbook + anti-temptation rules for an orchestrator profile routing work through Kanban. The \"don't do the work yourself\" rule and the basic lifecycle are auto-injected into every kanban worker's system prompt; this skill is the deeper playbook when you're specifically playing the orchestrator role.",
+      "category": "devops",
+      "path": "devops/kanban-orchestrator/SKILL.md",
+      "tags": [
+        "kanban",
+        "multi-agent",
+        "orchestration",
+        "routing"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "kanban-worker"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows",
+        "kanban"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "e82d8bb8a87173ee1feb99494bac3774a6fa26b33c8d22a6233328b243554f0a"
+    },
+    {
+      "name": "kanban-worker",
+      "description": "Pitfalls, examples, and edge cases for Hermes Kanban workers. The lifecycle itself is auto-injected into every worker's system prompt as KANBAN_GUIDANCE (from agent/prompt_builder.py); this skill is what you load when you want deeper detail on specific scenarios.",
+      "category": "devops",
+      "path": "devops/kanban-worker/SKILL.md",
+      "tags": [
+        "kanban",
+        "multi-agent",
+        "collaboration",
+        "workflow",
+        "pitfalls"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "kanban-orchestrator"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows",
+        "kanban"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "cbea1f523c630d403a4729f8dd134c65f0506edfd480baf2fe8915201cf8c394"
+    },
+    {
+      "name": "local-agent-runtime-operations",
+      "description": "Operate and recover local AI-agent runtimes with gateways, background services, device pairing, channels, and real end-to-end agent verification.",
+      "category": "devops",
+      "path": "devops/local-agent-runtime-operations/SKILL.md",
+      "tags": [
+        "agent-runtime",
+        "gateway",
+        "service",
+        "pairing",
+        "health-checks",
+        "operations"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "windows",
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "883de2ec3a9f17a3d432cf207ddb0cce73d40000173032cab2bf5f84419c47dd"
+    },
+    {
+      "name": "opencode-model-audit",
+      "description": "Retired with OpenCode. Do not run OpenCode model audits or preset updates.",
+      "category": "devops",
+      "path": "devops/opencode-model-audit/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": true,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "0c154fe65f3575a60c1a2f829ceedf5cadbb2a78dd4de2437712ea5b19e91fb4"
+    },
+    {
+      "name": "quantum-free-router",
+      "description": "Free LLM fallback aggregating Gemini, NVIDIA NIM, OpenCode Zen, KiloCode into one OpenAI-compatible endpoint with auto-failover.",
+      "category": "devops",
+      "path": "devops/quantum-free-router/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "5843c8436b2ad7e6bc0e386dd3d9319639c31c0dbe27b169646dc08533eb9d4d"
+    },
+    {
+      "name": "webhook-subscriptions",
+      "description": "Webhook subscriptions: event-driven agent runs.",
+      "category": "devops",
+      "path": "devops/webhook-subscriptions/SKILL.md",
+      "tags": [
+        "webhook",
+        "events",
+        "automation",
+        "integrations",
+        "notifications",
+        "push"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "dfb4ddad9b7911dbbd72d33029c33235c39e2af5947fd35738094752eaed64a8"
+    },
+    {
+      "name": "windows-system-diagnostics",
+      "description": "Diagnose Windows system performance issues — disk, memory, CPU, and I/O bottlenecks on Windows 10/11. HDD/SSD/NVMe health checks, power plan tuning, service-level triage, driver analysis.",
+      "category": "devops",
+      "path": "devops/windows-system-diagnostics/SKILL.md",
+      "tags": [
+        "windows",
+        "diagnostics",
+        "performance",
+        "disk",
+        "troubleshooting",
+        "devops",
+        "agents",
+        "coding-agents"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "systematic-debugging"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "11ddbd47f3ef3662a96bdb32ecb9c706c0630bed24cb51aff78a746879fc113d"
+    },
+    {
+      "name": "himalaya",
+      "description": "Himalaya CLI: IMAP/SMTP email from terminal.",
+      "category": "email",
+      "path": "email/himalaya/SKILL.md",
+      "tags": [
+        "Email",
+        "IMAP",
+        "SMTP",
+        "CLI",
+        "Communication"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['himalaya']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "0f6c9bb4c0a5c4f4627e139b6beb2b1ba0addd7145895196528b8125929e3837"
+    },
+    {
+      "name": "minecraft-modpack-server",
+      "description": "Host modded Minecraft servers (CurseForge, Modrinth).",
+      "category": "gaming",
+      "path": "gaming/minecraft-modpack-server/SKILL.md",
+      "tags": [
+        "minecraft",
+        "gaming",
+        "server",
+        "neoforge",
+        "forge",
+        "modpack"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "858f64c0e67efb296f832e63fdd3aedd16e954a2da474619eeaafef3cafec821"
+    },
+    {
+      "name": "pokemon-player",
+      "description": "Play Pokemon via headless emulator + RAM reads.",
+      "category": "gaming",
+      "path": "gaming/pokemon-player/SKILL.md",
+      "tags": [
+        "gaming",
+        "pokemon",
+        "emulator",
+        "pyboy",
+        "gameplay",
+        "gameboy"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "fe8da8e6dc5599ef3f5a0d4ffb8cb03083227643e2ca9594b9e2be19e07e667c"
+    },
+    {
+      "name": "codebase-inspection",
+      "description": "Inspect codebases w/ pygount: LOC, languages, ratios.",
+      "category": "github",
+      "path": "github/codebase-inspection/SKILL.md",
+      "tags": [
+        "LOC",
+        "Code Analysis",
+        "pygount",
+        "Codebase",
+        "Metrics",
+        "Repository"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "github-repo-management"
+      ],
+      "prerequisites": [
+        "commands: ['pygount']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "9000e4e547cf1972070e1eedd4b31f87b6165fec81bfb211e69a6791d4e6e10f"
+    },
+    {
+      "name": "github-auth",
+      "description": "GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.",
+      "category": "github",
+      "path": "github/github-auth/SKILL.md",
+      "tags": [
+        "GitHub",
+        "Authentication",
+        "Git",
+        "gh-cli",
+        "SSH",
+        "Setup"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "github-pr-workflow",
+        "github-code-review",
+        "github-issues",
+        "github-repo-management"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "cceb00bfa8908c45976316321fb27d99f5a5ffb26cebf8cd6efe69c6ede9c544"
+    },
+    {
+      "name": "github-code-review",
+      "description": "Review PRs: diffs, inline comments via gh or REST.",
+      "category": "github",
+      "path": "github/github-code-review/SKILL.md",
+      "tags": [
+        "GitHub",
+        "Code-Review",
+        "Pull-Requests",
+        "Git",
+        "Quality"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "github-auth",
+        "github-pr-workflow"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "af1f8aea62ed1f7e0107f00bfeccb2ac68ce6646ee2326ae27a33765f5ace203"
+    },
+    {
+      "name": "github-issues",
+      "description": "Create, triage, label, assign GitHub issues via gh or REST.",
+      "category": "github",
+      "path": "github/github-issues/SKILL.md",
+      "tags": [
+        "GitHub",
+        "Issues",
+        "Project-Management",
+        "Bug-Tracking",
+        "Triage"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "github-auth",
+        "github-pr-workflow"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3b0316d2598d391288b8b3ddffcd1429cb97153476bce99680cb78ea3d1b2c3c"
+    },
+    {
+      "name": "github-pr-workflow",
+      "description": "GitHub PR lifecycle: branch, commit, open, CI, merge.",
+      "category": "github",
+      "path": "github/github-pr-workflow/SKILL.md",
+      "tags": [
+        "GitHub",
+        "Pull-Requests",
+        "CI/CD",
+        "Git",
+        "Automation",
+        "Merge"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "github-auth",
+        "github-code-review"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "5ca8c061bd42580ed6b294a2a9065d70293228a398c7f1dd91f94f5c8c593941"
+    },
+    {
+      "name": "github-profile-customization",
+      "description": "Use when creating or updating a GitHub profile README.",
+      "category": "github",
+      "path": "github/github-profile-customization/SKILL.md",
+      "tags": [
+        "github",
+        "profile",
+        "readme",
+        "markdown",
+        "branding"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "github-repo-management",
+        "github-auth"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "77a40a460ebc8b389e77f07a959e67aa0a958936b8e04e9ccd4fa601d9295ea4"
+    },
+    {
+      "name": "github-profile-readmes",
+      "description": "Use when creating or revising a GitHub profile README.",
+      "category": "github",
+      "path": "github/github-profile-readmes/SKILL.md",
+      "tags": [
+        "github",
+        "profile",
+        "readme",
+        "personal-branding",
+        "svg"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "github-repo-management",
+        "popular-web-designs"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "2a1fcbf4bc5cecc32c9de5147ba1bbd11103a9b914ee22f5700951cdecf461c2"
+    },
+    {
+      "name": "github-repo-management",
+      "description": "Clone/create/fork repos; manage remotes, releases.",
+      "category": "github",
+      "path": "github/github-repo-management/SKILL.md",
+      "tags": [
+        "GitHub",
+        "Repositories",
+        "Git",
+        "Releases",
+        "Secrets",
+        "Configuration"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "github-auth",
+        "github-pr-workflow",
+        "github-issues"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "62ef35f1bea9db51ce42b021c55e0a7be023f438f6efc0617cc33e5a42c29220"
+    },
+    {
+      "name": "repository-consolidation",
+      "description": "Consolidate multiple existing Git repositories into a true monorepo or an umbrella workspace while preserving history, rollback safety, excluded local libraries, and path-dependent tooling.",
+      "category": "github",
+      "path": "github/repository-consolidation/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [
+        "The user wants several repositories in one repository or one clone",
+        "A workspace contains nested Git repositories and must become a monorepo",
+        "Choose between submodules, subtree imports, or a flattened snapshot",
+        "Preserve full history while merging repositories under prefixes",
+        "Convert an existing multi-repo workspace in place without moving stable paths"
+      ],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "509088a2d1a695964528a207b0cf21d6cb805c4453f3764ef9fdcda4cc9826f6"
+    },
+    {
+      "name": "native-mcp",
+      "description": "MCP client: connect servers, register tools (stdio/HTTP).",
+      "category": "mcp",
+      "path": "mcp/native-mcp/SKILL.md",
+      "tags": [
+        "MCP",
+        "Tools",
+        "Integrations"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "mcporter"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "59d2c150022d7906fb5d126389496c8bf4b675b06c615c606b12978865ee65e0"
+    },
+    {
+      "name": "gif-search",
+      "description": "Search/download GIFs from Tenor via curl + jq.",
+      "category": "media",
+      "path": "media/gif-search/SKILL.md",
+      "tags": [
+        "GIF",
+        "Media",
+        "Search",
+        "Tenor",
+        "API"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['curl', 'jq']",
+        "env_vars: ['TENOR_API_KEY']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "a8349043740a8805d4ebfeb3a21f67ec0e9a9733a84f96403ca142c88a312b5d"
+    },
+    {
+      "name": "heartmula",
+      "description": "HeartMuLa: Suno-like song generation from lyrics + tags.",
+      "category": "media",
+      "path": "media/heartmula/SKILL.md",
+      "tags": [
+        "music",
+        "audio",
+        "generation",
+        "ai",
+        "heartmula",
+        "heartcodec",
+        "lyrics",
+        "songs"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "audiocraft"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "d6f8322ba9ab47564ff73dc0ee8d8158d78cea4de557e5b0abe5c6921a12fa57"
+    },
+    {
+      "name": "media-corpus-transcription",
+      "description": "Use when transcribing playlists or large video/audio sets.",
+      "category": "media",
+      "path": "media/media-corpus-transcription/SKILL.md",
+      "tags": [
+        "transcription",
+        "youtube",
+        "playlists",
+        "captions",
+        "research-corpus"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "c77f7b66b44a6d7d35ef5a5c34a3bc55a4d125254859f6d879241f1f1552a6b9"
+    },
+    {
+      "name": "songsee",
+      "description": "Audio spectrograms/features (mel, chroma, MFCC) via CLI.",
+      "category": "media",
+      "path": "media/songsee/SKILL.md",
+      "tags": [
+        "Audio",
+        "Visualization",
+        "Spectrogram",
+        "Music",
+        "Analysis"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['songsee']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "d9d8d1394c630bd83329cd54cd8f18e0e3cd140debe31c3ccf5d9667f054de07"
+    },
+    {
+      "name": "spotify",
+      "description": "Spotify: play, search, queue, manage playlists and devices.",
+      "category": "media",
+      "path": "media/spotify/SKILL.md",
+      "tags": [
+        "spotify",
+        "music",
+        "playback",
+        "playlists",
+        "media"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "gif-search"
+      ],
+      "prerequisites": [
+        "tools: ['spotify_playback', 'spotify_devices', 'spotify_queue', 'spotify_search', 'spotify_playlists', 'spotify_albums', 'spotify_library']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "84b4c86e75f082882188bff3591eca78d222c0b337ef421a762e1a36139b66eb"
+    },
+    {
+      "name": "youtube-content",
+      "description": "YouTube transcripts to summaries, threads, blogs.",
+      "category": "media",
+      "path": "media/youtube-content/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "03cba418b10c64a316124fd9c0cde640bfe87da86f30df8136b8498003eafed8"
+    },
+    {
+      "name": "huggingface-hub",
+      "description": "HuggingFace hf CLI: search/download/upload models, datasets.",
+      "category": "mlops",
+      "path": "mlops/huggingface-hub/SKILL.md",
+      "tags": [
+        "huggingface",
+        "hf",
+        "models",
+        "datasets",
+        "hub",
+        "mlops"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "68ee2e5ae17e0f2968f8550534f3fce1c7eae461b95cbe1dbc34b8d487665bc5"
+    },
+    {
+      "name": "evaluating-llms-harness",
+      "description": "lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).",
+      "category": "mlops/evaluation",
+      "path": "mlops/evaluation/evaluating-llms-harness/SKILL.md",
+      "tags": [
+        "Evaluation",
+        "LM Evaluation Harness",
+        "Benchmarking",
+        "MMLU",
+        "HumanEval",
+        "GSM8K",
+        "EleutherAI",
+        "Model Quality",
+        "Academic Benchmarks",
+        "Industry Standard"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "lm-eval",
+        "transformers",
+        "vllm"
+      ],
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "d6f1d357a6561cfe42b7230b8bb449f720212038f180e74a33f9a22c67a963ff"
+    },
+    {
+      "name": "weights-and-biases",
+      "description": "W&B: log ML experiments, sweeps, model registry, dashboards.",
+      "category": "mlops/evaluation",
+      "path": "mlops/evaluation/weights-and-biases/SKILL.md",
+      "tags": [
+        "MLOps",
+        "Weights And Biases",
+        "WandB",
+        "Experiment Tracking",
+        "Hyperparameter Tuning",
+        "Model Registry",
+        "Collaboration",
+        "Real-Time Visualization",
+        "PyTorch",
+        "TensorFlow",
+        "HuggingFace"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "wandb"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "bc87d8c94c656ed76aaae6123b1f62c2f0341fcf8e44bb9556efc04c52a2cda1"
+    },
+    {
+      "name": "llama-cpp",
+      "description": "llama.cpp local GGUF inference + HF Hub model discovery.",
+      "category": "mlops/inference",
+      "path": "mlops/inference/llama-cpp/SKILL.md",
+      "tags": [
+        "llama.cpp",
+        "GGUF",
+        "Quantization",
+        "Hugging Face Hub",
+        "CPU Inference",
+        "Apple Silicon",
+        "Edge Deployment",
+        "AMD GPUs",
+        "Intel GPUs",
+        "NVIDIA",
+        "URL-first"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "llama-cpp-python>=0.2.0"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "9c1ef45f6197fbc08b643416d5f2c2e5469dbd45fb01e17cf48a0406ffacf8c2"
+    },
+    {
+      "name": "obliteratus",
+      "description": "OBLITERATUS: abliterate LLM refusals (diff-in-means).",
+      "category": "mlops/inference",
+      "path": "mlops/inference/obliteratus/SKILL.md",
+      "tags": [
+        "Abliteration",
+        "Uncensoring",
+        "Refusal-Removal",
+        "LLM",
+        "Weight-Projection",
+        "SVD",
+        "Mechanistic-Interpretability",
+        "HuggingFace",
+        "Model-Surgery"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "vllm",
+        "gguf",
+        "huggingface-tokenizers"
+      ],
+      "prerequisites": [
+        "obliteratus",
+        "torch",
+        "transformers",
+        "bitsandbytes",
+        "accelerate",
+        "safetensors"
+      ],
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "9fb394a0af2a9733bc7e88919580a49c4a17108d0012543a839138ced5aac8d1"
+    },
+    {
+      "name": "serving-llms-vllm",
+      "description": "vLLM: high-throughput LLM serving, OpenAI API, quantization.",
+      "category": "mlops/inference",
+      "path": "mlops/inference/serving-llms-vllm/SKILL.md",
+      "tags": [
+        "vLLM",
+        "Inference Serving",
+        "PagedAttention",
+        "Continuous Batching",
+        "High Throughput",
+        "Production",
+        "OpenAI API",
+        "Quantization",
+        "Tensor Parallelism"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "vllm",
+        "torch",
+        "transformers"
+      ],
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "1c64cbeec7e77ffc682da5fcf06d03741f1ecd7055a8f5c2fa12408716644c17"
+    },
+    {
+      "name": "audiocraft-audio-generation",
+      "description": "AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.",
+      "category": "mlops/models",
+      "path": "mlops/models/audiocraft/SKILL.md",
+      "tags": [
+        "Multimodal",
+        "Audio Generation",
+        "Text-to-Music",
+        "Text-to-Audio",
+        "MusicGen"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "audiocraft",
+        "torch>=2.0.0",
+        "transformers>=4.30.0"
+      ],
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "eebe52632e3312a55a352d766828e7153b2ee23e2e67c0e4e874474e5c52198c"
+    },
+    {
+      "name": "segment-anything-model",
+      "description": "SAM: zero-shot image segmentation via points, boxes, masks.",
+      "category": "mlops/models",
+      "path": "mlops/models/segment-anything/SKILL.md",
+      "tags": [
+        "Multimodal",
+        "Image Segmentation",
+        "Computer Vision",
+        "SAM",
+        "Zero-Shot"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "segment-anything",
+        "transformers>=4.30.0",
+        "torch>=1.7.0"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "86440d99e8ec3bd7f0a92640d62bf307915ec2a7154e45dd55a214d58ee6966d"
+    },
+    {
+      "name": "dspy",
+      "description": "DSPy: declarative LM programs, auto-optimize prompts, RAG.",
+      "category": "mlops/research",
+      "path": "mlops/research/dspy/SKILL.md",
+      "tags": [
+        "Prompt Engineering",
+        "DSPy",
+        "Declarative Programming",
+        "RAG",
+        "Agents",
+        "Prompt Optimization",
+        "LM Programming",
+        "Stanford NLP",
+        "Automatic Optimization",
+        "Modular AI"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "dspy",
+        "openai",
+        "anthropic"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "67410a6b216d79eb257eba1c5d0fa945080b98998ffc131e2cf873bee77e3dd0"
+    },
+    {
+      "name": "obsidian",
+      "description": "Read, search, create, and edit notes in the Obsidian vault.",
+      "category": "note-taking",
+      "path": "note-taking/obsidian/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "b3f669a8a14611c48f512f751eb0873f958b8bee3d944760fb8aaf269a2c4f55"
+    },
+    {
+      "name": "stakeholder-product-requirements",
+      "description": "Use for stakeholder PRDs from context and decisions.",
+      "category": "product-management",
+      "path": "product-management/stakeholder-product-requirements/SKILL.md",
+      "tags": [
+        "prd",
+        "product-management",
+        "requirements",
+        "stakeholder-review",
+        "moscow"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "23699041ef4d29c842f6983f9254eb725a5398b60f998e8a13270ba3b10b7a1a"
+    },
+    {
+      "name": "airtable",
+      "description": "Airtable REST API via curl. Records CRUD, filters, upserts.",
+      "category": "productivity",
+      "path": "productivity/airtable/SKILL.md",
+      "tags": [
+        "Airtable",
+        "Productivity",
+        "Database",
+        "API"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['curl']",
+        "env_vars: ['AIRTABLE_API_KEY']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "016198b563b8f8c4441b002bce8ad0e0865f2f39f1da22476beb7a7daed482aa"
+    },
+    {
+      "name": "document-to-action-items",
+      "description": "Extract cited obligations, deadlines, tasks from documents.",
+      "category": "productivity",
+      "path": "productivity/document-to-action-items/SKILL.md",
+      "tags": [
+        "Documents",
+        "OCR",
+        "Action-Items",
+        "Deadlines",
+        "Extraction"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "ocr-and-documents",
+        "pdf",
+        "docx",
+        "notion"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "f114af652272b56c8736172eab8ee870bd8c1004965b698d4ae5c705d8b6e554"
+    },
+    {
+      "name": "docx",
+      "description": "Create, read, edit Word .docx documents and templates.",
+      "category": "productivity",
+      "path": "productivity/docx/SKILL.md",
+      "tags": [
+        "Word",
+        "DOCX",
+        "Documents",
+        "Office",
+        "Productivity"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "pdf",
+        "xlsx",
+        "powerpoint",
+        "ocr-and-documents"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "cf17a6245da720b7cc3c61b77cc144225a32547568c4665fb77f0b0da96ff40a"
+    },
+    {
+      "name": "google-workspace",
+      "description": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
+      "category": "productivity",
+      "path": "productivity/google-workspace/SKILL.md",
+      "tags": [
+        "Google",
+        "Gmail",
+        "Calendar",
+        "Drive",
+        "Sheets",
+        "Docs",
+        "Contacts",
+        "Email",
+        "OAuth"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "himalaya"
+      ],
+      "prerequisites": [
+        "description: Google OAuth2 token (created by setup script)",
+        "path: google_token.json",
+        "description: Google OAuth2 client credentials (downloaded from Google Cloud Console)",
+        "path: google_client_secret.json"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "014a4818ee1b363d11fafa2353bcea4fd4f8e0c0802322708023d3cd2e3f43b6"
+    },
+    {
+      "name": "interview-assessment-design",
+      "description": "Design role-based interview/assessment templates, question banks, rubrics, and company-benchmark-backed hiring evaluations.",
+      "category": "productivity",
+      "path": "productivity/interview-assessment-design/SKILL.md",
+      "tags": [
+        "hiring",
+        "interviews",
+        "assessment",
+        "question-bank",
+        "rubrics",
+        "evalora"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "1c383515462e9896e9c07eca25cfac5937bc3180af937689b5053756d09616b8"
+    },
+    {
+      "name": "linear",
+      "description": "Linear: manage issues, projects, teams via GraphQL + curl.",
+      "category": "productivity",
+      "path": "productivity/linear/SKILL.md",
+      "tags": [
+        "Linear",
+        "Project Management",
+        "Issues",
+        "GraphQL",
+        "API",
+        "Productivity"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['curl']",
+        "env_vars: ['LINEAR_API_KEY']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "e7b6fbb8b55f84903759a4b01462938453d5ccc92318bdbdd637f6704a8726ff"
+    },
+    {
+      "name": "maps",
+      "description": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.",
+      "category": "productivity",
+      "path": "productivity/maps/SKILL.md",
+      "tags": [
+        "maps",
+        "geocoding",
+        "places",
+        "routing",
+        "distance",
+        "directions",
+        "nearby",
+        "location",
+        "openstreetmap",
+        "nominatim",
+        "overpass",
+        "osrm"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "terminal"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "8c961ecf662838e3ff287570d343db8b1587ca7a6d565ec53eeab13f89407b29"
+    },
+    {
+      "name": "markitdown",
+      "description": "Use this user's greenfield capability-core MarkItDown capability first; fall back to DK projection, then direct Python MarkItDown only when capability-core/DK are unavailable.",
+      "category": "productivity",
+      "path": "productivity/markitdown/SKILL.md",
+      "tags": [
+        "document",
+        "conversion",
+        "markdown",
+        "office",
+        "pdf",
+        "microsoft",
+        "capability-core",
+        "directive-kernel",
+        "projected-capability"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "0a85f9063ed54ea1c7b5669302b0d058a9352a469aa77323f1218cd1e94bf601"
+    },
+    {
+      "name": "nano-pdf",
+      "description": "Edit text in existing PDFs via natural-language prompts.",
+      "category": "productivity",
+      "path": "productivity/nano-pdf/SKILL.md",
+      "tags": [
+        "PDF",
+        "Documents",
+        "Editing",
+        "NLP",
+        "Productivity"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "pdf",
+        "ocr-and-documents"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "e0bdce5fe2d2c8f657f520337cc1cd8d26b13edb60decaafdd9865d4567289ea"
+    },
+    {
+      "name": "notion",
+      "description": "Notion API + ntn CLI: pages, databases, markdown, Workers.",
+      "category": "productivity",
+      "path": "productivity/notion/SKILL.md",
+      "tags": [
+        "Notion",
+        "Productivity",
+        "Notes",
+        "Database",
+        "API",
+        "CLI",
+        "Workers"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "env_vars: ['NOTION_API_KEY']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "798ad178ead72ad3056f5301e83b447fce3407de07d5ff8b0209b134b4eae866"
+    },
+    {
+      "name": "ocr-and-documents",
+      "description": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+      "category": "productivity",
+      "path": "productivity/ocr-and-documents/SKILL.md",
+      "tags": [
+        "PDF",
+        "Documents",
+        "Research",
+        "Arxiv",
+        "Text-Extraction",
+        "OCR"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "powerpoint"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "52808c99818115dda2ff03e60c79b3241cae3fb36f83d3a2a0e02ea9f2682ce7"
+    },
+    {
+      "name": "outbound-communication-operations",
+      "description": "Use when sending email or messages. Verify delivery.",
+      "category": "productivity",
+      "path": "productivity/outbound-communication-operations/SKILL.md",
+      "tags": [
+        "email",
+        "messaging",
+        "outbound",
+        "verification",
+        "computer-use"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "google-workspace",
+        "himalaya",
+        "computer-use"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "e607d7e6014856db6a081b23f4cae32e6c1f7e4b82736b9fcdf813f24ee56b04"
+    },
+    {
+      "name": "pdf",
+      "description": "Create, merge, split, fill, and secure PDF files.",
+      "category": "productivity",
+      "path": "productivity/pdf/SKILL.md",
+      "tags": [
+        "PDF",
+        "Documents",
+        "Forms",
+        "Office",
+        "Productivity"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "ocr-and-documents",
+        "nano-pdf",
+        "docx",
+        "xlsx"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "7f5e2db4342a69cc8193803f855fce8739c6b8f4d051a3d2691f827f595ce23e"
+    },
+    {
+      "name": "petdex",
+      "description": "Install and select animated petdex mascots for Hermes.",
+      "category": "productivity",
+      "path": "productivity/petdex/SKILL.md",
+      "tags": [
+        "petdex",
+        "mascot",
+        "display",
+        "cli",
+        "tui",
+        "desktop"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "ca52cda72a9c49d60c4a3c2dbfa6c64c87e62562857b598599cc496b30116fd1"
+    },
+    {
+      "name": "powerpoint",
+      "description": "Create, read, edit .pptx decks, slides, notes, templates.",
+      "category": "productivity",
+      "path": "productivity/powerpoint/SKILL.md",
+      "tags": [
+        "PowerPoint",
+        "PPTX",
+        "Presentations",
+        "Office",
+        "Productivity"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "docx",
+        "xlsx",
+        "pdf"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "a81d5c61b844b21b07393cd4bef7db0de6d4d484cecd40b00621087bc442263e"
+    },
+    {
+      "name": "report",
+      "description": "Produce concise but comprehensive status/technical reports after work is done: verdict first, what changed, improvements, evidence, risks, and next action.",
+      "category": "productivity",
+      "path": "productivity/report/SKILL.md",
+      "tags": [
+        "reporting",
+        "technical-writing",
+        "status",
+        "executive-summary",
+        "evidence"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "web-research",
+        "close-dk-session"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "6b743175be148af5c51a2f88a3fafa14285daa7448eb06ba0345a95283fb05ea"
+    },
+    {
+      "name": "scrapling",
+      "description": "Niche DK helper for exact selector-based HTML extraction from inline HTML, local HTML files, or safe public HTML URLs; not a general research/browsing path.",
+      "category": "productivity",
+      "path": "productivity/scrapling/SKILL.md",
+      "tags": [
+        "html",
+        "extraction",
+        "scraping",
+        "scrapling",
+        "directive-kernel",
+        "projected-capability",
+        "parsing"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "12a565023d52c51e9d2a1cf69a3d0cdae4b1a84ca0f68714b3af489c10454fd5"
+    },
+    {
+      "name": "self-contained-workflow-design",
+      "description": "Use when building a scoped-router workflow package.",
+      "category": "productivity",
+      "path": "productivity/self-contained-workflow-design/SKILL.md",
+      "tags": [
+        "workflow-design",
+        "skill-routing",
+        "package-structure",
+        "scoped-router",
+        "reference-prioritization"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "skill-router",
+        "skill-router-maintenance",
+        "writing-plans"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "70e7e7694895b8784ac8d07b627c6668bb2998e54494882e225af0f3470c9d0d"
+    },
+    {
+      "name": "skill-router",
+      "description": "Use when the user says “give me your suggestion”, “what should I use”, “choose the best skill/tool”, “recommend an approach”, “what now”, “route this”, “use the right skill”, or gives a broad task where Hermes should select skills/tools before acting. Routes tasks to installed skills, commands, DK capabilities, and execution patterns.",
+      "category": "productivity",
+      "path": "productivity/skill-router/SKILL.md",
+      "tags": [
+        "skill-routing",
+        "suggestions",
+        "orchestration",
+        "command-library",
+        "workflow-selection"
+      ],
+      "trigger_phrases": [
+        "give me your suggestion",
+        "suggest",
+        "recommend",
+        "what should I use",
+        "choose the best skill",
+        "choose the best tool",
+        "route this",
+        "what now",
+        "use the right skill",
+        "pick the workflow"
+      ],
+      "related_skills": [
+        "skill-router-maintenance",
+        "context-engineering"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "e481e8a68936850937e2d843299094137dc1221dd6dbafe024eb42842150a4b6"
+    },
+    {
+      "name": "skill-router-maintenance",
+      "description": "Use when updating the skill-router, organizer skill library, or command library after skills are added, removed, renamed, or materially changed. Keeps routing tables current as the user's skill set grows.",
+      "category": "productivity",
+      "path": "productivity/skill-router-maintenance/SKILL.md",
+      "tags": [
+        "skill-routing",
+        "maintenance",
+        "library",
+        "skills",
+        "organizer"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "skill-router",
+        "hermes-agent",
+        "validate-skills"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "dfe50cdc558de727bf4f3f127e09758f8d25dfba13b0e78b454746c495428b9a"
+    },
+    {
+      "name": "teams-meeting-pipeline",
+      "description": "Teams meeting summaries, job replay, Graph subscriptions.",
+      "category": "productivity",
+      "path": "productivity/teams-meeting-pipeline/SKILL.md",
+      "tags": [
+        "Teams",
+        "Microsoft Graph",
+        "Meetings",
+        "Productivity",
+        "Operations"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['hermes']",
+        "env_vars: ['MSGRAPH_TENANT_ID', 'MSGRAPH_CLIENT_ID', 'MSGRAPH_CLIENT_SECRET']"
+      ],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "787ecd8615a335e4b8c1d5834d01ce0c697e55f18e6bea6e39eaafb2d7fcfc5f"
+    },
+    {
+      "name": "xlsx",
+      "description": "Create, read, edit Excel .xlsx spreadsheets and CSVs.",
+      "category": "productivity",
+      "path": "productivity/xlsx/SKILL.md",
+      "tags": [
+        "Excel",
+        "XLSX",
+        "Spreadsheets",
+        "Office",
+        "Productivity"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "docx",
+        "pdf",
+        "powerpoint"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "5fb6612978efcf12596edbaa4e23a080d8aba97fcae058c2510c28d65fe1d12b"
+    },
+    {
+      "name": "godmode",
+      "description": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
+      "category": "red-teaming",
+      "path": "red-teaming/godmode/SKILL.md",
+      "tags": [
+        "jailbreak",
+        "red-teaming",
+        "G0DM0D3",
+        "Parseltongue",
+        "GODMODE",
+        "uncensoring",
+        "safety-bypass",
+        "prompt-engineering",
+        "L1B3RT4S"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "obliteratus"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "6c50d7f682eeb2dc6a241b2265acb5e3dcb46143299b14760116868904a3f525"
+    },
+    {
+      "name": "arxiv",
+      "description": "Search arXiv papers by keyword, author, category, or ID.",
+      "category": "research",
+      "path": "research/arxiv/SKILL.md",
+      "tags": [
+        "Research",
+        "Arxiv",
+        "Papers",
+        "Academic",
+        "Science",
+        "API"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "ocr-and-documents"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "2a6073a1ad08823dbdf26be64440b54155298db38fdee52c7b0a5d1cd0cfb05d"
+    },
+    {
+      "name": "blogwatcher",
+      "description": "Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.",
+      "category": "research",
+      "path": "research/blogwatcher/SKILL.md",
+      "tags": [
+        "RSS",
+        "Blogs",
+        "Feed-Reader",
+        "Monitoring"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['blogwatcher-cli']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "b85be5a9b86b90287266dd142a0ae9740be926298fbcb772f56b8a4d6451bb12"
+    },
+    {
+      "name": "external-validation-research",
+      "description": "Validate whether a real external problem, solution category, and project-specific pull exist using calibrated public-source research, autonomous incumbent-first source/code gap audits when claims are publicly inspectable, and bounded outsider contact when explicitly authorized.",
+      "category": "research",
+      "path": "research/external-validation-research/SKILL.md",
+      "tags": [
+        "research",
+        "validation",
+        "demand",
+        "product-discovery",
+        "outreach",
+        "evidence"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "813e2e31ef2e08fbe334bb357bb0d414efc5a23b560540351de695a7fa1baec6"
+    },
+    {
+      "name": "grounded-citations",
+      "description": "Ground answers and documents in cited, verifiable sources.",
+      "category": "research",
+      "path": "research/grounded-citations/SKILL.md",
+      "tags": [
+        "Research",
+        "Citations",
+        "Grounding",
+        "Sources",
+        "Web",
+        "Reports"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "research-paper-writing",
+        "arxiv",
+        "ocr-and-documents"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "e244361021acc9d41efc230df739130c5545bb86dba5af37aa0d1a878c6c59ea"
+    },
+    {
+      "name": "last30days",
+      "description": "Research what people actually say about any topic in the last 30 days. Pulls posts and engagement from Reddit, X, YouTube, TikTok, Hacker News, Polymarket, GitHub, and the web.",
+      "category": "research",
+      "path": "research/last30days/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": true,
+      "content_sha256": "571e83cae38ec644a550411b774b7c41231cb8fa0e67d664c75161eeb8ffd390"
+    },
+    {
+      "name": "literature-access",
+      "description": "Use this user's DK-projected Scientify Literature Access capability for academic/technical paper search and open-access metadata retrieval; prefer it before generic web search for literature questions.",
+      "category": "research",
+      "path": "research/literature-access/SKILL.md",
+      "tags": [
+        "research",
+        "literature",
+        "academic",
+        "papers",
+        "openalex",
+        "arxiv",
+        "unpaywall",
+        "directive-kernel",
+        "projected-capability"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "7a5d21d5b6f2ad445b86845e323553a5651ce2ff86f4f29d8c45feef60324875"
+    },
+    {
+      "name": "llm-wiki",
+      "description": "Karpathy's LLM Wiki: build/query interlinked markdown KB.",
+      "category": "research",
+      "path": "research/llm-wiki/SKILL.md",
+      "tags": [
+        "wiki",
+        "knowledge-base",
+        "research",
+        "notes",
+        "markdown",
+        "rag-alternative"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "obsidian",
+        "arxiv"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "986c0893a060a7fb801c06881dc33cf29c0ebc68d1d106dd9856f769da54af65"
+    },
+    {
+      "name": "online-presence-research",
+      "description": "Research a person, company, or organization's online presence across social media, web, and public records.",
+      "category": "research",
+      "path": "research/online-presence-research/SKILL.md",
+      "tags": [
+        "research",
+        "social-media",
+        "investigation",
+        "osint-light"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "e1bf86e13e6bfc5df1bbd90dfd1a9c083c547af8b029b81536757c706a2ab115"
+    },
+    {
+      "name": "polymarket",
+      "description": "Query Polymarket: markets, prices, orderbooks, history.",
+      "category": "research",
+      "path": "research/polymarket/SKILL.md",
+      "tags": [
+        "polymarket",
+        "prediction-markets",
+        "market-data",
+        "trading"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "becfa71e730b482c3f087c4de4071fd25f0feb475aec1293aee0b845c10fa190"
+    },
+    {
+      "name": "research-paper-writing",
+      "description": "Write ML papers for NeurIPS/ICML/ICLR: design→submit.",
+      "category": "research",
+      "path": "research/research-paper-writing/SKILL.md",
+      "tags": [
+        "Research",
+        "Paper Writing",
+        "Experiments",
+        "ML",
+        "AI",
+        "NeurIPS",
+        "ICML",
+        "ICLR",
+        "ACL",
+        "AAAI",
+        "COLM",
+        "LaTeX",
+        "Citations",
+        "Statistical Analysis"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "arxiv",
+        "subagent-driven-development",
+        "plan"
+      ],
+      "prerequisites": [
+        "semanticscholar",
+        "arxiv",
+        "habanero",
+        "requests",
+        "scipy",
+        "numpy",
+        "matplotlib",
+        "SciencePlots",
+        "terminal",
+        "files"
+      ],
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "b78cfe4323fa36b378c0a08ec4f1e131a1dabedab887b651748b011b73237b07"
+    },
+    {
+      "name": "research-simulation-workflow",
+      "description": "Generic research and simulation workflow: source planning, web extraction, GitHub/tooling research, stakeholder simulation, rubric scoring, and confidence calibration without domain-specific assumptions.",
+      "category": "research",
+      "path": "research/research-simulation-workflow/SKILL.md",
+      "tags": [
+        "research",
+        "simulation",
+        "evaluation",
+        "strategy",
+        "decision-making",
+        "llm-as-judge",
+        "stakeholder-analysis"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "72ecdaafd19be22da2b10ca02cb562e487e34e26be50bbd47c884f2f06684ee2"
+    },
+    {
+      "name": "scenario-simulation-evaluation",
+      "description": "Use simulation tools such as MiroFish as a second-opinion evaluator for ranked choices, hackathon/startup ideas, public reaction, sponsor/judge fit, and strategy stress tests.",
+      "category": "research",
+      "path": "research/scenario-simulation-evaluation/SKILL.md",
+      "tags": [
+        "simulation",
+        "evaluation",
+        "ranking",
+        "startup",
+        "hackathon",
+        "strategy",
+        "mirofish"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "1e84d7303d828994c7a4c61e8cebf2b946f3b493caa2b054121d95429b130fb3"
+    },
+    {
+      "name": "simulation-router",
+      "description": "Route simulation requests to the best available simulation source/tool: deterministic rubric, MiroFish, CAMEL/OASIS, future simulators, or combined runs. Skill UX on top; capability-control/CC should provide validated adapters and artifact contracts when implemented.",
+      "category": "research",
+      "path": "research/simulation-router/SKILL.md",
+      "tags": [
+        "simulation",
+        "routing",
+        "scenario-analysis",
+        "stakeholder-simulation",
+        "camel-oasis",
+        "mirofish",
+        "capability-control"
+      ],
+      "trigger_phrases": [
+        "run a simulation",
+        "simulate this",
+        "simulation router",
+        "choose simulation source",
+        "synthetic judges",
+        "stakeholder simulation",
+        "social reaction simulation",
+        "use MiroFish",
+        "use Oasis",
+        "use CAMEL"
+      ],
+      "related_skills": [
+        "scenario-simulation-evaluation",
+        "research-simulation-workflow",
+        "skill-router"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "ff84c89163b6099b3fa7b729a552dccdb9215638ad8994bc0cfb386a27264926"
+    },
+    {
+      "name": "web-crawl",
+      "description": "Use this user's DK-projected Crawl4AI capability to deep-crawl websites with recursive link-following and markdown output; fall back to direct crawler only when DK projection is unavailable.",
+      "category": "research",
+      "path": "research/web-crawl/SKILL.md",
+      "tags": [
+        "crawl",
+        "spider",
+        "scraping",
+        "web",
+        "markdown",
+        "deep-crawl",
+        "directive-kernel",
+        "projected-capability"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "c1690920102936f11e6e6dc0c239615665cd831ca0223d78796f6d02cb30c04e"
+    },
+    {
+      "name": "web-research",
+      "description": "Three-stage web research pipeline: search → sample → deep-crawl. Uses web_search, web_extract, and DK-projected Crawl4AI together for highest-quality results. Use when the user asks to research a topic, find information, or gather data from the web.",
+      "category": "research",
+      "path": "research/web-research/SKILL.md",
+      "tags": [
+        "research",
+        "search",
+        "crawl",
+        "extract",
+        "pipeline",
+        "directive-kernel"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "72da798b2616357df2ef6bb518f01158b39ae5c7253ba596706c773618821b42"
+    },
+    {
+      "name": "graphify",
+      "description": "Use for any question about a codebase, its architecture, file relationships, or project content — especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent knowledge graph with god nodes, community detection, and query/path/explain tools.",
+      "category": "root",
+      "path": "graphify/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "6fbd0b2b41d98cb850f8ba6441d27b573e61fb5d31ba9c75e78dd458108a2817"
+    },
+    {
+      "name": "simple-universal-ux",
+      "description": "Use when simplifying UI for non-technical or elderly users.",
+      "category": "root",
+      "path": "simple-universal-ux/SKILL.md",
+      "tags": [
+        "ux",
+        "ui",
+        "simplicity",
+        "accessibility",
+        "product-design",
+        "mobile",
+        "onboarding"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "b6aaf684adf3dbbf019097889d1dab48fd29068fe49fb191d0607a23aed035ea"
+    },
+    {
+      "name": "typescript-jsx-patterns",
+      "description": "TypeScript JSX type narrowing for JSONB and unknown values",
+      "category": "root",
+      "path": "typescript-jsx-patterns/SKILL.md",
+      "tags": [
+        "typescript",
+        "jsx",
+        "nextjs",
+        "drizzle",
+        "jsonb",
+        "type-narrowing"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "systematic-debugging",
+        "test-driven-development"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "4b21c09babb499b72a67474aedd528b72bccf8eace97917aae9c375cf2c518cd"
+    },
+    {
+      "name": "unbroker",
+      "description": "Autonomously remove your info from data-broker sites.",
+      "category": "root",
+      "path": "unbroker/SKILL.md",
+      "tags": [
+        "privacy",
+        "data-broker",
+        "opt-out",
+        "ccpa",
+        "gdpr",
+        "security",
+        "doxxing"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "google-workspace",
+        "agentmail",
+        "himalaya",
+        "scrapling",
+        "osint-investigation"
+      ],
+      "prerequisites": [
+        "commands: ['python3']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "075d93606b0a5c0e56a7e52bdad39bfe703f254465d03e7b460a245cd2d56ce8"
+    },
+    {
+      "name": "web-app-route-testing",
+      "description": "Batch HTTP route testing for Next.js web apps using curl.",
+      "category": "root",
+      "path": "web-app-route-testing/SKILL.md",
+      "tags": [
+        "qa",
+        "testing",
+        "routes",
+        "curl",
+        "nextjs",
+        "smoke-test"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "dogfood",
+        "authenticated-web-smoke"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "f692654beb9f29bb62403c7829f51b18cb31661c533d92a7bbe4f457f6b3de4a"
+    },
+    {
+      "name": "yuanbao",
+      "description": "Yuanbao (元宝) groups: @mention users, query info/members.",
+      "category": "root",
+      "path": "yuanbao/SKILL.md",
+      "tags": [
+        "yuanbao",
+        "mention",
+        "at",
+        "group",
+        "members",
+        "元宝",
+        "派",
+        "艾特"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "239e4875f511124fab06e94ff21511fd8f857554c6ffd82dfb796ed275b4ff32"
+    },
+    {
+      "name": "online-identity-removal",
+      "description": "Handle privacy cleanup beyond data brokers: social-profile impersonation/duplicates, account recovery vs reporting, and evidence-safe takedown workflows.",
+      "category": "security",
+      "path": "security/online-identity-removal/SKILL.md",
+      "tags": [
+        "privacy",
+        "impersonation",
+        "social-media",
+        "takedown",
+        "account-recovery",
+        "security"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "unbroker",
+        "web-research"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "02dd857147e3f8acc7a6f39f66e385091f5631ab749224353a3fda1f3de6120a"
+    },
+    {
+      "name": "openhue",
+      "description": "Control Philips Hue lights, scenes, rooms via OpenHue CLI.",
+      "category": "smart-home",
+      "path": "smart-home/openhue/SKILL.md",
+      "tags": [
+        "Smart-Home",
+        "Hue",
+        "Lights",
+        "IoT",
+        "Automation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['openhue']"
+      ],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "65a27110487bf296285ac1730a81fd0b5be3451a7a9abac767588be2986e454c"
+    },
+    {
+      "name": "xurl",
+      "description": "X/Twitter via xurl CLI: raw post search, posting, DM, media.",
+      "category": "social-media",
+      "path": "social-media/xurl/SKILL.md",
+      "tags": [
+        "twitter",
+        "x",
+        "social-media",
+        "xurl",
+        "official-api"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [
+        "commands: ['xurl']"
+      ],
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "5457319ee337284b1152dc9f60146c72685ade489299afed08e0b46ca5a97080"
+    },
+    {
+      "name": "android-companion-ux",
+      "description": "Android native Digital Twin companion UX: phone-first Compose redesign handoffs, verification, and CI.",
+      "category": "software-development",
+      "path": "software-development/android-companion-ux/SKILL.md",
+      "tags": [
+        "android",
+        "kotlin",
+        "compose",
+        "ux",
+        "codex",
+        "mobile"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "codex",
+        "incremental-implementation",
+        "context-engineering",
+        "github-pr-workflow"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "19e5e129a2a681b79ebe3b85a14576228b049a3aadc50033ae2d0624e7f624c7"
+    },
+    {
+      "name": "authenticated-web-smoke",
+      "description": "Authenticated browser smoke tests for owner/admin web apps: credential preflight, login redirects, gated CRUD, and honest blocker reporting.",
+      "category": "software-development",
+      "path": "software-development/authenticated-web-smoke/SKILL.md",
+      "tags": [
+        "qa",
+        "browser",
+        "auth",
+        "smoke-test",
+        "supabase",
+        "nextjs"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "dogfood",
+        "systematic-debugging"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "909c0945ce1ea3e5b4f1319823aa3bac43e1b78a1e88bf746f0e7703c8e28c49"
+    },
+    {
+      "name": "capability-runtime-integration",
+      "description": "Integrate external runtimes into capability registries with bounded contracts, exact dependency verification, safe execution, and end-to-end evidence.",
+      "category": "software-development",
+      "path": "software-development/capability-runtime-integration/SKILL.md",
+      "tags": [
+        "capabilities",
+        "integration",
+        "runtime",
+        "verification",
+        "security",
+        "containers"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "03c532bee7c952a098ba36d6ed9af77b9219dba009e2b469448002cc8216397f"
+    },
+    {
+      "name": "child-process-crash-testing",
+      "description": "Design and implement deterministic parent/child integration tests for process crashes, watchdogs, durable recovery, and IPC across Windows, macOS, and Linux.",
+      "category": "software-development",
+      "path": "software-development/child-process-crash-testing/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "de7bd033882e8b2ab41143d2f6e4a2fc21af0221fb3cb70b2bc27aee39465860"
+    },
+    {
+      "name": "close-dk-session",
+      "description": "Use when ending an active Directive Kernel session. Refresh `.hermes/active/` so the next session can resume cleanly.",
+      "category": "software-development",
+      "path": "software-development/close-dk-session/SKILL.md",
+      "tags": [
+        "directive-kernel",
+        "session-close",
+        "working-memory",
+        "handoff"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "directive-kernel",
+        "resume-dk-active-work",
+        "context-engineering"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "67f5c15651565b5a1efa10e7277d417ee929fe15794280aecacb39c4346cc6ca"
+    },
+    {
+      "name": "code-traced-qa",
+      "description": "Use when QA traces prototype source instead of clicking.",
+      "category": "software-development",
+      "path": "software-development/code-traced-qa/SKILL.md",
+      "tags": [
+        "qa",
+        "testing",
+        "code-review",
+        "prototypes",
+        "web"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "dogfood"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "586c0b4edbd220cc4b94903c5e74a61c10d477442ff0c0b0fdb743be585aefda"
+    },
+    {
+      "name": "codewave",
+      "description": "Use for CodeWave repo work — checks, tests, error-UX.",
+      "category": "software-development",
+      "path": "software-development/codewave/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "9d0e8b683764c2e57b3240fce73876090be35c8a2608899205dd5e5fb8ae34b0"
+    },
+    {
+      "name": "context-engineering",
+      "description": "Curate what the agent sees: rules files, specs, source files, errors, conversation history. Structure context to prevent hallucination and focus loss.",
+      "category": "software-development",
+      "path": "software-development/context-engineering/SKILL.md",
+      "tags": [
+        "context",
+        "quality",
+        "session-management",
+        "prompt-engineering"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "056fe974103b3bf46fdd391884f3a68e845f7c3694b56c8cdf6cd835d23225fc"
+    },
+    {
+      "name": "contribution-workflow",
+      "description": "Community propose-review-accept/reject workflows.",
+      "category": "software-development",
+      "path": "software-development/contribution-workflow/SKILL.md",
+      "tags": [
+        "contribution",
+        "workflow",
+        "review",
+        "editorial",
+        "stale-detection",
+        "wiki"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3bfb1f062440c9f882798a6c4c7daa64d9ec353ae3b3d90bce39efc612b178b3"
+    },
+    {
+      "name": "contribution-workflow-architecture",
+      "description": "Specify community contribution lifecycles.",
+      "category": "software-development",
+      "path": "software-development/contribution-workflow-architecture/SKILL.md",
+      "tags": [
+        "spec",
+        "architecture",
+        "contribution",
+        "workflow",
+        "audit"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "f7f8252fd14030a695b06c7ad141491cb50104eb7aeb2b3ff241ac590a926c0e"
+    },
+    {
+      "name": "cost-aware-execution-router",
+      "description": "Choose the cheapest effective execution path for coding work: direct GPT, spec-to-cheap-implementer-to-GPT-eval, or split the task smaller.",
+      "category": "software-development",
+      "path": "software-development/cost-aware-execution-router/SKILL.md",
+      "tags": [
+        "cost",
+        "routing",
+        "coding",
+        "evaluation",
+        "workflow"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "cost-control-agent-workflow",
+        "model-task-router",
+        "directive-kernel"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "5a65be87373f2e8031cbc96d194f2d32f61a24e4932786b8f989481bbca4483d"
+    },
+    {
+      "name": "cost-control-agent-workflow",
+      "description": "Cost-optimized Codex-orchestrated workflow with Grok 4.5 via xAI OAuth (`xai-oauth`, `grok-4.5`) as the sole implementation worker. DeepSeek API and OpenCode are prohibited. Small slices, binary checklists, one review pass.",
+      "category": "software-development",
+      "path": "software-development/cost-control-agent-workflow/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "7cb498018b89b7f6b066cabd5c6ea44740029942e8ca69eab7fc81d8449dc0e8"
+    },
+    {
+      "name": "daisyui-components",
+      "description": "Thin operational wrapper for the Directive Kernel-managed daisyUI capability. Use for Tailwind-first UI composition and themeable semantic components.",
+      "category": "software-development",
+      "path": "software-development/daisyui-components/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "6a040f2367dbf01eaf99e9439b9e38dfe31d5bd3c438ccf7046eaaa7385b55f5"
+    },
+    {
+      "name": "daisyui-components-v2",
+      "description": "Registered via full Directive Kernel pipeline. Tailwind CSS component library (41K stars) with semantic class-based theming.",
+      "category": "software-development",
+      "path": "software-development/daisyui-components-v2/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "36e4b1cbeae42cc6fd488ba62604a575152ada3da549386b1ccb68e4777a9dca"
+    },
+    {
+      "name": "debugging-hermes-tui-commands",
+      "description": "Debug Hermes TUI slash commands: Python, gateway, Ink UI.",
+      "category": "software-development",
+      "path": "software-development/debugging-hermes-tui-commands/SKILL.md",
+      "tags": [
+        "debugging",
+        "hermes-agent",
+        "tui",
+        "slash-commands",
+        "typescript",
+        "python"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "python-debugpy",
+        "node-inspect-debugger",
+        "systematic-debugging"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "55d5811c0b2d872dc59d87432720a113150dbbce2872524a36b3860a8967095d"
+    },
+    {
+      "name": "directive-kernel",
+      "description": "Operate Directive Kernel as a Hermes-managed system — source ingestion, engine routing, Runtime pipeline advancement, auto-ingest domain scaling, callable executor registration, MCP integration, mission management, cron-driven autonomous loops, and research engine discovery.",
+      "category": "software-development",
+      "path": "software-development/directive-kernel/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "47bc265ec1a0e9b4714d9d414caee54b464a69403430fbe858087c14060a355b"
+    },
+    {
+      "name": "dogfood",
+      "description": "Exploratory QA of web apps: find bugs, evidence, reports.",
+      "category": "software-development",
+      "path": "software-development/dogfood/SKILL.md",
+      "tags": [
+        "qa",
+        "testing",
+        "browser",
+        "web",
+        "dogfood"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "36b1a710c61727c2be3c43ba20d68605cfed199afc90e27bde9746f4b80b91dd"
+    },
+    {
+      "name": "doubt-driven-development",
+      "description": "Adversarial fresh-context review for non-trivial decisions: CLAIM → EXTRACT → DOUBT → RECONCILE → STOP. Catch wrong directions before they compound.",
+      "category": "software-development",
+      "path": "software-development/doubt-driven-development/SKILL.md",
+      "tags": [
+        "review",
+        "quality",
+        "adversarial",
+        "safety",
+        "verification"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "383ef22fca2479c8d79423dc1af6b0f07cb1efeea8a7dcabb37b3373cd425a0a"
+    },
+    {
+      "name": "durable-workflow-evidence-gates",
+      "description": "Evidence-gated TDD and pre-commit verification for durable workflow boundaries backed by journals and canonical databases.",
+      "category": "software-development",
+      "path": "software-development/durable-workflow-evidence-gates/SKILL.md",
+      "tags": [
+        "tdd",
+        "durable-workflows",
+        "concurrency",
+        "evidence",
+        "privacy",
+        "code-review"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3837b18989ac40acb86b63d41d341a2f214452c2d494439d27208a1effcb7655"
+    },
+    {
+      "name": "evalora",
+      "description": "Work on the Evalora assessment repos under Internship/.",
+      "category": "software-development",
+      "path": "software-development/evalora/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "acc9a0030e699d5c09b30a75720116c9b8342424dd70d4be1cb17b873825312b"
+    },
+    {
+      "name": "hermes-s6-container-supervision",
+      "description": "Modify, debug, or extend the s6-overlay supervision tree inside the Hermes Agent Docker image — adding new services, debugging profile gateways, understanding the Architecture B main-program pattern.",
+      "category": "software-development",
+      "path": "software-development/hermes-s6-container-supervision/SKILL.md",
+      "tags": [
+        "docker",
+        "s6",
+        "supervision",
+        "gateway",
+        "profiles"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "hermes-agent",
+        "hermes-agent-dev"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "14d42314746571421ff7ca90cbc2cb34b428a09a6d4424fa942bc2ff79e344f2"
+    },
+    {
+      "name": "implementation-reconciliation",
+      "description": "Reconcile code against an approved architecture spec.",
+      "category": "software-development",
+      "path": "software-development/implementation-reconciliation/SKILL.md",
+      "tags": [
+        "reconciliation",
+        "spec-compliance",
+        "implementation",
+        "review",
+        "architecture"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "0acd4cf29171ba1826f142282dfb84e80d5a25b3bb4a386e592a67d6e7d10396"
+    },
+    {
+      "name": "incremental-implementation",
+      "description": "Build in thin vertical slices: implement → test → verify → commit. Each slice leaves the system working. Never write >100 lines before testing.",
+      "category": "software-development",
+      "path": "software-development/incremental-implementation/SKILL.md",
+      "tags": [
+        "implementation",
+        "incremental",
+        "slicing",
+        "quality",
+        "workflow"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3b71e1edf6d1d8f641b355fcb0e77f989c5ff69d0e4aa8cf7c4ab00cf7fe49a0"
+    },
+    {
+      "name": "inspecting-hermes-desktop-dom",
+      "description": "Read the live Hermes desktop DOM/CSS over CDP.",
+      "category": "software-development",
+      "path": "software-development/inspecting-hermes-desktop-dom/SKILL.md",
+      "tags": [
+        "desktop",
+        "electron",
+        "cdp",
+        "dom",
+        "ui-verification",
+        "self-inspection"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "node-inspect-debugger",
+        "systematic-debugging",
+        "dogfood"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "a78a5f8d277a1d6d39fccd5ecf1e76ce519a1ace831f06078dfcc91cb54a3399"
+    },
+    {
+      "name": "interview-me",
+      "description": "One-question-at-a-time interview to extract real needs (>95% confidence). Use when requirements are underspecified or user says 'interview me'.",
+      "category": "software-development",
+      "path": "software-development/interview-me/SKILL.md",
+      "tags": [
+        "requirements",
+        "discovery",
+        "planning",
+        "clarification"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "57b46c810c2f35e2b84e3491041f1cdd75f72741614536924f6ffd54ff7da182"
+    },
+    {
+      "name": "menui-dashboard-ux",
+      "description": "Use when editing Menui app UI, forms, copy, or git flow.",
+      "category": "software-development",
+      "path": "software-development/menui-dashboard-ux/SKILL.md",
+      "tags": [
+        "menui",
+        "ux",
+        "nextjs",
+        "supabase",
+        "mobile",
+        "git"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "79d96e8cc6d6cf528e03c500c6930fb0f2501a95bc07645df095fa5eac366ff8"
+    },
+    {
+      "name": "model-task-router",
+      "description": "Route software work through Codex control and Grok 4.5 implementation. DeepSeek API and OpenCode are prohibited.",
+      "category": "software-development",
+      "path": "software-development/model-task-router/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "5fc05ba2d052b92a57c454a7b6b6d7d74b371c7b9172458be10e7b7f87ac31f3"
+    },
+    {
+      "name": "node-inspect-debugger",
+      "description": "Debug Node.js via --inspect + Chrome DevTools Protocol CLI.",
+      "category": "software-development",
+      "path": "software-development/node-inspect-debugger/SKILL.md",
+      "tags": [
+        "debugging",
+        "nodejs",
+        "node-inspect",
+        "cdp",
+        "breakpoints",
+        "ui-tui"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "systematic-debugging",
+        "python-debugpy"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3f10dc0ffd47dd0564dd622b274fb1c281b918ca735b20e0e7100657683974bc"
+    },
+    {
+      "name": "plan",
+      "description": "Write a markdown plan to .hermes/plans/; no execution.",
+      "category": "software-development",
+      "path": "software-development/plan/SKILL.md",
+      "tags": [
+        "planning",
+        "plan-mode",
+        "implementation",
+        "workflow",
+        "design",
+        "documentation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "subagent-driven-development",
+        "test-driven-development",
+        "requesting-code-review"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "7513da40fbbbf899bc94ffdf05921a8187866745e67e2d81a55790b70daca72c"
+    },
+    {
+      "name": "prd-driven-admin-dev",
+      "description": "Implement admin dashboard features from a PRD.",
+      "category": "software-development",
+      "path": "software-development/prd-driven-admin-dev/SKILL.md",
+      "tags": [
+        "admin-dashboard",
+        "prd-driven",
+        "micro-slice",
+        "workflow-overlay"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "spec-driven-development",
+        "incremental-implementation",
+        "codebase-inspection"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "db82cff90954eb9f1cd55993de05e87e50c4fc1b092db4c57e2b8468ccba03ac"
+    },
+    {
+      "name": "project-archive-management",
+      "description": "Organize archived/frozen project collections: distinguish cold storage from goal-adjacent source libraries, preserve repository state, and keep active workspaces usable.",
+      "category": "software-development",
+      "path": "software-development/project-archive-management/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [
+        "A project is frozen, complete, or intentionally stopped and needs classification or archival",
+        "The user asks to organize an archive/archieve/frozen-projects folder",
+        "An archive inside a working space may contain past projects useful to the current goal",
+        "Workspace cleanup after DK freeze or project retirement",
+        "Temporary external-model briefs, incomplete review sessions, or generated summaries need value extraction and deletion"
+      ],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "713577de781f734d5795f04cace79cd3050087d8489c638fa7f9106681b4fa8d"
+    },
+    {
+      "name": "project-second-brain",
+      "description": "Design and maintain file-first AI second brains for projects: AGENTS.md routing, .active/ state, evergreen context, references, wiki, archives, and selective retrieval layers.",
+      "category": "software-development",
+      "path": "software-development/project-second-brain/SKILL.md",
+      "tags": [
+        "second-brain",
+        "context",
+        "active-memory",
+        "routing",
+        "knowledge-management",
+        "agents"
+      ],
+      "trigger_phrases": [
+        "second brain",
+        "project memory",
+        "active memory",
+        "knowledge base",
+        "organize project context",
+        "make this agent-readable",
+        "extract useful into our system"
+      ],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "2310d2c6470a16ab0b8ce6bd5f9f425abe5fe0dffdcfe1c7f4569fecd0e972ec"
+    },
+    {
+      "name": "python-debugpy",
+      "description": "Debug Python: pdb REPL + debugpy remote (DAP).",
+      "category": "software-development",
+      "path": "software-development/python-debugpy/SKILL.md",
+      "tags": [
+        "debugging",
+        "python",
+        "pdb",
+        "debugpy",
+        "breakpoints",
+        "dap",
+        "post-mortem"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "systematic-debugging",
+        "node-inspect-debugger"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "d64377eed7b8aa99008ecd43fc858d8fe73d08bb2a88a15bf82bfbe1d18ccf36"
+    },
+    {
+      "name": "react-bits-components",
+      "description": "Thin operational wrapper for the Directive Kernel-managed React Bits capability. Use for animated, motion-rich React UI patterns.",
+      "category": "software-development",
+      "path": "software-development/react-bits-components/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "f4a5dfe796d6caa547518d03e15ab143ace2de3cf8987f9a984786cfc49c6525"
+    },
+    {
+      "name": "react-bits-v2",
+      "description": "DK registered. Animated React components (40K stars). Full pipeline provenance.",
+      "category": "software-development",
+      "path": "software-development/react-bits-v2/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3cc14f546038a6fa520141ffb840a5d88a1b36905949f2766a8677542570775e"
+    },
+    {
+      "name": "react-bootstrap-components",
+      "description": "Thin operational wrapper for the Directive Kernel-managed React Bootstrap capability. Use for production-proven responsive layouts and accessible Bootstrap patterns in React.",
+      "category": "software-development",
+      "path": "software-development/react-bootstrap-components/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "d7ce24b8ca479cc29b321e52745e5966e106b870bb1c59367bd66eb2fe7b8d48"
+    },
+    {
+      "name": "react-bootstrap-v2",
+      "description": "DK registered. Bootstrap for React (22K stars). Full pipeline provenance.",
+      "category": "software-development",
+      "path": "software-development/react-bootstrap-v2/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "dc8b84282817b1742a6d1d2d3a0817d722a0c9ae87daac81b4cecdbd66d66ee3"
+    },
+    {
+      "name": "requesting-code-review",
+      "description": "Pre-commit review: security scan, quality gates, auto-fix.",
+      "category": "software-development",
+      "path": "software-development/requesting-code-review/SKILL.md",
+      "tags": [
+        "code-review",
+        "security",
+        "verification",
+        "quality",
+        "pre-commit",
+        "auto-fix"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "subagent-driven-development",
+        "plan",
+        "test-driven-development",
+        "github-code-review"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "95756acaaf4a2d22c4db687056f86e30a4b87ae5c610b76b3858b1ce6a2d9aa3"
+    },
+    {
+      "name": "resume-dk-active-work",
+      "description": "Use when resuming active Directive Kernel work in a fresh Hermes session. Rehydrate from `.hermes/active/` before touching anything else.",
+      "category": "software-development",
+      "path": "software-development/resume-dk-active-work/SKILL.md",
+      "tags": [
+        "directive-kernel",
+        "session-resume",
+        "context",
+        "working-memory"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "directive-kernel",
+        "context-engineering"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "5d70765a533e4a2d2b63660dca28837c585b225cab3552899140a35bb4fe00a0"
+    },
+    {
+      "name": "shadcn-ui-components",
+      "description": "Reference and compose shadcn/ui React components (116K GitHub stars). Provides component discovery, documentation lookup, theme validation, and installation guidance for professional web development.",
+      "category": "software-development",
+      "path": "software-development/shadcn-ui-components/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "2c254831af2438542d0646dd0993a5b39f34a5b6344e9dfe14f9ca8fa75616b3"
+    },
+    {
+      "name": "simplify-code",
+      "description": "Parallel 4-agent cleanup of recent code changes.",
+      "category": "software-development",
+      "path": "software-development/simplify-code/SKILL.md",
+      "tags": [
+        "code-review",
+        "cleanup",
+        "refactor",
+        "delegation",
+        "subagent",
+        "parallel",
+        "simplify"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "requesting-code-review",
+        "test-driven-development",
+        "plan"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "c259970bff23997a9b395f514af12723e33218fca97f529b5e0fa914ac72660e"
+    },
+    {
+      "name": "spec-driven-development",
+      "description": "Write a specification before any code — PRD with objectives, commands, structure, code style, testing, and boundaries. Four gated phases: SPECIFY → PLAN → TASKS → IMPLEMENT.",
+      "category": "software-development",
+      "path": "software-development/spec-driven-development/SKILL.md",
+      "tags": [
+        "spec",
+        "planning",
+        "prd",
+        "design",
+        "requirements"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "f073b3516ad9d30e60ab1338353ec50bf85c810395c5e97cd68f6072bdd08da1"
+    },
+    {
+      "name": "spike",
+      "description": "Throwaway experiments to validate an idea before build.",
+      "category": "software-development",
+      "path": "software-development/spike/SKILL.md",
+      "tags": [
+        "spike",
+        "prototype",
+        "experiment",
+        "feasibility",
+        "throwaway",
+        "exploration",
+        "research",
+        "planning",
+        "mvp",
+        "proof-of-concept"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "sketch",
+        "subagent-driven-development",
+        "plan"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "891bc0a6fbb7aa6cb4164e48e2d20aae56aad7bbd83d20d093ba89a8ed2b48ab"
+    },
+    {
+      "name": "stateful-web-admin-qa",
+      "description": "Use for stateful web/admin QA and mutation verification.",
+      "category": "software-development",
+      "path": "software-development/stateful-web-admin-qa/SKILL.md",
+      "tags": [
+        "qa",
+        "web",
+        "admin",
+        "permissions",
+        "state",
+        "audit",
+        "verification",
+        "dogfood"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "dogfood",
+        "requesting-code-review",
+        "doubt-driven-development",
+        "incremental-implementation"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "windows",
+        "macos",
+        "linux"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "ec2852c6522fb85d066dd37fb1f96ec9a81b112edd294053eb642707b82b326b"
+    },
+    {
+      "name": "subagent-driven-development",
+      "description": "Execute plans via delegate_task subagents (2-stage review).",
+      "category": "software-development",
+      "path": "software-development/subagent-driven-development/SKILL.md",
+      "tags": [
+        "delegation",
+        "subagent",
+        "implementation",
+        "workflow",
+        "parallel"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "writing-plans",
+        "requesting-code-review",
+        "test-driven-development"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "db48395eee34dc4db049073f0882f3ed1fdb3210513db1fa98d8b47be4170a76"
+    },
+    {
+      "name": "superpowers-workflow",
+      "description": "Use obra/superpowers as a real workflow reference for skill-driven agent development, planning, subagents, review, and testing.",
+      "category": "software-development",
+      "path": "software-development/superpowers-workflow/SKILL.md",
+      "tags": [
+        "workflow",
+        "superpowers",
+        "skills",
+        "planning",
+        "subagents",
+        "methodology"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "d0849a5a56c3ce283c3694f00485f11e9e84df1540da117b3f5b9f9f1339ef3d"
+    },
+    {
+      "name": "systematic-debugging",
+      "description": "4-phase root cause debugging: understand bugs before fixing.",
+      "category": "software-development",
+      "path": "software-development/systematic-debugging/SKILL.md",
+      "tags": [
+        "debugging",
+        "troubleshooting",
+        "problem-solving",
+        "root-cause",
+        "investigation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "test-driven-development",
+        "writing-plans",
+        "subagent-driven-development"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "7e0c842540dbed8aaf56bf8784fd15c584088ea22caad4e3c8200781c1291d2c"
+    },
+    {
+      "name": "test-driven-development",
+      "description": "TDD: enforce RED-GREEN-REFACTOR, tests before code.",
+      "category": "software-development",
+      "path": "software-development/test-driven-development/SKILL.md",
+      "tags": [
+        "testing",
+        "tdd",
+        "development",
+        "quality",
+        "red-green-refactor"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "systematic-debugging",
+        "plan",
+        "subagent-driven-development"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "fc2dcbb4d37d22422fd8b5be80c79fd29fb16fcb0497ad39e45649e5f2b54adf"
+    },
+    {
+      "name": "tremor-dashboard-components",
+      "description": "Thin operational wrapper for the Directive Kernel-managed Tremor capability. Use for analytics dashboards, KPI cards, and data visualization in React.",
+      "category": "software-development",
+      "path": "software-development/tremor-dashboard-components/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "f0b4e956777a79c6724c1edbc37a03b35077d3535951e8a468f81aa2985d54ee"
+    },
+    {
+      "name": "tremor-dashboard-v2",
+      "description": "DK registered. Dashboard components (16K stars). Full pipeline provenance.",
+      "category": "software-development",
+      "path": "software-development/tremor-dashboard-v2/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "695347af6ce86d9ef63b8bdf4180a8c688bc368c845f90d98efd958bc98d5835"
+    },
+    {
+      "name": "two-phase-spec-system",
+      "description": "Hermes writes design specs, Codex translates into surgical task slices for OpenCode execution. State machine tracked in README.",
+      "category": "software-development",
+      "path": "software-development/two-phase-spec-system/SKILL.md",
+      "tags": [],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "da73c6210f61311ed2e0b257013457fe99c9e61ab9c5011e9289effd3a2abc9b"
+    },
+    {
+      "name": "typeorm-database-documentation",
+      "description": "Generate human-readable database structure documentation from NestJS/TypeORM entity sources and migrations.",
+      "category": "software-development",
+      "path": "software-development/typeorm-database-documentation/SKILL.md",
+      "tags": [
+        "typeorm",
+        "database",
+        "documentation",
+        "schema",
+        "nestjs",
+        "markdown"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "codebase-inspection",
+        "report"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "6ffb6b4465db366786af525caa997969b33771ef30afce4a430768bc731f977f"
+    },
+    {
+      "name": "validate-skills",
+      "description": "Validate all Hermes skills have proper YAML frontmatter with required fields — name and description. Catches duplicates, missing frontmatter, and YAML errors.",
+      "category": "software-development",
+      "path": "software-development/validate-skills/SKILL.md",
+      "tags": [
+        "skills",
+        "validation",
+        "quality",
+        "maintenance"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "ddc89b16af55f17a875dee246e55fde6342dc007d6725d4237ac09345cd3fc10"
+    },
+    {
+      "name": "web-app-ux-pass-verification",
+      "description": "Use when implementing or verifying UX changes in a web app.",
+      "category": "software-development",
+      "path": "software-development/web-app-ux-pass-verification/SKILL.md",
+      "tags": [
+        "ux",
+        "verification",
+        "playwright",
+        "nextjs",
+        "screenshots",
+        "mobile"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "phone-first-pwa-ux",
+        "standalone-html-ui-artifacts"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "ad12e3fd9144cb5d7f877cad6fe6a8ebd5485c78439330c78c39071d32b2a096"
+    },
+    {
+      "name": "web-form-flow-debugging",
+      "description": "Debug and verify web form flows, especially auth forms, server actions, alternate submit buttons, and phone-first viewport issues.",
+      "category": "software-development",
+      "path": "software-development/web-form-flow-debugging/SKILL.md",
+      "tags": [
+        "web",
+        "forms",
+        "auth",
+        "qa",
+        "debugging",
+        "nextjs"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "systematic-debugging",
+        "test-driven-development",
+        "dogfood"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "3ba3e13819ef11d85bdd27abbf7acffc594cdd43f88db8129b2392d83c50bbf4"
+    },
+    {
+      "name": "workflow-package-design",
+      "description": "Create agent workflow packages with skill routing.",
+      "category": "software-development",
+      "path": "software-development/workflow-package-design/SKILL.md",
+      "tags": [
+        "workflow",
+        "skill-routing",
+        "agent-workflow"
+      ],
+      "trigger_phrases": [
+        "create a new workflow",
+        "bundle skills into a workflow",
+        "add skill routing"
+      ],
+      "related_skills": [],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "78efa06628f71efb2315a4fbdcf30358801c78cd6d8c04f210f9059ac81660d8"
+    },
+    {
+      "name": "workflow-reference-evaluation",
+      "description": "Evaluate external agent/workflow repos as reference architectures or donor systems, then extract only the parts worth importing into Hermes or the user's workflow.",
+      "category": "software-development",
+      "path": "software-development/workflow-reference-evaluation/SKILL.md",
+      "tags": [
+        "workflow",
+        "architecture",
+        "evaluation",
+        "repo-review",
+        "agent-systems",
+        "methodology"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "superpowers-workflow",
+        "skill-router",
+        "report",
+        "writing-plans"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "2d3b122668984352ebeba587c86093efb073795b635a324735a1b760f7dc69c4"
+    },
+    {
+      "name": "workflow-skill-curation",
+      "description": "Build a workflow-local skill package from a larger library.",
+      "category": "software-development",
+      "path": "software-development/workflow-skill-curation/SKILL.md",
+      "tags": [
+        "workflow",
+        "curation",
+        "skill-router",
+        "scoped-routing",
+        "domain-package"
+      ],
+      "trigger_phrases": [
+        "create a workflow with these skills",
+        "curate skills for",
+        "scoped skill router",
+        "domain-specific skill package",
+        "build a skill library for"
+      ],
+      "related_skills": [
+        "skill-router",
+        "workflow-reference-evaluation",
+        "writing-plans"
+      ],
+      "prerequisites": [],
+      "platforms": [],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "a9db6c5f0e67a930db4515c355abf8adbb15dc0a7a3c72794a4b600813fb744f"
+    },
+    {
+      "name": "writing-plans",
+      "description": "Write implementation plans: bite-sized tasks, paths, code.",
+      "category": "software-development",
+      "path": "software-development/writing-plans/SKILL.md",
+      "tags": [
+        "planning",
+        "design",
+        "implementation",
+        "workflow",
+        "documentation"
+      ],
+      "trigger_phrases": [],
+      "related_skills": [
+        "subagent-driven-development",
+        "test-driven-development",
+        "requesting-code-review"
+      ],
+      "prerequisites": [],
+      "platforms": [
+        "linux",
+        "macos",
+        "windows"
+      ],
+      "retired_or_negative_default": false,
+      "disable_model_invocation": false,
+      "user_invocable": null,
+      "content_sha256": "374ec7cb0a109545b06f58ac0f0abebb0a2dd8864addff201dffd96d38f35455"
+    }
+  ]
+}
