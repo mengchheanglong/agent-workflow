@@ -1,0 +1,14 @@
+name: Frontend UI UX
+id: frontend-ui-ux
+version: 1.0.0
+description: >-
+  Frontend, UI, and UX design workflow with 16 specialized design skills and
+  skill-router for intelligent routing. Covers full websites, dashboards,
+  landing pages, animations, component polish, UX audits, and visual critique.
+category: design
+agents:
+  - generic
+requires:
+  git: false
+  python: true
+entrypoint: package/AGENTS.md

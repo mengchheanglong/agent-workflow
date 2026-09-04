@@ -1,0 +1,55 @@
+# 13. Create a 3D Animated Website with Figma & Dora - No Code Required
+URL: https://www.youtube.com/watch?v=5cqpf1rdeFc
+Type: video
+Duration seconds: 407
+Views: 246818
+Upload date: 20230912
+Transcript words: 971
+
+## Description
+💎 Learn how to design beautiful UI designs: https://www.uxpeak.com/pages/playbook
+
+Ever wanted to create a 3D animated website but thought it was too complicated? In this tutorial, we'll show you how to use Figma and Dora to design a jaw-dropping 3D website—and the best part? No coding skills are needed. 
+
+#3dwebsite #uixudesign #animation
+
+Grab our FREE UX/UI Design Playbook 👇 
+https://uxpeak.gumroad.com/l/UIUXPlaybook
+
+Figma Source File 👇 
+https://uxpeak.gumroad.com/l/gtsus
+
+Learn UX/UI Design 👇 
+https://www.uxpeak.com/
+
+3D Models👇
+Fish: https://sketchfab.com/3d-models/emperor-angelfish-3dc2d360d98c485496899121792ebcce
+
+Turtle: https://sketchfab.com/3d-models/sea-green-turtle-0530386d3fef4157b10dbbdb4688e758
+
+Free Turtle Alternative: https://sketchfab.com/3d-models/model-72b-juvenile-green-sea-turtle-c90a930f8b2a4cc8bc516742a0df01d9
+
+Timestamps: 
+00:00 - Intro 
+00:21 - Getting Design to Dora
+01:48 - Finding 3D Models 
+02:24 - Manipulating 3D Models
+06:36 - Outro
+
+If you enjoy our content, feel free to subscribe and hit that bell notification. We promise to bring you a ton of free value! 
+
+⚡️ Try Mobbin for free and get 20% off for your first year's subscription: https://mobbin.com/uxpeak
+
+✨ UX/UI Playbook: https://www.uxpeak.com/pages/playbook
+
+💎 Uxpeak+ Platform: https://www.uxpeak.com 
+
+🚀  UX/UI Design Mastery Course: https://www.uxpeak.com/pages/course
+
+Join our design community 
+Instagram - https://www.instagram.com/uxpeak_/ 
+Twitter - https://twitter.com/uxpeak_ 
+Linkedin - https://www.linkedin.com/company/uxpeak/
+
+## Transcript
+[Music] foreign have you ever wondered how to make a website with 3D scroll animations without using any code today we'll do just that using figma Andorra before we dive in make sure to download our free UI ux Playbook with practical design tips and tricks alright let's get started we already have a website design in figma if you want to follow along you can find the free source file in the description below this video to get started select the frame and open the figma to Dora plugin now copy the layers to your clipboard and head over to dora.run Dora is awesome for Designing and Publishing 3D and animated sites all without a code if you don't have an account yet go ahead and register for free now let's create a new project when you do you'll notice a desktop size frame is automatically created let's change that to a Macbook 16 inch before we go any further it's important to match our frame height in Dora to the one we have in figma for us it's 5772 pixels now we're going to paste our layers into this new frame this part might take a few seconds or even a couple of minutes a quick tip try unselecting the frame while it's processing I found that this often speeds things up a bit once your design is in Dora you might notice that some elements look a bit off feel free to adjust their position delete them or even recreate them directly in Dora now let's enhance our design by incorporating 3D models head over to sketchfab.com a great resource for both free and paid 3D models I'm going to search for ocean animals and set filters to show only downloadable and animated models that are free but feel free to look for any specific animal you like once you've found a model you like go ahead and download it in glb format now that we've got our 3D model it's time to bring it into Dora find the 3D icon in the top bar and click and drag to create a 3D widget once that's set up import the 3D model you just downloaded every 3D widget in Dora contains a built-in default camera to zoom in or out just use your mouse wheel if you want to rotate the model left click and drag and if you want to move it around simply right click and drag if you prefer you can also adjust the values in the right sidebar to see the animation select the layer right below the 3D scene and toggle it on next let's make sure our design looks good on different screen sizes to do that adjust the 3D widget frame width to 100 viewport width now for the main attraction on this page I'll be using a 3D model of a sea turtle there are some free options out there but for this tutorial I'm using a paid one I'll include links to the 3D models in the description along with some free Alternatives once you've picked your 3D model download it and bring it into Dora just like before set the width to 100 viewport width and connect the 3D widget with the viewport top [Music] now when you open the keyframe panel and move the viewport your sea turtle should move along with it fantastic we're now ready to bring the sea turtle to life so first things first let's select the default camera add your first keyframe when the handle is at zero now Slide the handle over to 32 and add a second keyframe here's where we get a little precise adjust the values in the right sidebar according to the settings I'm using this way you can get the same animation I've got down to the Last Detail next move your handle to 88 and add another keyframe and tweak the values again [Music] at 120 add your next keyframe and fine tune the values these incremental changes are what's going to make your animation smooth and eye-catching alright move the handle to 170 and yes you guessed it another keyframe and another round of adjustments it might seem like a lot of steps but the final effect will be worth it let's keep going move the handle to 235 add a keyframe and adjust the values almost there slide to 280 and adjust the values lastly move the handle to 310 and adjust the values one more time [Music] that's it let's check out how all this effort pays off thank you the animated sea turtle really brings the design to life this kind of dynamic element is not just eye-catching it's also on Trend in the design World offering an immersive experience to your users before we wrap up there's one more crucial tip to make your entire website responsive don't forget to add constraints to your elements directly in Dora this ensures that your design adjusts beautifully on different screen sizes it's worth mentioning that Dora is still evolving while it's pretty awesome already you might run into some limitations especially when it comes to responsiveness but the good news is that the platform is getting better all the time so keep an eye out for updates as it's likely to offer an even better experience in the near future to get your website live just hit publish and that's it you've transformed your static figma design into a vibrant animated 3D website see you in the next video

@@ -1,0 +1,1224 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.590 --> 00:00:06.070 align:start position:0%
+ 
+[Music]
+
+00:00:06.070 --> 00:00:06.080 align:start position:0%
+ 
+ 
+
+00:00:06.080 --> 00:00:08.030 align:start position:0%
+ 
+hi<00:00:07.080><c> everyone</c>
+
+00:00:08.030 --> 00:00:08.040 align:start position:0%
+hi everyone
+ 
+
+00:00:08.040 --> 00:00:10.129 align:start position:0%
+hi everyone
+welcome<00:00:08.580><c> back</c><00:00:08.820><c> to</c><00:00:09.059><c> our</c><00:00:09.240><c> Channel</c>
+
+00:00:10.129 --> 00:00:10.139 align:start position:0%
+welcome back to our Channel
+ 
+
+00:00:10.139 --> 00:00:12.290 align:start position:0%
+welcome back to our Channel
+today<00:00:10.500><c> we</c><00:00:10.800><c> have</c><00:00:10.920><c> a</c><00:00:11.160><c> unique</c><00:00:11.400><c> figma</c><00:00:11.820><c> tutorial</c>
+
+00:00:12.290 --> 00:00:12.300 align:start position:0%
+today we have a unique figma tutorial
+ 
+
+00:00:12.300 --> 00:00:13.730 align:start position:0%
+today we have a unique figma tutorial
+ready<00:00:12.599><c> for</c><00:00:12.840><c> you</c>
+
+00:00:13.730 --> 00:00:13.740 align:start position:0%
+ready for you
+ 
+
+00:00:13.740 --> 00:00:15.829 align:start position:0%
+ready for you
+we're<00:00:14.099><c> going</c><00:00:14.340><c> to</c><00:00:14.460><c> create</c><00:00:14.700><c> a</c><00:00:15.059><c> circular</c><00:00:15.360><c> slider</c>
+
+00:00:15.829 --> 00:00:15.839 align:start position:0%
+we're going to create a circular slider
+ 
+
+00:00:15.839 --> 00:00:18.470 align:start position:0%
+we're going to create a circular slider
+for<00:00:16.080><c> a</c><00:00:16.199><c> website's</c><00:00:16.680><c> hero</c><00:00:16.980><c> section</c><00:00:17.279><c> so</c><00:00:18.180><c> get</c><00:00:18.359><c> your</c>
+
+00:00:18.470 --> 00:00:18.480 align:start position:0%
+for a website's hero section so get your
+ 
+
+00:00:18.480 --> 00:00:21.349 align:start position:0%
+for a website's hero section so get your
+figma<00:00:18.840><c> file</c><00:00:19.140><c> ready</c><00:00:19.380><c> and</c><00:00:19.920><c> let's</c><00:00:20.100><c> dive</c><00:00:20.460><c> in</c><00:00:20.640><c> here</c>
+
+00:00:21.349 --> 00:00:21.359 align:start position:0%
+figma file ready and let's dive in here
+ 
+
+00:00:21.359 --> 00:00:23.330 align:start position:0%
+figma file ready and let's dive in here
+we<00:00:21.600><c> have</c><00:00:21.720><c> our</c><00:00:21.960><c> basic</c><00:00:22.320><c> layout</c><00:00:22.680><c> for</c><00:00:22.859><c> the</c><00:00:23.039><c> hero</c>
+
+00:00:23.330 --> 00:00:23.340 align:start position:0%
+we have our basic layout for the hero
+ 
+
+00:00:23.340 --> 00:00:26.570 align:start position:0%
+we have our basic layout for the hero
+section<00:00:23.699><c> already</c><00:00:24.180><c> set</c><00:00:24.539><c> up</c><00:00:24.980><c> just</c><00:00:25.980><c> beneath</c><00:00:26.400><c> that</c>
+
+00:00:26.570 --> 00:00:26.580 align:start position:0%
+section already set up just beneath that
+ 
+
+00:00:26.580 --> 00:00:28.790 align:start position:0%
+section already set up just beneath that
+you'll<00:00:27.240><c> see</c><00:00:27.420><c> we</c><00:00:27.720><c> have</c><00:00:27.840><c> a</c><00:00:28.019><c> few</c><00:00:28.140><c> images</c><00:00:28.380><c> of</c>
+
+00:00:28.790 --> 00:00:28.800 align:start position:0%
+you'll see we have a few images of
+ 
+
+00:00:28.800 --> 00:00:30.950 align:start position:0%
+you'll see we have a few images of
+smoothie<00:00:29.160><c> bowls</c><00:00:29.580><c> and</c><00:00:29.880><c> fruits</c><00:00:30.300><c> ready</c><00:00:30.599><c> to</c><00:00:30.840><c> go</c>
+
+00:00:30.950 --> 00:00:30.960 align:start position:0%
+smoothie bowls and fruits ready to go
+ 
+
+00:00:30.960 --> 00:00:33.350 align:start position:0%
+smoothie bowls and fruits ready to go
+the<00:00:31.800><c> first</c><00:00:31.920><c> step</c><00:00:32.099><c> is</c><00:00:32.460><c> to</c><00:00:32.700><c> create</c><00:00:32.880><c> a</c><00:00:33.180><c> circle</c>
+
+00:00:33.350 --> 00:00:33.360 align:start position:0%
+the first step is to create a circle
+ 
+
+00:00:33.360 --> 00:00:35.750 align:start position:0%
+the first step is to create a circle
+that<00:00:33.960><c> is</c><00:00:34.079><c> going</c><00:00:34.260><c> to</c><00:00:34.440><c> serve</c><00:00:34.739><c> as</c><00:00:34.920><c> the</c><00:00:35.219><c> base</c><00:00:35.340><c> for</c>
+
+00:00:35.750 --> 00:00:35.760 align:start position:0%
+that is going to serve as the base for
+ 
+
+00:00:35.760 --> 00:00:38.030 align:start position:0%
+that is going to serve as the base for
+our<00:00:36.000><c> rotating</c><00:00:36.360><c> Carousel</c><00:00:37.079><c> of</c><00:00:37.320><c> smoothie</c><00:00:37.680><c> bowls</c>
+
+00:00:38.030 --> 00:00:38.040 align:start position:0%
+our rotating Carousel of smoothie bowls
+ 
+
+00:00:38.040 --> 00:00:41.090 align:start position:0%
+our rotating Carousel of smoothie bowls
+now<00:00:39.000><c> let's</c><00:00:39.719><c> go</c><00:00:39.899><c> ahead</c><00:00:40.140><c> and</c><00:00:40.320><c> copy</c><00:00:40.680><c> all</c><00:00:40.920><c> the</c>
+
+00:00:41.090 --> 00:00:41.100 align:start position:0%
+now let's go ahead and copy all the
+ 
+
+00:00:41.100 --> 00:00:42.770 align:start position:0%
+now let's go ahead and copy all the
+Smoothie<00:00:41.460><c> Bowl</c><00:00:41.579><c> images</c><00:00:41.879><c> into</c><00:00:42.360><c> our</c><00:00:42.540><c> circle</c>
+
+00:00:42.770 --> 00:00:42.780 align:start position:0%
+Smoothie Bowl images into our circle
+ 
+
+00:00:42.780 --> 00:00:45.110 align:start position:0%
+Smoothie Bowl images into our circle
+make<00:00:43.680><c> sure</c><00:00:43.800><c> to</c><00:00:44.040><c> distribute</c><00:00:44.460><c> them</c><00:00:44.640><c> evenly</c>
+
+00:00:45.110 --> 00:00:45.120 align:start position:0%
+make sure to distribute them evenly
+ 
+
+00:00:45.120 --> 00:00:46.910 align:start position:0%
+make sure to distribute them evenly
+around<00:00:45.360><c> the</c><00:00:45.600><c> circle</c><00:00:45.780><c> so</c><00:00:46.200><c> we</c><00:00:46.379><c> can</c><00:00:46.440><c> create</c><00:00:46.620><c> a</c>
+
+00:00:46.910 --> 00:00:46.920 align:start position:0%
+around the circle so we can create a
+ 
+
+00:00:46.920 --> 00:00:50.510 align:start position:0%
+around the circle so we can create a
+good<00:00:47.040><c> flow</c><00:00:47.399><c> for</c><00:00:47.579><c> our</c><00:00:47.760><c> slider</c>
+
+00:00:50.510 --> 00:00:50.520 align:start position:0%
+ 
+ 
+
+00:00:50.520 --> 00:00:59.090 align:start position:0%
+ 
+all<00:00:51.059><c> right</c>
+
+00:00:59.090 --> 00:00:59.100 align:start position:0%
+ 
+ 
+
+00:00:59.100 --> 00:01:01.850 align:start position:0%
+ 
+once<00:00:59.760><c> we</c><00:00:59.879><c> have</c><00:01:00.059><c> all</c><00:01:00.360><c> our</c><00:01:00.539><c> bowls</c><00:01:01.020><c> nicely</c><00:01:01.440><c> placed</c>
+
+00:01:01.850 --> 00:01:01.860 align:start position:0%
+once we have all our bowls nicely placed
+ 
+
+00:01:01.860 --> 00:01:04.070 align:start position:0%
+once we have all our bowls nicely placed
+around<00:01:02.039><c> the</c><00:01:02.280><c> circle</c><00:01:02.460><c> we're</c><00:01:03.300><c> going</c><00:01:03.539><c> to</c><00:01:03.780><c> select</c>
+
+00:01:04.070 --> 00:01:04.080 align:start position:0%
+around the circle we're going to select
+ 
+
+00:01:04.080 --> 00:01:06.410 align:start position:0%
+around the circle we're going to select
+all<00:01:04.500><c> these</c><00:01:04.739><c> images</c><00:01:04.920><c> along</c><00:01:05.820><c> with</c><00:01:06.119><c> the</c><00:01:06.299><c> circle</c>
+
+00:01:06.410 --> 00:01:06.420 align:start position:0%
+all these images along with the circle
+ 
+
+00:01:06.420 --> 00:01:09.770 align:start position:0%
+all these images along with the circle
+itself<00:01:06.900><c> and</c><00:01:07.740><c> create</c><00:01:07.979><c> a</c><00:01:08.340><c> group</c><00:01:08.520><c> now</c><00:01:09.299><c> move</c><00:01:09.540><c> this</c>
+
+00:01:09.770 --> 00:01:09.780 align:start position:0%
+itself and create a group now move this
+ 
+
+00:01:09.780 --> 00:01:12.230 align:start position:0%
+itself and create a group now move this
+group<00:01:09.900><c> into</c><00:01:10.200><c> the</c><00:01:10.439><c> hero</c><00:01:10.740><c> section</c><00:01:10.979><c> frame</c>
+
+00:01:12.230 --> 00:01:12.240 align:start position:0%
+group into the hero section frame
+ 
+
+00:01:12.240 --> 00:01:14.270 align:start position:0%
+group into the hero section frame
+carefully<00:01:12.960><c> position</c><00:01:13.200><c> it</c><00:01:13.560><c> so</c><00:01:13.740><c> that</c><00:01:13.920><c> we're</c><00:01:14.040><c> only</c>
+
+00:01:14.270 --> 00:01:14.280 align:start position:0%
+carefully position it so that we're only
+ 
+
+00:01:14.280 --> 00:01:15.890 align:start position:0%
+carefully position it so that we're only
+able<00:01:14.520><c> to</c><00:01:14.700><c> see</c><00:01:14.880><c> the</c><00:01:15.119><c> pink</c><00:01:15.240><c> bowl</c><00:01:15.479><c> at</c><00:01:15.780><c> the</c>
+
+00:01:15.890 --> 00:01:15.900 align:start position:0%
+able to see the pink bowl at the
+ 
+
+00:01:15.900 --> 00:01:18.950 align:start position:0%
+able to see the pink bowl at the
+Forefront
+
+00:01:18.950 --> 00:01:18.960 align:start position:0%
+ 
+ 
+
+00:01:18.960 --> 00:01:20.929 align:start position:0%
+ 
+next<00:01:19.500><c> we're</c><00:01:19.740><c> going</c><00:01:19.920><c> to</c><00:01:20.100><c> give</c><00:01:20.220><c> our</c><00:01:20.460><c> Circle</c><00:01:20.640><c> a</c>
+
+00:01:20.929 --> 00:01:20.939 align:start position:0%
+next we're going to give our Circle a
+ 
+
+00:01:20.939 --> 00:01:22.910 align:start position:0%
+next we're going to give our Circle a
+bit<00:01:21.000><c> of</c><00:01:21.119><c> color</c><00:01:21.299><c> let's</c><00:01:22.020><c> go</c><00:01:22.200><c> with</c><00:01:22.380><c> a</c><00:01:22.619><c> vibrant</c>
+
+00:01:22.910 --> 00:01:22.920 align:start position:0%
+bit of color let's go with a vibrant
+ 
+
+00:01:22.920 --> 00:01:25.249 align:start position:0%
+bit of color let's go with a vibrant
+pink<00:01:23.159><c> now</c><00:01:24.060><c> let's</c><00:01:24.299><c> go</c><00:01:24.479><c> back</c><00:01:24.600><c> to</c><00:01:24.840><c> our</c><00:01:24.960><c> collection</c>
+
+00:01:25.249 --> 00:01:25.259 align:start position:0%
+pink now let's go back to our collection
+ 
+
+00:01:25.259 --> 00:01:27.170 align:start position:0%
+pink now let's go back to our collection
+of<00:01:25.500><c> smoothie</c><00:01:25.920><c> Bowl</c><00:01:26.040><c> images</c>
+
+00:01:27.170 --> 00:01:27.180 align:start position:0%
+of smoothie Bowl images
+ 
+
+00:01:27.180 --> 00:01:29.270 align:start position:0%
+of smoothie Bowl images
+copy<00:01:27.840><c> all</c><00:01:27.960><c> of</c><00:01:28.080><c> them</c><00:01:28.200><c> and</c><00:01:28.500><c> scale</c><00:01:28.680><c> them</c><00:01:28.920><c> down</c><00:01:29.100><c> a</c>
+
+00:01:29.270 --> 00:01:29.280 align:start position:0%
+copy all of them and scale them down a
+ 
+
+00:01:29.280 --> 00:01:30.109 align:start position:0%
+copy all of them and scale them down a
+bit
+
+00:01:30.109 --> 00:01:30.119 align:start position:0%
+bit
+ 
+
+00:01:30.119 --> 00:01:31.969 align:start position:0%
+bit
+once<00:01:30.659><c> that's</c><00:01:30.780><c> done</c><00:01:31.020><c> we'll</c><00:01:31.320><c> place</c><00:01:31.560><c> these</c>
+
+00:01:31.969 --> 00:01:31.979 align:start position:0%
+once that's done we'll place these
+ 
+
+00:01:31.979 --> 00:01:34.070 align:start position:0%
+once that's done we'll place these
+images<00:01:32.100><c> right</c><00:01:32.580><c> below</c><00:01:32.880><c> the</c><00:01:33.060><c> paragraph</c>
+
+00:01:34.070 --> 00:01:34.080 align:start position:0%
+images right below the paragraph
+ 
+
+00:01:34.080 --> 00:01:35.990 align:start position:0%
+images right below the paragraph
+these<00:01:34.560><c> will</c><00:01:34.740><c> serve</c><00:01:35.040><c> as</c><00:01:35.159><c> our</c><00:01:35.340><c> handy</c><00:01:35.640><c> selectors</c>
+
+00:01:35.990 --> 00:01:36.000 align:start position:0%
+these will serve as our handy selectors
+ 
+
+00:01:36.000 --> 00:01:41.710 align:start position:0%
+these will serve as our handy selectors
+to<00:01:36.299><c> switch</c><00:01:36.479><c> between</c><00:01:36.780><c> the</c><00:01:37.079><c> bowls</c>
+
+00:01:41.710 --> 00:01:41.720 align:start position:0%
+ 
+ 
+
+00:01:41.720 --> 00:01:44.569 align:start position:0%
+ 
+to<00:01:42.720><c> help</c><00:01:42.900><c> our</c><00:01:43.200><c> viewers</c><00:01:43.500><c> know</c><00:01:43.799><c> which</c><00:01:44.100><c> smoothie</c>
+
+00:01:44.569 --> 00:01:44.579 align:start position:0%
+to help our viewers know which smoothie
+ 
+
+00:01:44.579 --> 00:01:46.789 align:start position:0%
+to help our viewers know which smoothie
+bowl<00:01:44.700><c> is</c><00:01:45.000><c> currently</c><00:01:45.299><c> in</c><00:01:45.479><c> the</c><00:01:45.659><c> spotlight</c><00:01:45.960><c> We'll</c>
+
+00:01:46.789 --> 00:01:46.799 align:start position:0%
+bowl is currently in the spotlight We'll
+ 
+
+00:01:46.799 --> 00:01:48.770 align:start position:0%
+bowl is currently in the spotlight We'll
+add<00:01:47.040><c> a</c><00:01:47.280><c> white</c><00:01:47.400><c> rectangle</c><00:01:48.060><c> just</c><00:01:48.299><c> below</c><00:01:48.659><c> the</c>
+
+00:01:48.770 --> 00:01:48.780 align:start position:0%
+add a white rectangle just below the
+ 
+
+00:01:48.780 --> 00:01:54.230 align:start position:0%
+add a white rectangle just below the
+pink<00:01:48.960><c> Bowl</c>
+
+00:01:54.230 --> 00:01:54.240 align:start position:0%
+ 
+ 
+
+00:01:54.240 --> 00:01:56.870 align:start position:0%
+ 
+finally<00:01:54.960><c> We'll</c><00:01:55.380><c> add</c><00:01:55.619><c> some</c><00:01:55.860><c> drop</c><00:01:56.100><c> Shadows</c><00:01:56.640><c> to</c>
+
+00:01:56.870 --> 00:01:56.880 align:start position:0%
+finally We'll add some drop Shadows to
+ 
+
+00:01:56.880 --> 00:01:59.030 align:start position:0%
+finally We'll add some drop Shadows to
+all<00:01:57.060><c> the</c><00:01:57.180><c> bowl</c><00:01:57.299><c> images</c><00:01:57.600><c> this</c><00:01:58.560><c> will</c><00:01:58.740><c> give</c><00:01:58.860><c> our</c>
+
+00:01:59.030 --> 00:01:59.040 align:start position:0%
+all the bowl images this will give our
+ 
+
+00:01:59.040 --> 00:02:19.090 align:start position:0%
+all the bowl images this will give our
+design<00:01:59.220><c> a</c><00:01:59.579><c> more</c><00:01:59.759><c> 3D</c><00:02:00.240><c> and</c><00:02:00.600><c> interactive</c><00:02:01.079><c> feel</c>
+
+00:02:19.090 --> 00:02:19.100 align:start position:0%
+ 
+ 
+
+00:02:19.100 --> 00:02:22.010 align:start position:0%
+ 
+[Music]
+
+00:02:22.010 --> 00:02:22.020 align:start position:0%
+[Music]
+ 
+
+00:02:22.020 --> 00:02:24.890 align:start position:0%
+[Music]
+now<00:02:22.440><c> we're</c><00:02:22.620><c> going</c><00:02:22.800><c> to</c><00:02:22.980><c> duplicate</c><00:02:23.400><c> the</c><00:02:23.580><c> frame</c>
+
+00:02:24.890 --> 00:02:24.900 align:start position:0%
+now we're going to duplicate the frame
+ 
+
+00:02:24.900 --> 00:02:27.170 align:start position:0%
+now we're going to duplicate the frame
+select<00:02:25.560><c> the</c><00:02:25.680><c> circle</c><00:02:25.860><c> with</c><00:02:26.280><c> all</c><00:02:26.459><c> the</c><00:02:26.580><c> bowls</c><00:02:26.879><c> and</c>
+
+00:02:27.170 --> 00:02:27.180 align:start position:0%
+select the circle with all the bowls and
+ 
+
+00:02:27.180 --> 00:02:28.729 align:start position:0%
+select the circle with all the bowls and
+rotate<00:02:27.480><c> it</c><00:02:27.660><c> just</c><00:02:27.900><c> enough</c><00:02:28.020><c> so</c><00:02:28.379><c> that</c><00:02:28.500><c> you</c><00:02:28.680><c> can</c>
+
+00:02:28.729 --> 00:02:28.739 align:start position:0%
+rotate it just enough so that you can
+ 
+
+00:02:28.739 --> 00:02:30.830 align:start position:0%
+rotate it just enough so that you can
+see<00:02:28.980><c> the</c><00:02:29.220><c> next</c><00:02:29.340><c> bulb</c><00:02:29.760><c> that's</c><00:02:30.000><c> to</c><00:02:30.300><c> the</c><00:02:30.480><c> right</c><00:02:30.540><c> of</c>
+
+00:02:30.830 --> 00:02:30.840 align:start position:0%
+see the next bulb that's to the right of
+ 
+
+00:02:30.840 --> 00:02:32.869 align:start position:0%
+see the next bulb that's to the right of
+the<00:02:31.020><c> currently</c><00:02:31.260><c> displayed</c><00:02:31.739><c> Bowl</c><00:02:31.920><c> you</c><00:02:32.760><c> might</c>
+
+00:02:32.869 --> 00:02:32.879 align:start position:0%
+the currently displayed Bowl you might
+ 
+
+00:02:32.879 --> 00:02:34.309 align:start position:0%
+the currently displayed Bowl you might
+need<00:02:33.060><c> to</c><00:02:33.180><c> play</c><00:02:33.300><c> around</c><00:02:33.480><c> with</c><00:02:33.780><c> the</c><00:02:33.900><c> positioning</c>
+
+00:02:34.309 --> 00:02:34.319 align:start position:0%
+need to play around with the positioning
+ 
+
+00:02:34.319 --> 00:02:36.589 align:start position:0%
+need to play around with the positioning
+a<00:02:34.440><c> bit</c><00:02:34.620><c> to</c><00:02:34.800><c> get</c><00:02:34.860><c> it</c><00:02:35.040><c> just</c><00:02:35.220><c> right</c><00:02:35.459><c> and</c><00:02:36.180><c> here's</c><00:02:36.420><c> a</c>
+
+00:02:36.589 --> 00:02:36.599 align:start position:0%
+a bit to get it just right and here's a
+ 
+
+00:02:36.599 --> 00:02:38.990 align:start position:0%
+a bit to get it just right and here's a
+little<00:02:36.720><c> trick</c><00:02:37.140><c> let's</c><00:02:38.040><c> also</c><00:02:38.340><c> rotate</c><00:02:38.700><c> the</c>
+
+00:02:38.990 --> 00:02:39.000 align:start position:0%
+little trick let's also rotate the
+ 
+
+00:02:39.000 --> 00:02:40.610 align:start position:0%
+little trick let's also rotate the
+individual<00:02:39.360><c> Bowl</c>
+
+00:02:40.610 --> 00:02:40.620 align:start position:0%
+individual Bowl
+ 
+
+00:02:40.620 --> 00:02:42.170 align:start position:0%
+individual Bowl
+this<00:02:40.980><c> will</c><00:02:41.160><c> give</c><00:02:41.280><c> the</c><00:02:41.519><c> effect</c><00:02:41.640><c> of</c><00:02:41.940><c> the</c><00:02:42.060><c> bowl</c>
+
+00:02:42.170 --> 00:02:42.180 align:start position:0%
+this will give the effect of the bowl
+ 
+
+00:02:42.180 --> 00:02:44.930 align:start position:0%
+this will give the effect of the bowl
+also<00:02:42.720><c> turning</c><00:02:43.080><c> as</c><00:02:43.200><c> it</c><00:02:43.440><c> moves</c><00:02:43.680><c> into</c><00:02:43.800><c> view</c>
+
+00:02:44.930 --> 00:02:44.940 align:start position:0%
+also turning as it moves into view
+ 
+
+00:02:44.940 --> 00:02:47.509 align:start position:0%
+also turning as it moves into view
+now<00:02:45.540><c> we're</c><00:02:46.140><c> going</c><00:02:46.319><c> to</c><00:02:46.440><c> tweak</c><00:02:46.800><c> the</c><00:02:47.040><c> colors</c><00:02:47.340><c> and</c>
+
+00:02:47.509 --> 00:02:47.519 align:start position:0%
+now we're going to tweak the colors and
+ 
+
+00:02:47.519 --> 00:02:49.430 align:start position:0%
+now we're going to tweak the colors and
+visuals<00:02:48.000><c> a</c><00:02:48.120><c> bit</c><00:02:48.300><c> to</c><00:02:48.900><c> bring</c><00:02:49.080><c> everything</c>
+
+00:02:49.430 --> 00:02:49.440 align:start position:0%
+visuals a bit to bring everything
+ 
+
+00:02:49.440 --> 00:02:50.809 align:start position:0%
+visuals a bit to bring everything
+together
+
+00:02:50.809 --> 00:02:50.819 align:start position:0%
+together
+ 
+
+00:02:50.819 --> 00:02:52.790 align:start position:0%
+together
+first<00:02:51.360><c> let's</c><00:02:51.599><c> adjust</c><00:02:51.840><c> the</c><00:02:52.200><c> colors</c><00:02:52.500><c> of</c><00:02:52.620><c> our</c>
+
+00:02:52.790 --> 00:02:52.800 align:start position:0%
+first let's adjust the colors of our
+ 
+
+00:02:52.800 --> 00:02:55.490 align:start position:0%
+first let's adjust the colors of our
+page<00:02:53.040><c> to</c><00:02:53.400><c> match</c><00:02:53.519><c> the</c><00:02:53.819><c> new</c><00:02:53.940><c> smoothie</c><00:02:54.360><c> Bowl</c>
+
+00:02:55.490 --> 00:02:55.500 align:start position:0%
+page to match the new smoothie Bowl
+ 
+
+00:02:55.500 --> 00:02:57.410 align:start position:0%
+page to match the new smoothie Bowl
+this<00:02:56.040><c> can</c><00:02:56.160><c> really</c><00:02:56.340><c> tie</c><00:02:56.700><c> the</c><00:02:56.879><c> design</c><00:02:57.060><c> together</c>
+
+00:02:57.410 --> 00:02:57.420 align:start position:0%
+this can really tie the design together
+ 
+
+00:02:57.420 --> 00:03:00.830 align:start position:0%
+this can really tie the design together
+and<00:02:58.019><c> create</c><00:02:58.200><c> a</c><00:02:58.500><c> cohesive</c><00:02:58.980><c> look</c><00:02:59.220><c> and</c><00:02:59.580><c> feel</c>
+
+00:03:00.830 --> 00:03:00.840 align:start position:0%
+and create a cohesive look and feel
+ 
+
+00:03:00.840 --> 00:03:02.809 align:start position:0%
+and create a cohesive look and feel
+next<00:03:01.319><c> we'll</c><00:03:01.560><c> play</c><00:03:01.800><c> around</c><00:03:01.980><c> with</c><00:03:02.340><c> the</c><00:03:02.459><c> Shadows</c>
+
+00:03:02.809 --> 00:03:02.819 align:start position:0%
+next we'll play around with the Shadows
+ 
+
+00:03:02.819 --> 00:03:14.890 align:start position:0%
+next we'll play around with the Shadows
+a<00:03:02.940><c> bit</c>
+
+00:03:14.890 --> 00:03:14.900 align:start position:0%
+ 
+ 
+
+00:03:14.900 --> 00:03:17.390 align:start position:0%
+ 
+we're<00:03:15.900><c> also</c><00:03:16.140><c> going</c><00:03:16.319><c> to</c><00:03:16.500><c> change</c><00:03:16.739><c> the</c><00:03:17.040><c> color</c><00:03:17.159><c> of</c>
+
+00:03:17.390 --> 00:03:17.400 align:start position:0%
+we're also going to change the color of
+ 
+
+00:03:17.400 --> 00:03:18.589 align:start position:0%
+we're also going to change the color of
+the<00:03:17.580><c> paragraph</c>
+
+00:03:18.589 --> 00:03:18.599 align:start position:0%
+the paragraph
+ 
+
+00:03:18.599 --> 00:03:20.449 align:start position:0%
+the paragraph
+with<00:03:19.140><c> our</c><00:03:19.260><c> light</c><00:03:19.440><c> background</c><00:03:19.860><c> we</c><00:03:20.220><c> want</c><00:03:20.340><c> to</c>
+
+00:03:20.449 --> 00:03:20.459 align:start position:0%
+with our light background we want to
+ 
+
+00:03:20.459 --> 00:03:22.369 align:start position:0%
+with our light background we want to
+make<00:03:20.700><c> sure</c><00:03:20.819><c> the</c><00:03:21.120><c> text</c><00:03:21.239><c> has</c><00:03:21.599><c> enough</c><00:03:21.780><c> contrast</c>
+
+00:03:22.369 --> 00:03:22.379 align:start position:0%
+make sure the text has enough contrast
+ 
+
+00:03:22.379 --> 00:03:24.229 align:start position:0%
+make sure the text has enough contrast
+to<00:03:22.680><c> be</c><00:03:22.800><c> easily</c><00:03:23.159><c> readable</c>
+
+00:03:24.229 --> 00:03:24.239 align:start position:0%
+to be easily readable
+ 
+
+00:03:24.239 --> 00:03:26.449 align:start position:0%
+to be easily readable
+for<00:03:24.720><c> the</c><00:03:24.840><c> Final</c><00:03:24.959><c> Touch</c><00:03:25.260><c> let's</c><00:03:25.800><c> switch</c><00:03:26.040><c> out</c><00:03:26.220><c> the</c>
+
+00:03:26.449 --> 00:03:26.459 align:start position:0%
+for the Final Touch let's switch out the
+ 
+
+00:03:26.459 --> 00:03:27.830 align:start position:0%
+for the Final Touch let's switch out the
+fruit<00:03:26.580><c> in</c><00:03:26.819><c> the</c><00:03:27.000><c> background</c>
+
+00:03:27.830 --> 00:03:27.840 align:start position:0%
+fruit in the background
+ 
+
+00:03:27.840 --> 00:03:29.990 align:start position:0%
+fruit in the background
+we'll<00:03:28.379><c> replace</c><00:03:28.620><c> it</c><00:03:28.920><c> with</c><00:03:29.099><c> these</c><00:03:29.280><c> mango</c><00:03:29.640><c> pieces</c>
+
+00:03:29.990 --> 00:03:30.000 align:start position:0%
+we'll replace it with these mango pieces
+ 
+
+00:03:30.000 --> 00:03:35.270 align:start position:0%
+we'll replace it with these mango pieces
+to<00:03:30.540><c> match</c><00:03:30.720><c> our</c><00:03:31.080><c> smoothie</c>
+
+00:03:35.270 --> 00:03:35.280 align:start position:0%
+ 
+ 
+
+00:03:35.280 --> 00:03:37.309 align:start position:0%
+ 
+change<00:03:35.700><c> the</c><00:03:36.000><c> pass-through</c><00:03:36.360><c> property</c><00:03:36.900><c> to</c><00:03:37.140><c> 20</c>
+
+00:03:37.309 --> 00:03:37.319 align:start position:0%
+change the pass-through property to 20
+ 
+
+00:03:37.319 --> 00:03:39.530 align:start position:0%
+change the pass-through property to 20
+so<00:03:37.920><c> that</c><00:03:38.159><c> the</c><00:03:38.280><c> fruit</c><00:03:38.400><c> doesn't</c><00:03:38.700><c> overshadow</c><00:03:39.300><c> the</c>
+
+00:03:39.530 --> 00:03:39.540 align:start position:0%
+so that the fruit doesn't overshadow the
+ 
+
+00:03:39.540 --> 00:03:42.289 align:start position:0%
+so that the fruit doesn't overshadow the
+text
+
+00:03:42.289 --> 00:03:42.299 align:start position:0%
+ 
+ 
+
+00:03:42.299 --> 00:03:47.750 align:start position:0%
+ 
+foreign
+
+00:03:47.750 --> 00:03:47.760 align:start position:0%
+ 
+ 
+
+00:03:47.760 --> 00:03:49.369 align:start position:0%
+ 
+moving<00:03:48.480><c> forward</c>
+
+00:03:49.369 --> 00:03:49.379 align:start position:0%
+moving forward
+ 
+
+00:03:49.379 --> 00:03:52.449 align:start position:0%
+moving forward
+duplicate<00:03:50.099><c> the</c><00:03:50.340><c> frame</c><00:03:50.640><c> we've</c><00:03:50.940><c> just</c><00:03:51.120><c> created</c>
+
+00:03:52.449 --> 00:03:52.459 align:start position:0%
+duplicate the frame we've just created
+ 
+
+00:03:52.459 --> 00:03:55.009 align:start position:0%
+duplicate the frame we've just created
+select<00:03:53.459><c> the</c><00:03:53.640><c> circle</c><00:03:53.819><c> that</c><00:03:54.239><c> includes</c><00:03:54.599><c> all</c><00:03:54.900><c> the</c>
+
+00:03:55.009 --> 00:03:55.019 align:start position:0%
+select the circle that includes all the
+ 
+
+00:03:55.019 --> 00:03:57.170 align:start position:0%
+select the circle that includes all the
+bowls<00:03:55.379><c> and</c><00:03:55.739><c> once</c><00:03:56.040><c> again</c><00:03:56.099><c> rotate</c><00:03:56.700><c> it</c><00:03:56.879><c> just</c>
+
+00:03:57.170 --> 00:03:57.180 align:start position:0%
+bowls and once again rotate it just
+ 
+
+00:03:57.180 --> 00:03:58.850 align:start position:0%
+bowls and once again rotate it just
+enough<00:03:57.299><c> to</c><00:03:57.659><c> bring</c><00:03:57.780><c> the</c><00:03:58.019><c> next</c><00:03:58.140><c> bowl</c><00:03:58.379><c> from</c><00:03:58.739><c> the</c>
+
+00:03:58.850 --> 00:03:58.860 align:start position:0%
+enough to bring the next bowl from the
+ 
+
+00:03:58.860 --> 00:04:02.089 align:start position:0%
+enough to bring the next bowl from the
+right<00:03:58.980><c> into</c><00:03:59.280><c> view</c>
+
+00:04:02.089 --> 00:04:02.099 align:start position:0%
+ 
+ 
+
+00:04:02.099 --> 00:04:03.890 align:start position:0%
+ 
+let's<00:04:02.280><c> match</c><00:04:02.519><c> the</c><00:04:02.760><c> page</c><00:04:02.940><c> colors</c><00:04:03.360><c> to</c><00:04:03.540><c> this</c><00:04:03.720><c> new</c>
+
+00:04:03.890 --> 00:04:03.900 align:start position:0%
+let's match the page colors to this new
+ 
+
+00:04:03.900 --> 00:04:06.110 align:start position:0%
+let's match the page colors to this new
+bowl<00:04:04.140><c> and</c><00:04:04.799><c> move</c><00:04:04.920><c> the</c><00:04:05.159><c> rectangle</c><00:04:05.640><c> indicating</c>
+
+00:04:06.110 --> 00:04:06.120 align:start position:0%
+bowl and move the rectangle indicating
+ 
+
+00:04:06.120 --> 00:04:11.390 align:start position:0%
+bowl and move the rectangle indicating
+the<00:04:06.480><c> selected</c><00:04:06.840><c> Bowl</c><00:04:07.019><c> under</c><00:04:07.379><c> the</c><00:04:07.620><c> next</c><00:04:07.739><c> Bowl</c>
+
+00:04:11.390 --> 00:04:11.400 align:start position:0%
+ 
+ 
+
+00:04:11.400 --> 00:04:13.130 align:start position:0%
+ 
+[Music]
+
+00:04:13.130 --> 00:04:13.140 align:start position:0%
+[Music]
+ 
+
+00:04:13.140 --> 00:04:15.050 align:start position:0%
+[Music]
+tweak<00:04:13.620><c> the</c><00:04:13.739><c> Shadows</c><00:04:14.159><c> a</c><00:04:14.220><c> bit</c><00:04:14.340><c> to</c><00:04:14.580><c> ensure</c><00:04:14.879><c> they</c>
+
+00:04:15.050 --> 00:04:15.060 align:start position:0%
+tweak the Shadows a bit to ensure they
+ 
+
+00:04:15.060 --> 00:04:18.890 align:start position:0%
+tweak the Shadows a bit to ensure they
+match<00:04:15.239><c> with</c><00:04:15.540><c> the</c><00:04:15.659><c> new</c><00:04:15.780><c> color</c><00:04:15.900><c> changes</c>
+
+00:04:18.890 --> 00:04:18.900 align:start position:0%
+ 
+ 
+
+00:04:18.900 --> 00:04:23.210 align:start position:0%
+ 
+foreign
+
+00:04:23.210 --> 00:04:23.220 align:start position:0%
+ 
+ 
+
+00:04:23.220 --> 00:04:26.090 align:start position:0%
+ 
+ly<00:04:23.940><c> replace</c><00:04:24.240><c> the</c><00:04:24.600><c> background</c><00:04:24.960><c> fruit</c><00:04:25.320><c> to</c><00:04:25.979><c> match</c>
+
+00:04:26.090 --> 00:04:26.100 align:start position:0%
+ly replace the background fruit to match
+ 
+
+00:04:26.100 --> 00:04:50.770 align:start position:0%
+ly replace the background fruit to match
+the<00:04:26.400><c> Smoothie</c><00:04:26.759><c> Bowl</c><00:04:27.000><c> currently</c><00:04:27.600><c> displayed</c>
+
+00:04:50.770 --> 00:04:50.780 align:start position:0%
+ 
+ 
+
+00:04:50.780 --> 00:04:53.810 align:start position:0%
+ 
+now<00:04:51.780><c> repeat</c><00:04:51.960><c> the</c><00:04:52.320><c> entire</c><00:04:52.620><c> process</c><00:04:53.100><c> for</c><00:04:53.639><c> the</c>
+
+00:04:53.810 --> 00:04:53.820 align:start position:0%
+now repeat the entire process for the
+ 
+
+00:04:53.820 --> 00:04:57.170 align:start position:0%
+now repeat the entire process for the
+last<00:04:53.880><c> frame</c><00:04:54.240><c> with</c><00:04:54.419><c> a</c><00:04:54.600><c> blue</c><00:04:54.720><c> smoothie</c><00:04:55.139><c> Bowl</c>
+
+00:04:57.170 --> 00:04:57.180 align:start position:0%
+last frame with a blue smoothie Bowl
+ 
+
+00:04:57.180 --> 00:05:01.450 align:start position:0%
+last frame with a blue smoothie Bowl
+foreign
+
+00:05:01.450 --> 00:05:01.460 align:start position:0%
+ 
+ 
+
+00:05:01.460 --> 00:05:04.370 align:start position:0%
+ 
+don't<00:05:02.460><c> forget</c><00:05:02.639><c> to</c><00:05:03.060><c> adjust</c><00:05:03.240><c> the</c><00:05:03.600><c> color</c><00:05:03.720><c> shadows</c>
+
+00:05:04.370 --> 00:05:04.380 align:start position:0%
+don't forget to adjust the color shadows
+ 
+
+00:05:04.380 --> 00:05:12.030 align:start position:0%
+don't forget to adjust the color shadows
+and<00:05:04.680><c> background</c><00:05:05.040><c> fruit</c><00:05:05.340><c> accordingly</c>
+
+00:05:12.030 --> 00:05:12.040 align:start position:0%
+ 
+ 
+
+00:05:12.040 --> 00:05:39.230 align:start position:0%
+ 
+[Music]
+
+00:05:39.230 --> 00:05:39.240 align:start position:0%
+ 
+ 
+
+00:05:39.240 --> 00:05:40.610 align:start position:0%
+ 
+fantastic
+
+00:05:40.610 --> 00:05:40.620 align:start position:0%
+fantastic
+ 
+
+00:05:40.620 --> 00:05:42.529 align:start position:0%
+fantastic
+to<00:05:41.100><c> make</c><00:05:41.220><c> our</c><00:05:41.400><c> design</c><00:05:41.580><c> even</c><00:05:41.940><c> more</c><00:05:42.180><c> vibrant</c>
+
+00:05:42.529 --> 00:05:42.539 align:start position:0%
+to make our design even more vibrant
+ 
+
+00:05:42.539 --> 00:05:44.810 align:start position:0%
+to make our design even more vibrant
+let's<00:05:43.259><c> apply</c><00:05:43.560><c> a</c><00:05:43.800><c> drop</c><00:05:43.919><c> shadow</c><00:05:44.280><c> to</c><00:05:44.520><c> all</c><00:05:44.699><c> the</c>
+
+00:05:44.810 --> 00:05:44.820 align:start position:0%
+let's apply a drop shadow to all the
+ 
+
+00:05:44.820 --> 00:05:47.689 align:start position:0%
+let's apply a drop shadow to all the
+bowls<00:05:45.180><c> currently</c><00:05:45.479><c> in</c><00:05:45.660><c> view</c>
+
+00:05:47.689 --> 00:05:47.699 align:start position:0%
+bowls currently in view
+ 
+
+00:05:47.699 --> 00:06:03.780 align:start position:0%
+bowls currently in view
+this<00:05:48.240><c> will</c><00:05:48.419><c> give</c><00:05:48.539><c> us</c><00:05:48.720><c> a</c><00:05:48.960><c> nice</c><00:05:49.080><c> 3d</c><00:05:49.500><c> effect</c>
+
+00:06:03.780 --> 00:06:03.790 align:start position:0%
+ 
+ 
+
+00:06:03.790 --> 00:06:06.950 align:start position:0%
+ 
+[Music]
+
+00:06:06.950 --> 00:06:06.960 align:start position:0%
+ 
+ 
+
+00:06:06.960 --> 00:06:09.590 align:start position:0%
+ 
+and<00:06:07.919><c> now</c><00:06:08.100><c> on</c><00:06:08.400><c> to</c><00:06:08.520><c> our</c><00:06:08.759><c> final</c><00:06:09.000><c> and</c><00:06:09.419><c> most</c>
+
+00:06:09.590 --> 00:06:09.600 align:start position:0%
+and now on to our final and most
+ 
+
+00:06:09.600 --> 00:06:11.390 align:start position:0%
+and now on to our final and most
+exciting<00:06:10.080><c> part</c><00:06:10.380><c> where</c><00:06:10.680><c> we'll</c><00:06:10.860><c> be</c><00:06:11.039><c> creating</c>
+
+00:06:11.390 --> 00:06:11.400 align:start position:0%
+exciting part where we'll be creating
+ 
+
+00:06:11.400 --> 00:06:14.090 align:start position:0%
+exciting part where we'll be creating
+interactions<00:06:12.120><c> between</c><00:06:12.479><c> frames</c>
+
+00:06:14.090 --> 00:06:14.100 align:start position:0%
+interactions between frames
+ 
+
+00:06:14.100 --> 00:06:16.670 align:start position:0%
+interactions between frames
+this<00:06:14.820><c> is</c><00:06:15.060><c> where</c><00:06:15.300><c> we</c><00:06:15.539><c> truly</c><00:06:15.900><c> bring</c><00:06:16.199><c> our</c><00:06:16.500><c> design</c>
+
+00:06:16.670 --> 00:06:16.680 align:start position:0%
+this is where we truly bring our design
+ 
+
+00:06:16.680 --> 00:06:19.490 align:start position:0%
+this is where we truly bring our design
+to<00:06:17.039><c> life</c><00:06:17.280><c> switch</c><00:06:18.060><c> over</c><00:06:18.300><c> to</c><00:06:18.539><c> the</c><00:06:18.660><c> Prototype</c><00:06:19.199><c> tab</c>
+
+00:06:19.490 --> 00:06:19.500 align:start position:0%
+to life switch over to the Prototype tab
+ 
+
+00:06:19.500 --> 00:06:21.890 align:start position:0%
+to life switch over to the Prototype tab
+in<00:06:20.160><c> the</c><00:06:20.280><c> first</c><00:06:20.400><c> frame</c><00:06:20.759><c> select</c><00:06:21.539><c> the</c><00:06:21.720><c> second</c>
+
+00:06:21.890 --> 00:06:21.900 align:start position:0%
+in the first frame select the second
+ 
+
+00:06:21.900 --> 00:06:24.230 align:start position:0%
+in the first frame select the second
+bowl<00:06:22.199><c> click</c><00:06:22.919><c> on</c><00:06:23.039><c> the</c><00:06:23.220><c> plus</c><00:06:23.400><c> sign</c><00:06:23.639><c> and</c><00:06:23.940><c> drag</c><00:06:24.120><c> it</c>
+
+00:06:24.230 --> 00:06:24.240 align:start position:0%
+bowl click on the plus sign and drag it
+ 
+
+00:06:24.240 --> 00:06:26.210 align:start position:0%
+bowl click on the plus sign and drag it
+to<00:06:24.419><c> connect</c><00:06:24.539><c> it</c><00:06:24.780><c> with</c><00:06:24.960><c> the</c><00:06:25.139><c> second</c><00:06:25.259><c> frame</c>
+
+00:06:26.210 --> 00:06:26.220 align:start position:0%
+to connect it with the second frame
+ 
+
+00:06:26.220 --> 00:06:28.550 align:start position:0%
+to connect it with the second frame
+choose<00:06:26.639><c> on</c><00:06:26.759><c> click</c><00:06:27.120><c> as</c><00:06:27.300><c> the</c><00:06:27.479><c> trigger</c><00:06:27.840><c> smart</c>
+
+00:06:28.550 --> 00:06:28.560 align:start position:0%
+choose on click as the trigger smart
+ 
+
+00:06:28.560 --> 00:06:31.070 align:start position:0%
+choose on click as the trigger smart
+animate<00:06:29.100><c> for</c><00:06:29.220><c> the</c><00:06:29.400><c> animation</c><00:06:29.819><c> ease</c><00:06:30.720><c> out</c><00:06:30.900><c> for</c>
+
+00:06:31.070 --> 00:06:31.080 align:start position:0%
+animate for the animation ease out for
+ 
+
+00:06:31.080 --> 00:06:33.290 align:start position:0%
+animate for the animation ease out for
+the<00:06:31.199><c> easing</c><00:06:31.560><c> and</c><00:06:31.860><c> set</c><00:06:32.039><c> the</c><00:06:32.220><c> duration</c><00:06:32.580><c> to</c><00:06:32.880><c> 600</c>
+
+00:06:33.290 --> 00:06:33.300 align:start position:0%
+the easing and set the duration to 600
+ 
+
+00:06:33.300 --> 00:06:35.870 align:start position:0%
+the easing and set the duration to 600
+milliseconds<00:06:34.020><c> let's</c><00:06:34.800><c> ensure</c><00:06:35.160><c> that</c><00:06:35.400><c> our</c><00:06:35.580><c> users</c>
+
+00:06:35.870 --> 00:06:35.880 align:start position:0%
+milliseconds let's ensure that our users
+ 
+
+00:06:35.880 --> 00:06:37.790 align:start position:0%
+milliseconds let's ensure that our users
+can<00:06:36.180><c> also</c><00:06:36.419><c> go</c><00:06:36.600><c> back</c><00:06:36.780><c> to</c><00:06:37.020><c> the</c><00:06:37.199><c> previous</c><00:06:37.319><c> Bowl</c>
+
+00:06:37.790 --> 00:06:37.800 align:start position:0%
+can also go back to the previous Bowl
+ 
+
+00:06:37.800 --> 00:06:41.450 align:start position:0%
+can also go back to the previous Bowl
+not<00:06:38.460><c> just</c><00:06:38.699><c> forward</c><00:06:39.199><c> use</c><00:06:40.199><c> the</c><00:06:40.440><c> same</c><00:06:40.560><c> details</c><00:06:41.100><c> as</c>
+
+00:06:41.450 --> 00:06:41.460 align:start position:0%
+not just forward use the same details as
+ 
+
+00:06:41.460 --> 00:06:43.430 align:start position:0%
+not just forward use the same details as
+before<00:06:41.639><c> enabling</c><00:06:42.180><c> our</c><00:06:42.479><c> design</c><00:06:42.660><c> to</c><00:06:43.020><c> move</c><00:06:43.199><c> both</c>
+
+00:06:43.430 --> 00:06:43.440 align:start position:0%
+before enabling our design to move both
+ 
+
+00:06:43.440 --> 00:06:48.950 align:start position:0%
+before enabling our design to move both
+ways
+
+00:06:48.950 --> 00:06:48.960 align:start position:0%
+ 
+ 
+
+00:06:48.960 --> 00:06:50.870 align:start position:0%
+ 
+let's<00:06:49.500><c> continue</c><00:06:49.740><c> by</c><00:06:50.280><c> creating</c><00:06:50.580><c> an</c>
+
+00:06:50.870 --> 00:06:50.880 align:start position:0%
+let's continue by creating an
+ 
+
+00:06:50.880 --> 00:06:52.610 align:start position:0%
+let's continue by creating an
+interaction<00:06:51.240><c> between</c><00:06:51.600><c> the</c><00:06:52.020><c> second</c><00:06:52.139><c> and</c><00:06:52.380><c> third</c>
+
+00:06:52.610 --> 00:06:52.620 align:start position:0%
+interaction between the second and third
+ 
+
+00:06:52.620 --> 00:06:53.749 align:start position:0%
+interaction between the second and third
+frames
+
+00:06:53.749 --> 00:06:53.759 align:start position:0%
+frames
+ 
+
+00:06:53.759 --> 00:06:55.909 align:start position:0%
+frames
+keep<00:06:54.240><c> the</c><00:06:54.479><c> interaction</c><00:06:54.840><c> details</c><00:06:55.440><c> consistent</c>
+
+00:06:55.909 --> 00:06:55.919 align:start position:0%
+keep the interaction details consistent
+ 
+
+00:06:55.919 --> 00:06:58.309 align:start position:0%
+keep the interaction details consistent
+with<00:06:56.160><c> what</c><00:06:56.340><c> we</c><00:06:56.460><c> used</c><00:06:56.639><c> before</c>
+
+00:06:58.309 --> 00:06:58.319 align:start position:0%
+with what we used before
+ 
+
+00:06:58.319 --> 00:07:00.529 align:start position:0%
+with what we used before
+and<00:06:58.800><c> for</c><00:06:59.039><c> our</c><00:06:59.280><c> final</c><00:06:59.460><c> interaction</c><00:07:00.060><c> let's</c>
+
+00:07:00.529 --> 00:07:00.539 align:start position:0%
+and for our final interaction let's
+ 
+
+00:07:00.539 --> 00:07:02.749 align:start position:0%
+and for our final interaction let's
+connect<00:07:00.840><c> the</c><00:07:01.199><c> third</c><00:07:01.319><c> and</c><00:07:01.680><c> the</c><00:07:01.800><c> last</c><00:07:01.979><c> frames</c><00:07:02.460><c> in</c>
+
+00:07:02.749 --> 00:07:02.759 align:start position:0%
+connect the third and the last frames in
+ 
+
+00:07:02.759 --> 00:07:04.550 align:start position:0%
+connect the third and the last frames in
+the<00:07:02.880><c> same</c><00:07:03.000><c> way</c>
+
+00:07:04.550 --> 00:07:04.560 align:start position:0%
+the same way
+ 
+
+00:07:04.560 --> 00:07:07.249 align:start position:0%
+the same way
+now<00:07:05.100><c> let's</c><00:07:05.520><c> preview</c><00:07:05.940><c> our</c><00:07:06.300><c> prototype</c><00:07:06.840><c> and</c><00:07:07.139><c> see</c>
+
+00:07:07.249 --> 00:07:07.259 align:start position:0%
+now let's preview our prototype and see
+ 
+
+00:07:07.259 --> 00:07:13.129 align:start position:0%
+now let's preview our prototype and see
+how<00:07:07.440><c> it</c><00:07:07.560><c> performs</c>
+
+00:07:13.129 --> 00:07:13.139 align:start position:0%
+ 
+ 
+
+00:07:13.139 --> 00:07:14.990 align:start position:0%
+ 
+the<00:07:13.500><c> Smoothie</c><00:07:13.919><c> bowls</c><00:07:14.280><c> are</c><00:07:14.580><c> rotating</c>
+
+00:07:14.990 --> 00:07:15.000 align:start position:0%
+the Smoothie bowls are rotating
+ 
+
+00:07:15.000 --> 00:07:17.390 align:start position:0%
+the Smoothie bowls are rotating
+beautifully<00:07:15.660><c> when</c><00:07:16.020><c> we're</c><00:07:16.199><c> moving</c><00:07:16.500><c> forward</c>
+
+00:07:17.390 --> 00:07:17.400 align:start position:0%
+beautifully when we're moving forward
+ 
+
+00:07:17.400 --> 00:07:19.730 align:start position:0%
+beautifully when we're moving forward
+but<00:07:17.880><c> not</c><00:07:18.060><c> when</c><00:07:18.240><c> we're</c><00:07:18.360><c> going</c><00:07:18.600><c> back</c>
+
+00:07:19.730 --> 00:07:19.740 align:start position:0%
+but not when we're going back
+ 
+
+00:07:19.740 --> 00:07:22.249 align:start position:0%
+but not when we're going back
+but<00:07:20.160><c> we</c><00:07:20.340><c> can</c><00:07:20.520><c> fix</c><00:07:20.759><c> this</c><00:07:21.000><c> easily</c>
+
+00:07:22.249 --> 00:07:22.259 align:start position:0%
+but we can fix this easily
+ 
+
+00:07:22.259 --> 00:07:24.409 align:start position:0%
+but we can fix this easily
+the<00:07:22.740><c> trick</c><00:07:22.979><c> here</c><00:07:23.220><c> is</c><00:07:23.759><c> to</c><00:07:23.940><c> adjust</c><00:07:24.060><c> the</c>
+
+00:07:24.409 --> 00:07:24.419 align:start position:0%
+the trick here is to adjust the
+ 
+
+00:07:24.419 --> 00:07:26.450 align:start position:0%
+the trick here is to adjust the
+positions<00:07:24.780><c> of</c><00:07:24.960><c> bowls</c><00:07:25.380><c> in</c><00:07:25.620><c> subsequent</c><00:07:26.039><c> frames</c>
+
+00:07:26.450 --> 00:07:26.460 align:start position:0%
+positions of bowls in subsequent frames
+ 
+
+00:07:26.460 --> 00:07:28.189 align:start position:0%
+positions of bowls in subsequent frames
+for<00:07:27.360><c> instance</c>
+
+00:07:28.189 --> 00:07:28.199 align:start position:0%
+for instance
+ 
+
+00:07:28.199 --> 00:07:30.770 align:start position:0%
+for instance
+if<00:07:28.740><c> we</c><00:07:28.860><c> want</c><00:07:29.039><c> the</c><00:07:29.220><c> pink</c><00:07:29.340><c> Bowl</c><00:07:29.639><c> to</c><00:07:30.000><c> rotate</c><00:07:30.360><c> when</c>
+
+00:07:30.770 --> 00:07:30.780 align:start position:0%
+if we want the pink Bowl to rotate when
+ 
+
+00:07:30.780 --> 00:07:32.689 align:start position:0%
+if we want the pink Bowl to rotate when
+going<00:07:31.020><c> back</c><00:07:31.259><c> we</c><00:07:31.620><c> need</c><00:07:31.740><c> to</c><00:07:31.919><c> rotate</c><00:07:32.220><c> it</c><00:07:32.340><c> slightly</c>
+
+00:07:32.689 --> 00:07:32.699 align:start position:0%
+going back we need to rotate it slightly
+ 
+
+00:07:32.699 --> 00:07:34.610 align:start position:0%
+going back we need to rotate it slightly
+in<00:07:32.880><c> this</c><00:07:33.060><c> Frame</c>
+
+00:07:34.610 --> 00:07:34.620 align:start position:0%
+in this Frame
+ 
+
+00:07:34.620 --> 00:07:37.550 align:start position:0%
+in this Frame
+now<00:07:35.039><c> when</c><00:07:35.280><c> we</c><00:07:35.460><c> preview</c><00:07:35.759><c> the</c><00:07:36.060><c> Prototype</c><00:07:36.599><c> again</c>
+
+00:07:37.550 --> 00:07:37.560 align:start position:0%
+now when we preview the Prototype again
+ 
+
+00:07:37.560 --> 00:07:40.129 align:start position:0%
+now when we preview the Prototype again
+it<00:07:38.039><c> works</c><00:07:38.280><c> as</c><00:07:38.400><c> expected</c>
+
+00:07:40.129 --> 00:07:40.139 align:start position:0%
+it works as expected
+ 
+
+00:07:40.139 --> 00:07:42.770 align:start position:0%
+it works as expected
+repeat<00:07:40.620><c> this</c><00:07:41.039><c> process</c><00:07:41.340><c> for</c><00:07:41.819><c> all</c><00:07:42.060><c> the</c><00:07:42.120><c> bowls</c><00:07:42.539><c> to</c>
+
+00:07:42.770 --> 00:07:42.780 align:start position:0%
+repeat this process for all the bowls to
+ 
+
+00:07:42.780 --> 00:07:44.749 align:start position:0%
+repeat this process for all the bowls to
+ensure<00:07:43.080><c> a</c><00:07:43.319><c> smooth</c><00:07:43.500><c> rotation</c><00:07:44.039><c> in</c><00:07:44.580><c> both</c>
+
+00:07:44.749 --> 00:07:44.759 align:start position:0%
+ensure a smooth rotation in both
+ 
+
+00:07:44.759 --> 00:07:47.450 align:start position:0%
+ensure a smooth rotation in both
+directions<00:07:45.259><c> with</c><00:07:46.259><c> that</c><00:07:46.440><c> final</c><00:07:46.680><c> tweak</c><00:07:47.160><c> we've</c>
+
+00:07:47.450 --> 00:07:47.460 align:start position:0%
+directions with that final tweak we've
+ 
+
+00:07:47.460 --> 00:07:49.490 align:start position:0%
+directions with that final tweak we've
+created<00:07:47.759><c> a</c><00:07:48.240><c> beautiful</c><00:07:48.360><c> engaging</c><00:07:49.020><c> animation</c>
+
+00:07:49.490 --> 00:07:49.500 align:start position:0%
+created a beautiful engaging animation
+ 
+
+00:07:49.500 --> 00:07:51.589 align:start position:0%
+created a beautiful engaging animation
+that<00:07:49.860><c> will</c><00:07:50.039><c> truly</c><00:07:50.400><c> bring</c><00:07:50.699><c> your</c><00:07:50.940><c> designs</c><00:07:51.360><c> to</c>
+
+00:07:51.589 --> 00:07:51.599 align:start position:0%
+that will truly bring your designs to
+ 
+
+00:07:51.599 --> 00:07:54.110 align:start position:0%
+that will truly bring your designs to
+life<00:07:51.780><c> don't</c><00:07:52.620><c> forget</c><00:07:52.800><c> to</c><00:07:53.160><c> subscribe</c><00:07:53.639><c> to</c><00:07:53.940><c> our</c>
+
+00:07:54.110 --> 00:07:54.120 align:start position:0%
+life don't forget to subscribe to our
+ 
+
+00:07:54.120 --> 00:07:56.210 align:start position:0%
+life don't forget to subscribe to our
+channel<00:07:54.300><c> for</c><00:07:54.660><c> more</c><00:07:54.840><c> creative</c><00:07:55.319><c> content</c><00:07:55.860><c> and</c>
+
+00:07:56.210 --> 00:07:56.220 align:start position:0%
+channel for more creative content and
+ 
+
+00:07:56.220 --> 00:07:59.479 align:start position:0%
+channel for more creative content and
+inspiring<00:07:56.759><c> design</c><00:07:57.060><c> ideas</c>
+

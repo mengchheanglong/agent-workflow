@@ -1,0 +1,56 @@
+# 03. Ecommerce Page Redesign: UX/UI Tips to 3.5x Conversion
+URL: https://www.youtube.com/watch?v=oYskl2ZBoBc
+Type: video
+Duration seconds: 502
+Views: 50872
+Upload date: 20260425
+Transcript words: 1407
+
+## Description
+💎 Try Mobbin for free and get 20% off for your first year's subscription: https://mobbin.com/uxpeak
+
+📘 Get the UI/UX Playbook → https://www.uxpeak.com/pages/playbook 🎁 Use code PLAYBOOK15 for 15% off
+
+Same product. Same price. Same traffic. One page converts at 2%, the other at 7%. In this video, we break down every single design decision that creates that 3.5x difference — from the hero image and social proof to the subscription cards and the "Add to Cart" button.
+
+If you want to stop guessing and start designing pages that actually sell, this one's for you. 👇
+
+🧠 WHAT YOU'LL LEARN 
+
+✅ The psychology behind high-converting product pages 
+✅ How to use social proof that feels real (not fake) 
+✅ Why dropdowns kill conversions — and what to use instead 
+✅ How to increase Average Order Value without being pushy 
+✅ The micro-interactions that remove buyer hesitation 
+✅ Button copy and trust signals that actually work in 2026
+
+‼️ Important note: Use these tips ethically. Never ever share false, exaggerated, or fabricated information about reviews, ratings, sales demand, product features, customer results, or availability! Everything you show should be accurate, up to date, and authentic. The goal is not to pressure, trick, or mislead users. The goal is to communicate real value more clearly and help users make confident decisions. 
+
+Good UX should support both the business and the user. Conversion matters, but trust matters more. ❤
+
+🛠️ TOOLS & RESOURCES MENTIONED:
+
+💎 Mobbin (design inspiration library): https://mobbin.com/uxpeak (Use the link to get the 20% OFF 🔗
+
+📘  UI/UX Playbook: https://www.uxpeak.com/pages/playbook — code PLAYBOOK15 for 15% off
+
+👑 UX/UI Design Mastery course: https://www.uxpeak.com/pages/course (Learn UX/UI design like a pro)
+
+🏆 Top design resources  → https://uxpeak.com/pages/resources
+
+💬 Which change do you think moves the needle the most? Drop a comment, we will read every single one.
+
+👍 If this helped, a like really helps the channel. 🔔 Subscribe for more breakdowns like this every week.
+
+
+️💜 JOIN OUR COMMUNITY 
+Instagram: https://www.instagram.com/uxpeak_
+Twitter/X: https://x.com/uxpeak_
+LinkedIn: https://www.linkedin.com/company/uxpeakDribble: https://dribbble.com/uxpeak/Medium: https://medium.com/@uxpeak.comBehance: https://www.behance.net/uxpeak
+
+▶️ WATCH NEXT: https://www.youtube.com/watch?v=YlN28RNChl0&t=538s
+
+#UIUXDesign #WebDesign #uidesign
+
+## Transcript
+Same product, same price, same traffic. One of these pages converts at 2%, the other converts at 7%. That's not a small difference. That's three and a half times more revenue from the exact same visitors. So, what's different? [music] It's not the product. It's not even the offer. One page shows a product, the other one sells it. It's guiding someone from this looks interesting all the way to I need this. Answering questions before they're asked, removing doubts before they form, building trust at every single step. And every single decision that creates that difference, we're going to go through it right now. Before the user even reads the product name, their eyes hit a visual anchor. We added a subtle but clear best-seller badge right above the product title. This uses the halo effect. By immediately crowning the product with a status badge, whether you choose best-seller, new arrival, or top-rated, you frame the user's entire perception [music] of the product before they've read a single detail. It instantly elevates the item's perceived value. Right next to that, we fixed a massive missed opportunity with the imagery. The original design features an isolated product tub sitting on a plain empty background. When you sell a physical product online, the user can't pick it up. They have to mentally bridge the gap between that raw powder and the actual experience of consuming it. >> [music] >> We call this the imagination gap. The solution? We updated the hero image to show the tub right next to a freshly mixed icy glass of the greens and some sliced pineapple. The human brain processes images infinitely faster than text. We're answering the question, "What does this actually look like?" instantly. By making the product feel refreshing and appetizing, we lower the cognitive effort required to understand [music] its value. Perfectly round numbers like 100, 200, or 500 subconsciously feel like an estimate, a placeholder, or worse, fake. We updated this to a highly specific 4.9 stars and 221 reviews. Specific numbers feel much more authentic and believable to a shopper. We also added a subtle fire icon with the text 500 plus sold this week. Instead of the user thinking, "Should I be the first person to risk trying this?" they think, "Wow, hundreds of people are buying this right now. It must be great." It's a powerful trust anchor that naturally encourages them to join the crowd. Next, let's look at how users interact with the page [music] to pick their flavor. The old design hid the options inside a standard drop-down menu. Drop-downs are often considered lazy design because they force the user to click, scroll, and read just [music] to see what their basic options are. We brought these options out into the open using clear visual swatches with little fruit icons. The user can [music] instantly see their three choices without doing any work. But we pushed the UI further to solve a very specific user fear. When buying a health drink, the biggest question is, "What if this tastes awful?" To ease [music] this worry without cluttering our clean layout, we added a helpful micro-interaction. >> [music] >> When a user hovers over a flavor like kiwi, a small tooltip smoothly appears saying, "Light, [music] tart, and not overly sweet." Good UX anticipates questions and delivers reassuring information at the exact moment of hesitation. At this point, you might be wondering, "How do you know the best way to actually improve a specific part of design? How do you know which layouts will get people to buy? [music] And where do you even look for that inspiration?" The reality is, top designers don't rely on gut feeling or try to reinvent the wheel. We study what is already proven to work at the highest level. And the fastest way we do that is with Mobbin, the sponsor of this video. Mobbin is our ultimate design cheat code. It's a massive library of the most successful sites and apps on the planet. You can search for shopping or health [music] and instantly get inspired by top brands like Seed or Hims. You get to see exactly how they structure the pricing cards, hero images, and trust elements pixel by pixel. It basically hands you the proven blueprint of what's converting instead of having to guess. If you want to stop designing in the dark, design with absolute confidence, and save hours on every project, hit the first link in the description to check out Mobbin and grab 20% off. Let's move to the next section. This is the most critical area of the entire screen. This is where a great UX designer stops just making things look nice and actively increases a brand's average order value. The original UI used standard stacked radio buttons for one-time purchase versus subscribe and save. Radio buttons present two visually equal choices, which usually causes users to default to the lowest immediate risk, the one-time purchase. We completely rebuilt this using dynamic side-by-side selection cards to create a much smoother flow. By default, the subscribe card is selected. It has a gently tinted background and features a green most popular tag. >> [music] >> We are visually guiding the user toward the best value option. To handle their fear of getting locked into a contract, we brought the reassuring details directly inside the box. Save 15%, cancel anytime, and priority dispatch. We calm their financial worries at the exact second they're making the decision. But what happens when the user does click one-time purchase? We don't just give up. The UI smoothly expands to reveal tiered bundle options. A one-month supply, a two-month supply with 10% discount, and a three-month supply with 20% discount. By using progressive disclosure, we keep the initial interface clean, but reward the user's click with new money-saving options. This gives the user total autonomy while intelligently incentivizing a larger upfront purchase. If you enjoy this kind of thinking behind UI design, the psychology, the small interaction details, the way tiny changes can completely change how people [music] view your designs. This is exactly what we break down inside the UI UX Playbook. It's a practical guide where we walk through real UI patterns and explain why they work, how they influence user decisions, and how you can apply them in your own designs. Because good design is rarely about making something just look nice. It's about understanding what the user is thinking, [music] where they might hesitate, and how small design choices can guide them smoothly through [music] an experience. If you want to get better at spotting these opportunities in your own work, you can check out the UI UX Playbook at uxpeak.com. And as a small thank you for watching the channel, you can use the code playbook50 for a 15% discount. The link is in the description if you'd like to explore [music] it. Finally, let's look at the button and the trust badges underneath it. The [music] original button simply says, "Add to cart." followed by generic text points. Free shipping, money back, made in USA. Add to cart is purely transactional language. It reminds the user that they're about to spend money. And generic badges like free shipping don't build deep trust anymore because shoppers expect [music] them. The solution? We softened the primary button copy to add to cart start my journey. This subtle shift makes clicking feel less like a purchase and more like a positive step in their health routine. Beneath that, we replaced the generic text with custom illustrated icons tailored to what a health-conscious shopper actually cares about. 100% vegan, a 60-day guarantee, and most importantly, third-party tested for heavy metals. We are actively answering their unspoken questions about safety and quality. Now, let's take one last look at where we started and where we ended up. It's a night and day difference, right? >> [music] >> I'm really curious to hear from you all. Which of these changes do you think moves the needle the most? Drop a comment down below and let me know your thoughts.

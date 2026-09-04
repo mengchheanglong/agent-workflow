@@ -1,0 +1,47 @@
+# 14. UI Design Trends Everyone Is Talking About
+URL: https://www.youtube.com/watch?v=BZ0QER_0ZWI
+Type: video
+Duration seconds: 305
+Views: 369197
+Upload date: 20230821
+Transcript words: 915
+
+## Description
+💎 Learn how to design beautiful UI designs: https://www.uxpeak.com/pages/playbook
+
+Hey there! 2023 is really shaking things up in the design world. If you've noticed websites looking cooler with 3D stuff and glowing colors, you're not alone. In this video, we're chatting about these cool new design changes and what they mean for us. 🖥️✨
+#uidesign #uiuxtrends #3d
+
+Grab our FREE UX/UI Design Playbook 👇 
+https://uxpeak.gumroad.com/l/UIUXPlaybook
+
+⚡️ Try Mobbin for free and get 20% off for your first year's subscription: https://mobbin.com/uxpeak
+
+Learn UX/UI Design 👇 
+https://www.uxpeak.com/
+
+Timestamps: 
+00:00 - Intro 
+00:34 - 1st Trend
+01:22 - 2nd Trend
+02:00 - 3rd Trend
+02:47 - 4th Trend
+03:24 - 5th Trend
+04:15 - 6th Trend 
+04:52 - Outro
+
+If you enjoy our content, feel free to subscribe and hit that bell notification. We promise to bring you a ton of free value! 
+
+✨ UX/UI Playbook: https://www.uxpeak.com/pages/playbook
+
+💎 Uxpeak+ Platform: https://www.uxpeak.com 
+
+🚀  UX/UI Design Mastery Course: https://www.uxpeak.com/pages/course
+
+Join our design community 
+Instagram - https://www.instagram.com/uxpeak_/ 
+Twitter - https://twitter.com/uxpeak_ 
+Linkedin - https://www.linkedin.com/company/uxpeak/
+
+## Transcript
+[Music] 2023 is rewriting the rules of digital design every click every scroll every interaction is transforming taking on New Dimensions and breaking boundaries today we're pulling back the curtain on the UI design trends that are not just shaping the year but revolutionizing the way we experience the web and as we navigate through these Trends let us know which trend is your favorite or if there's something on the horizon we should be on the lookout for while exploring these Trends get our free UI ux design Playbook packed with amazing design tips and tricks that will elevate your design game alright let's dive into the first Trend animated 3D models now think about the usual pictures we see on websites pretty flat right well 2023 is pushing that aside for something way cooler animated 3D models let you see things from all angles almost like you're holding them in your hand want to see the back of a product before you buy it no problem or maybe there's a cool character on a site and you can watch it move and do things it's like taking what's great about video games and putting it right on a web page but this trend isn't just a visual treat interactive 3D models leave a lasting impression when visitors play around with these models they're more likely to recall the brand or product companies are catching on and they're leaning into this trend to present their offerings in a way that's both Innovative and memorable let's dive into a detail of design that might seem small but makes a huge impact remember when the cursor was just an arrow or a pointing hand 2023 has shaken things up turning the humble cursor into a design element of its own custom cursors can range from Brand specific icons to dynamically changing shapes adapting to the content they hover over it's like giving a personal touch to a visitor's every move but there's more to it than just Aesthetics custom cursors can guide users highlight key elements or provide additional information now let's talk about a trend that's turning the act of scrolling into a cinematic experience scroll-based animations remember the times when scrolling down a web page was just well scrolling not anymore now as you scroll things move shift and come to life but it's not just about items popping up as you scroll it's about storytelling the entire Narrative of a website or digital platform can be mapped out with each scroll introducing new characters unfolding stories or revealing crucial information it's a dynamic way to make sure the content isn't just consumed but experienced scroll-based animations are changing how we perceive time on websites instead of static stagnant Pages we're getting fluid evolving digital stories where the user decides the pace and in 2023 this is quickly becoming the norm rather than the exception [Music] ever notice those soft glowing colors lighting up some of your favorite websites they add a modern vibrant touch to sites giving them that edge without being too in your face neon Mists are truly shaping the 2023 web design game whether it's to highlight a button add a cool backdrop or just give a futuristic feel neon Mists make things pop but that's not all neon Mists can actually influence user Behavior a subtle glowing highlight around a call to action or a soft neon Haze in the background can guide the user's eyes to specific content or sections it's a fusion of Aesthetics and functionality minimalism has been around for a while but is making a big splash again in 2023 in a digital world bustling with information and flashing ads sometimes less truly is more minimalism is all about stripping away the excess and focusing on what's essential but don't mistake it for being boring or too plain a minimalist design can be bold impactful and Incredibly effective minimalist design usually has clean lines limited color palettes and purposeful white spaces every element on a minimalist website or app has a clear purpose there's no decoration for the sake of decoration this means faster load times more direct messaging and a better user experience overall on top of that Brands embracing minimalism are often perceived as being more genuine transparent and trustworthy lastly let's move on to a trend that's hard to miss huge typography in 2023 designers aren't just using text to convey a message they're turning it into a visual Powerhouse words are no longer confined to the sidelines they're front and center dominating screens and making bold statements this trend is about more than just size it's about playing with font weights Styles and compositions to create designs that are both eye-catching and impactful when typography takes the lead every letter and word becomes an integral part of the design sometimes even replacing traditional imagery this means designers have to be more selective and thoughtful about their word choices ensuring they convey the intended message effectively that's a wrap on the best UI design Trends in 2023 if you've got thoughts or predictions of your own drop a comment below thanks for watching and we'll see you in the next video
