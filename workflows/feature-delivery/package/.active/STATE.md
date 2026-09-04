@@ -12,9 +12,19 @@ IDLE
 
 - Feature: None
 - Risk: UNASSESSED
+- Collaboration: SOLO (owner/task/feature branch recorded when GROUP)
 - Workflow path: Not selected
-- Fix cycles: 0 / 2 authorized
+- Broad review reopenings (`fixCycles`): 0
 - Additional-cycle authorization: None
+
+## Review policy
+
+- Tier: UNSET
+- Specialist mode: UNSET
+- Specialist rationale: None
+- Budget: Not selected
+- Maximum broad review cycles: 1
+- Escalation reason: None
 
 ## Actors
 
@@ -56,11 +66,16 @@ None.
 No commands run.
 
 For each command record exact command, result/exit code, relevant pass/fail/skip/warning counts, and
-whether it ran after the last edit.
+whether it ran after the last edit. For retained canonical evidence that predates a later narrow edit,
+record `unaffectedByLaterEdit: true` and a concrete unaffected rationale. At least one affected check
+must run after the last edit.
 
 ## Review
 
 - Artifact: `.active/REVIEW.md`
+- Type: NOT_REVIEWED
+- Base approved snapshot: None
+- Changed criteria/invariants: None
 - Reviewed snapshot: None
 - Specification verdict: NOT_REVIEWED
 - Engineering-quality verdict: NOT_REVIEWED

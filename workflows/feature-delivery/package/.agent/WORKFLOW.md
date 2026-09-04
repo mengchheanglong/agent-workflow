@@ -53,13 +53,17 @@ It still requires baseline capture, fresh evidence, independent review, and vali
 3. Inspect version-control state from the actual repository root.
 4. Record base branch, base commit, pre-existing changes, and allowed change paths.
 5. Refuse to overwrite or absorb unexplained pre-existing work.
-6. Initialize `.active/FEATURE.md` from the template and synchronize `.active/STATE.md` and
+6. In multi-contributor repositories, set `collaboration.mode` to `GROUP` and record the contributor
+   owner, team task/issue reference, and task-owned feature branch. Omit `collaboration` (or use
+   `SOLO`) for single-contributor work.
+7. Initialize `.active/FEATURE.md` from the template and synchronize `.active/STATE.md` and
    `.active/STATE.json`.
 
 Output:
 
 - feature name and slug;
 - repository/base baseline;
+- collaboration owner, task, and feature branch when `GROUP`;
 - pre-existing changes;
 - user-visible goal;
 - initial unknowns;
@@ -79,11 +83,17 @@ It must:
 - identify authoritative requirements and contradictions;
 - resolve or block material ambiguity before design;
 - classify risk `LOW`, `MEDIUM`, or `HIGH`;
-- select roles, specialist review lenses, human approval, allowed paths, and validation commands;
+- select roles, review tier, specialist mode/lenses, review budget, human approval, allowed paths,
+  and validation commands;
 - define dependency-ordered implementation slices when the feature is too large for one safe slice.
 
 Treat the requirements-quality checklist in `FEATURE.md` as unit tests for the specification. The
 Builder must not self-approve unresolved checklist items.
+
+Prefer 3-7 acceptance criteria for a normal feature. Select MECHANICAL only for LOW, TARGETED by
+default for MEDIUM, and DEEP for HIGH or explicit escalation. Specialist mode defaults to INLINE for
+LOW/MEDIUM. Review budgets default to 5/15/30 minutes for LOW/MEDIUM/HIGH unless project evidence
+requires another positive bound. `maxBroadReviewCycles` defaults to 1.
 
 Gate: `G0_SCOPE`.
 
@@ -149,12 +159,16 @@ Validation belongs to the controller/orchestrator, not only the Builder.
 
 1. Confirm the final changed-file set is within allowed paths and pre-existing changes remain intact.
 2. Read back changed boundary files and tests after the last worker/edit.
-3. Run targeted behavior tests.
-4. Run the full relevant repository gates: tests, typecheck, lint/static analysis, build, migration or
-   API/integration checks, security checks, and manual acceptance where applicable.
-5. Inspect test selection, pass/fail/skip counts, warnings, and exit codes—not only command names.
-6. Record exact fresh evidence in both state files.
-7. Compute the delivery snapshot:
+3. Run focused behavior checks throughout implementation/fix work and after the last edit.
+4. Run canonical full project gates once after the candidate final product edit: tests, typecheck,
+   lint/static analysis, build, migration or API/integration checks, and security checks as routed.
+   After a later narrow edit, rerun a canonical gate only when that edit can affect it; otherwise
+   retain its passing evidence with a concrete unaffected rationale.
+5. Run browser/manual acceptance for routed user-visible UI.
+6. Inspect test selection, pass/fail/skip counts, warnings, and exit codes—not only command names.
+7. Record exact evidence in both state files, including at least one affected check after the last
+   edit.
+8. Compute the delivery snapshot:
 
 ```bash
 python .agent/scripts/validate_workflow.py --snapshot
@@ -173,9 +187,24 @@ Code, Codex, or another review engine may be used, but it must receive the same 
 
 Review in order:
 
-1. specification compliance;
-2. engineering quality;
-3. specialist lenses required by risk.
+1. freeze review type, tier, budget, baseline/allowlist, pre-existing changes, and snapshot;
+2. apply the selected tier to acceptance-criterion deltas, changed files, validation evidence, and
+   applicable quality dimensions;
+3. for TARGETED, inspect the 1-3 risky seams selected at Scope;
+4. apply specialist mode in this same artifact (INLINE by default for LOW/MEDIUM);
+5. record specification, engineering-quality, and overall verdicts first, followed by concise rubric
+   deltas.
+
+Tier meanings:
+
+- MECHANICAL: LOW-only compact independent scope/evidence review.
+- TARGETED: default MEDIUM review of changed criteria/files/evidence and 1-3 risky seams.
+- DEEP: full specification/engineering review, required HIGH or explicit escalation.
+
+The reviewer inspects controller evidence and reruns expensive commands only when evidence is
+missing, inconsistent, stale, or suspect. Budget defaults are LOW 5, MEDIUM 15, HIGH 30 minutes. At
+the bound, insufficient proof becomes `UNVERIFIABLE` / `CHANGES_REQUESTED` with an escalation reason,
+never approval.
 
 The reviewer verifies candidate issues, classifies introduced versus pre-existing findings, and
 records three results: specification `PASS` / `FAIL` / `UNVERIFIABLE`, engineering-quality
@@ -192,18 +221,32 @@ For `CHANGES_REQUESTED`:
 
 1. Reconcile every finding as accepted, rejected with evidence, or deferred with an explicit gate.
 2. Builder fixes only accepted current findings and directly necessary regressions.
-3. Increment `fixCycles`.
-4. Re-run Stage 6 after the last edit.
-5. Run a fresh review of the new snapshot.
+3. Classify materiality before editing. Requirement changes, scope expansion, shared contracts,
+   auth/security/data/migration/lifecycle behavior, new dependencies, broad refactors, or ambiguous
+   evidence require another FULL review and therefore a broad reopening.
+4. For a named accepted finding or human-requested polish with unchanged requirements/contracts,
+   approved files, narrow diff, and explicit affected criteria/invariants, use DELTA.
+5. Re-run affected focused checks after the last edit. Rerun canonical gates only if the edit can
+   affect them, then compute a new snapshot.
+6. Have the same independent gate review the new snapshot read-only. DELTA inspects the correction,
+   affected criteria/files/checks, and regression seams, carrying forward only conclusions the prior
+   review explicitly marked reusable.
 
-Default maximum is two broad cycles (`maxFixCycles: 2`). After that, unresolved BLOCKER/MAJOR
-findings set status `BLOCKED` and require human direction. A human-authorized additional cycle must
-increase `maxFixCycles` and record `fixCycleOverrideEvidence`; status advancement alone cannot bypass
-the bound. A final focused delta review may verify named mechanical corrections without reopening
-settled scope.
+The default is one broad FULL review cycle (`maxBroadReviewCycles: 1`) plus one bounded DELTA
+correction. `fixCycles` counts broad FULL reopenings only; DELTA does not increment it. Increasing the
+broad-cycle allowance above 1 requires explicit human `fixCycleOverrideEvidence`. Otherwise, a
+correction needing FULL sets `BLOCKED`. Status advancement cannot bypass the bound.
 
 `DO_NOT_MERGE` returns to the owning stage or blocks the feature; it is not an invitation to patch
 blindly.
+
+In `GROUP` mode, keep fixes on the task-owned feature branch. Never reset, rewrite, or force-push a
+branch other contributors may share. Independent AI review is additional evidence, not a substitute
+for the repository's human PR review; the author never self-merges.
+
+For user-visible UI, browser acceptance remains required when routed. LOW/MEDIUM visual critique is
+INLINE. Human visual feedback after review uses focused visual/browser DELTA plus affected checks
+unless it changes requirements or scope.
 
 ## Stage 9 — Human checkpoint
 

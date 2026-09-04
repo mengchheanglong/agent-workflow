@@ -54,7 +54,7 @@ The workflow README should cover:
 
 ## Naming conventions
 
-- Workflow IDs use `kebab-case`: `feature-delivery`, `gemini-delivery`, `deep-review`.
+- Workflow IDs use `kebab-case`: `feature-delivery`, `deep-review`.
 - Files use existing markdown conventions from the repository.
 - Avoid generic names like `workflow-1`; use descriptive names.
 

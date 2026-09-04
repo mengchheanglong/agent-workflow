@@ -108,6 +108,9 @@ A feature contract must contain:
 - risk classification and human-checkpoint decision;
 - validation plan and definition of done.
 
+Prefer 3-7 acceptance criteria for normal features. Exceed that range only when distinct risk or
+behavior truly requires separate proof; do not fragment prose into artificial criteria.
+
 Unresolved high-impact ambiguity blocks implementation. Do not invent UI, automation, permissions,
 billing behavior, migrations, or external contracts.
 
@@ -134,8 +137,10 @@ Implement thin vertical slices. Where behavior can be tested, use RED → GREEN 
 If an automated test is impractical, record why and provide the strongest deterministic substitute.
 Do not weaken or delete a valid test to make the implementation pass.
 
-Any edit after validation invalidates validation evidence, the delivery snapshot, and the review
-verdict. Re-run the affected checks and review the new snapshot.
+Run focused checks during implementation and fix loops. Run canonical full project gates once after
+the candidate final product edit before ship readiness. A later edit invalidates the snapshot and
+review, but rerun only affected focused checks plus any canonical gate the edit can affect; record a
+concrete unaffected rationale for retained canonical evidence.
 
 ## Validation evidence
 
@@ -167,14 +172,32 @@ The Reviewer must:
 
 1. start from a fresh context independent of the Builder;
 2. verify the exact base, current diff, allowed paths, and pre-existing changes;
-3. perform specification compliance before engineering-quality review;
-4. inspect relevant surrounding code and tests rather than reviewing the patch in isolation;
+3. apply the selected MECHANICAL, TARGETED, or DEEP tier and FULL or DELTA review type;
+4. inspect the tier-required surrounding code and tests rather than reviewing the patch in isolation;
 5. verify candidate findings before reporting them;
 6. classify severity as BLOCKER, MAJOR, MINOR, or NIT;
 7. classify origin as INTRODUCED, PRE_EXISTING, or UNCLEAR;
 8. cite exact evidence, failure scenario, impact, and required correction/proof;
 9. write findings to `.active/REVIEW.md` and synchronize `.active/STATE.json`;
 10. avoid modifying product code during the authoritative pass.
+
+Review policy is selected at `G0_SCOPE`:
+
+- `MECHANICAL` is LOW-only and compact;
+- `TARGETED` is the MEDIUM default and covers criterion deltas, changed files, validation evidence,
+  and 1-3 named risky seams;
+- `DEEP` is required for HIGH or explicit escalation and performs full specification/engineering
+  review.
+
+Specialist mode is `INLINE` by default for LOW/MEDIUM, keeping UX/visual/accessibility or another
+lens inside the one independent reviewer context and artifact. Use `SEPARATE` only for HIGH risk,
+genuinely independent expertise, or explicit human request. `NOT_REQUIRED` needs rationale and is
+forbidden for HIGH.
+
+Default review budgets are LOW 5, MEDIUM 15, and HIGH 30 minutes unless project evidence justifies a
+different positive bound. Budget exhaustion never permits approval: stop `UNVERIFIABLE` /
+`CHANGES_REQUESTED` with a concrete escalation reason. Reviewer output is verdict-first and
+rubric-delta based; do not repeat the full PRD/design prose.
 
 Record specification (`PASS` / `FAIL` / `UNVERIFIABLE`) and engineering-quality
 (`APPROVE` / `CHANGES_REQUESTED` / `DO_NOT_MERGE`) results separately. Overall `APPROVE` requires
@@ -197,13 +220,20 @@ replaces tests, human approval, snapshot freshness, or these verdict rules.
 ## Findings and fix loops
 
 Fix findings in severity order. Make the smallest correction that addresses the cited invariant or
-acceptance criterion. Re-run affected validation, compute a new snapshot, and obtain focused
-re-review.
+acceptance criterion. The default is one broad FULL review cycle, which may yield one bounded narrow
+correction. Re-run affected validation, compute a new snapshot, and obtain a focused DELTA review of
+the named findings/criteria without reopening settled rubric areas.
 
-The default maximum is two broad fix/re-review cycles. If BLOCKER or MAJOR findings remain after two,
-set `BLOCKED` and request human direction. Do not evade the bound by advancing the status. A human may
-explicitly authorize a revised scope or additional cycle. Record that decision in
-`fixCycleOverrideEvidence` and raise `maxFixCycles`; an unexplained higher limit is invalid.
+`fixCycles` counts broad FULL reopenings only; a named DELTA correction does not increment it.
+`reviewPolicy.maxBroadReviewCycles` defaults to 1. Raising it above 1 requires explicit human
+override evidence in `fixCycleOverrideEvidence`. Without that authorization, a material correction
+requiring another FULL review sets `BLOCKED` and requests direction.
+
+FULL review is required for requirement changes, scope expansion, shared contracts,
+auth/security/data/migration/lifecycle behavior, new dependencies, broad refactors, or ambiguous
+evidence. DELTA is allowed only for named accepted findings or human-requested polish with unchanged
+requirements/contracts, approved files, a narrow diff, explicit affected criteria/invariants, and a
+named reusable base snapshot.
 
 ## Risk and human checkpoints
 
@@ -225,13 +255,18 @@ Every `PASS`, `FAIL`, or `NOT_REQUIRED` gate must have matching machine-readable
 
 Invalidating events include:
 
-- any product-code, test, configuration, dependency, migration, or generated-artifact edit;
+- any product-code, test, configuration, dependency, migration, or generated-artifact edit, which
+  always invalidates the snapshot/review and invalidates only validation gates it can affect;
 - base branch or commit change;
 - scope, acceptance-criterion, risk, or material-decision change;
 - stale or mismatched snapshot;
 - new BLOCKER or MAJOR finding.
 
 Invalidate downstream gates immediately and return to the earliest affected stage.
+
+For routed user-visible UI, browser acceptance remains required. LOW/MEDIUM visual and accessibility
+critique is INLINE by default. Human visual feedback after review uses focused browser/visual DELTA
+review and affected checks unless it changes requirements or scope.
 
 ## Shipping and repository side effects
 
