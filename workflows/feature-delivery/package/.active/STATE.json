@@ -1,12 +1,18 @@
 {
   "$comment": "Machine-checkable active workflow state. Keep synchronized with STATE.md.",
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "feature": {
     "name": null,
     "slug": null
   },
   "status": "IDLE",
   "risk": "UNASSESSED",
+  "collaboration": {
+    "mode": "SOLO",
+    "owner": null,
+    "taskRef": null,
+    "featureBranch": null
+  },
   "workflowPath": [],
   "actors": {
     "router": null,
@@ -26,6 +32,14 @@
   "change": {
     "currentSnapshot": null,
     "changedFiles": []
+  },
+  "reviewPolicy": {
+    "tier": "UNSET",
+    "specialistMode": "UNSET",
+    "specialistRationale": null,
+    "budgetMinutes": null,
+    "maxBroadReviewCycles": 1,
+    "escalationReason": null
   },
   "gates": {
     "G0_SCOPE": "NOT_RUN",
@@ -52,6 +66,9 @@
   "validation": [],
   "review": {
     "artifact": ".active/REVIEW.md",
+    "type": "NOT_REVIEWED",
+    "baseApprovedSnapshot": null,
+    "changedCriteria": [],
     "reviewedSnapshot": null,
     "reviewer": null,
     "independent": false,
@@ -72,7 +89,6 @@
   },
   "shipEvidence": null,
   "fixCycles": 0,
-  "maxFixCycles": 2,
   "fixCycleOverrideEvidence": null,
   "nextAction": "Initialize one feature."
 }

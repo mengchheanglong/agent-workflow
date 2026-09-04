@@ -45,6 +45,9 @@ VALID_GATE_STATES = {"NOT_RUN", "PASS", "FAIL", "NOT_REQUIRED"}
 VALID_SPEC_VERDICTS = {"NOT_REVIEWED", "PASS", "FAIL", "UNVERIFIABLE"}
 VALID_QUALITY_VERDICTS = {"NOT_REVIEWED", "CHANGES_REQUESTED", "DO_NOT_MERGE", "APPROVE"}
 VALID_VERDICTS = {"NOT_REVIEWED", "CHANGES_REQUESTED", "DO_NOT_MERGE", "APPROVE"}
+VALID_REVIEW_TIERS = {"UNSET", "MECHANICAL", "TARGETED", "DEEP"}
+VALID_SPECIALIST_MODES = {"UNSET", "INLINE", "SEPARATE", "NOT_REQUIRED"}
+VALID_REVIEW_TYPES = {"NOT_REVIEWED", "FULL", "DELTA"}
 GATES = (
     "G0_SCOPE",
     "G1_RESEARCH",
@@ -100,8 +103,8 @@ def validate_state(state: dict[str, Any]) -> list[str]:
     """Return validation errors for a parsed STATE.json object."""
     errors: list[str] = []
 
-    if state.get("schemaVersion") != 1:
-        errors.append("schemaVersion must be 1")
+    if state.get("schemaVersion") != 2:
+        errors.append("schemaVersion must be 2")
 
     status = state.get("status")
     risk = state.get("risk")
@@ -109,6 +112,50 @@ def validate_state(state: dict[str, Any]) -> list[str]:
         errors.append(f"status must be one of {sorted(VALID_STATUSES)}")
     if risk not in VALID_RISKS:
         errors.append(f"risk must be one of {sorted(VALID_RISKS)}")
+
+    review_policy = state.get("reviewPolicy")
+    if not isinstance(review_policy, dict):
+        errors.append("reviewPolicy must be an object")
+        review_policy = {}
+    tier = review_policy.get("tier")
+    specialist_mode = review_policy.get("specialistMode")
+    budget_minutes = review_policy.get("budgetMinutes")
+    max_broad_cycles = review_policy.get("maxBroadReviewCycles")
+    escalation_reason = review_policy.get("escalationReason")
+    specialist_rationale = review_policy.get("specialistRationale")
+    if tier not in VALID_REVIEW_TIERS:
+        errors.append(f"reviewPolicy.tier must be one of {sorted(VALID_REVIEW_TIERS)}")
+    if specialist_mode not in VALID_SPECIALIST_MODES:
+        errors.append(
+            f"reviewPolicy.specialistMode must be one of {sorted(VALID_SPECIALIST_MODES)}"
+        )
+    if budget_minutes is not None and (
+        not isinstance(budget_minutes, int) or isinstance(budget_minutes, bool) or budget_minutes < 1
+    ):
+        errors.append("reviewPolicy.budgetMinutes must be null or a positive integer")
+    if not isinstance(max_broad_cycles, int) or isinstance(max_broad_cycles, bool) or max_broad_cycles < 1:
+        errors.append("reviewPolicy.maxBroadReviewCycles must be a positive integer")
+    elif max_broad_cycles > 1 and not _is_nonempty_string(state.get("fixCycleOverrideEvidence")):
+        errors.append(
+            "reviewPolicy.maxBroadReviewCycles above 1 requires fixCycleOverrideEvidence"
+        )
+    if escalation_reason is not None and not _is_nonempty_string(escalation_reason):
+        errors.append("reviewPolicy.escalationReason must be null or a non-empty string")
+    if specialist_rationale is not None and not _is_nonempty_string(specialist_rationale):
+        errors.append("reviewPolicy.specialistRationale must be null or a non-empty string")
+
+    if tier == "MECHANICAL" and risk != "LOW":
+        errors.append("reviewPolicy.tier MECHANICAL is allowed only for LOW risk")
+    if risk == "HIGH" and tier != "DEEP":
+        errors.append("HIGH risk requires reviewPolicy.tier DEEP")
+    if tier == "DEEP" and risk in {"LOW", "MEDIUM"} and not _is_nonempty_string(escalation_reason):
+        errors.append("DEEP review for LOW or MEDIUM risk requires reviewPolicy.escalationReason")
+    if specialist_mode == "NOT_REQUIRED" and not _is_nonempty_string(specialist_rationale):
+        errors.append("specialistMode NOT_REQUIRED requires reviewPolicy.specialistRationale")
+    if specialist_mode == "SEPARATE" and not _is_nonempty_string(specialist_rationale):
+        errors.append("specialistMode SEPARATE requires reviewPolicy.specialistRationale")
+    if risk == "HIGH" and specialist_mode == "NOT_REQUIRED":
+        errors.append("HIGH risk may not use specialistMode NOT_REQUIRED")
 
     gates = state.get("gates")
     if not isinstance(gates, dict):
@@ -142,26 +189,31 @@ def validate_state(state: dict[str, Any]) -> list[str]:
     quality_verdict = review.get("qualityVerdict")
     if quality_verdict not in VALID_QUALITY_VERDICTS:
         errors.append(f"review.qualityVerdict must be one of {sorted(VALID_QUALITY_VERDICTS)}")
+    review_type = review.get("type")
+    if review_type not in VALID_REVIEW_TYPES:
+        errors.append(f"review.type must be one of {sorted(VALID_REVIEW_TYPES)}")
+    base_approved_snapshot = review.get("baseApprovedSnapshot")
+    if base_approved_snapshot is not None and not _is_nonempty_string(base_approved_snapshot):
+        errors.append("review.baseApprovedSnapshot must be null or a non-empty string")
+    changed_criteria = review.get("changedCriteria")
+    if not isinstance(changed_criteria, list) or not all(
+        _is_nonempty_string(item) for item in changed_criteria
+    ):
+        errors.append("review.changedCriteria must be an array of non-empty strings")
 
     fix_cycles = state.get("fixCycles")
-    max_fix_cycles = state.get("maxFixCycles")
-    override_evidence = state.get("fixCycleOverrideEvidence")
     if not isinstance(fix_cycles, int) or fix_cycles < 0:
         errors.append("fixCycles must be a non-negative integer")
-    if not isinstance(max_fix_cycles, int) or max_fix_cycles < 1:
-        errors.append("maxFixCycles must be a positive integer")
-    else:
-        if max_fix_cycles > 2 and not _is_nonempty_string(override_evidence):
-            errors.append("maxFixCycles above 2 requires fix-cycle override evidence")
-        if (
-            isinstance(fix_cycles, int)
-            and fix_cycles > max_fix_cycles
-            and status not in {"BLOCKED", "PAUSED", "CANCELLED"}
-        ):
-            errors.append(
-                f"fix cycles exceeded authorized maximum of {max_fix_cycles}; "
-                "set BLOCKED or record a human-approved override"
-            )
+    if (
+        isinstance(fix_cycles, int)
+        and isinstance(max_broad_cycles, int)
+        and fix_cycles + 1 > max_broad_cycles
+        and status not in {"BLOCKED", "PAUSED", "CANCELLED"}
+    ):
+        errors.append(
+            f"broad review cycles exceeded authorized maximum of {max_broad_cycles}; "
+            "set BLOCKED or record a human-approved override"
+        )
 
     feature = state.get("feature")
     if not isinstance(feature, dict):
@@ -179,6 +231,21 @@ def validate_state(state: dict[str, Any]) -> list[str]:
         errors.append("active state requires feature.slug")
     if risk == "UNASSESSED" and status not in {"SCOPING", "BLOCKED", "PAUSED", "CANCELLED"}:
         errors.append(f"risk must be assessed before status {status}")
+
+    # Collaboration is optional; absent (or SOLO) means a single-contributor feature. GROUP mode
+    # adds team-ownership evidence without hardcoding any repository's branch names.
+    collaboration = state.get("collaboration")
+    if collaboration is not None:
+        if not isinstance(collaboration, dict):
+            errors.append("collaboration must be an object when present")
+            collaboration = {}
+        mode = collaboration.get("mode")
+        if mode is not None and mode not in {"SOLO", "GROUP"}:
+            errors.append("collaboration.mode must be SOLO or GROUP")
+        if mode == "GROUP" and gates.get("G0_SCOPE") == "PASS":
+            for field in ("owner", "taskRef", "featureBranch"):
+                if not _is_nonempty_string(collaboration.get(field)):
+                    errors.append(f"GROUP G0_SCOPE PASS requires collaboration.{field}")
 
     human = state.get("humanApproval")
     if not isinstance(human, dict):
@@ -210,6 +277,14 @@ def validate_state(state: dict[str, Any]) -> list[str]:
                 errors.append(f"G0_SCOPE PASS requires baseline.{field}")
         if not isinstance(baseline.get("allowedPaths"), list) or not baseline.get("allowedPaths"):
             errors.append("G0_SCOPE PASS requires at least one baseline.allowedPaths entry")
+        if tier == "UNSET":
+            errors.append("G0_SCOPE PASS requires a selected reviewPolicy.tier")
+        if specialist_mode == "UNSET":
+            errors.append("G0_SCOPE PASS requires a selected reviewPolicy.specialistMode")
+        if not isinstance(budget_minutes, int) or isinstance(budget_minutes, bool) or budget_minutes < 1:
+            errors.append("G0_SCOPE PASS requires a positive reviewPolicy.budgetMinutes")
+        if not isinstance(max_broad_cycles, int) or isinstance(max_broad_cycles, bool) or max_broad_cycles < 1:
+            errors.append("G0_SCOPE PASS requires reviewPolicy.maxBroadReviewCycles")
 
     if gates.get("G5_VALIDATION") == "PASS":
         if not isinstance(change, dict) or not _is_nonempty_string(change.get("currentSnapshot")):
@@ -217,19 +292,36 @@ def validate_state(state: dict[str, Any]) -> list[str]:
         if not isinstance(validation, list) or not validation:
             errors.append("G5_VALIDATION PASS requires fresh validation evidence")
         else:
+            has_fresh_evidence = False
             for index, item in enumerate(validation, start=1):
                 if not isinstance(item, dict):
                     errors.append(f"G5_VALIDATION evidence[{index}] must be an object")
                     continue
                 if item.get("result") != "PASS" or item.get("exitCode") != 0:
                     errors.append(f"G5_VALIDATION evidence[{index}] must record PASS with exitCode 0")
-                if item.get("afterLastEdit") is not True:
-                    errors.append(f"G5_VALIDATION evidence[{index}] must be after the last edit")
+                if item.get("afterLastEdit") is True:
+                    has_fresh_evidence = True
+                elif item.get("unaffectedByLaterEdit") is not True or not _is_nonempty_string(
+                    item.get("unaffectedRationale")
+                ):
+                    errors.append(
+                        f"G5_VALIDATION evidence[{index}] must be after the last edit or record "
+                        "why a later edit cannot affect it"
+                    )
                 if not _is_nonempty_string(item.get("command")):
                     errors.append(f"G5_VALIDATION evidence[{index}] requires the exact command")
+            if not has_fresh_evidence:
+                errors.append("G5_VALIDATION PASS requires at least one check after the last edit")
 
     if gates.get("G6_REVIEW") == "PASS":
         current_snapshot = _get(change, "currentSnapshot")
+        if review_type not in {"FULL", "DELTA"}:
+            errors.append("G6_REVIEW PASS requires review.type FULL or DELTA")
+        if review_type == "DELTA":
+            if not _is_nonempty_string(base_approved_snapshot):
+                errors.append("DELTA approval requires review.baseApprovedSnapshot")
+            if not changed_criteria:
+                errors.append("DELTA approval requires non-empty review.changedCriteria")
         if review.get("specVerdict") != "PASS":
             errors.append("G6_REVIEW PASS requires review.specVerdict PASS")
         if review.get("qualityVerdict") != "APPROVE":
@@ -302,16 +394,26 @@ def validate_state(state: dict[str, Any]) -> list[str]:
         if not isinstance(validation, list) or not validation:
             errors.append("ship-ready state requires fresh validation evidence")
         else:
+            has_fresh_evidence = False
             for index, item in enumerate(validation, start=1):
                 if not isinstance(item, dict):
                     errors.append(f"validation[{index}] must be an object")
                     continue
                 if item.get("result") != "PASS" or item.get("exitCode") != 0:
                     errors.append(f"validation[{index}] must record PASS with exitCode 0")
-                if item.get("afterLastEdit") is not True:
-                    errors.append(f"validation[{index}] must be run after the last edit")
+                if item.get("afterLastEdit") is True:
+                    has_fresh_evidence = True
+                elif item.get("unaffectedByLaterEdit") is not True or not _is_nonempty_string(
+                    item.get("unaffectedRationale")
+                ):
+                    errors.append(
+                        f"validation[{index}] must be after the last edit or record why a later "
+                        "edit cannot affect it"
+                    )
                 if not _is_nonempty_string(item.get("command")):
                     errors.append(f"validation[{index}] requires the exact command")
+            if not has_fresh_evidence:
+                errors.append("ship-ready state requires at least one check after the last edit")
 
         required_gate_states = {
             "G0_SCOPE": "PASS",
@@ -431,7 +533,23 @@ def compute_snapshot(root: Path, base_commit: str | None = None) -> str:
     return f"sha256:{digest.hexdigest()}"
 
 
-def validate_live_snapshot(root: Path, state: dict[str, Any]) -> list[str]:
+def resolve_repository_root(workflow_root: Path, state: dict[str, Any]) -> Path:
+    """Resolve the delivery repository independently from the workflow home.
+
+    Defaults to the workflow home (root install). When ``baseline.repositoryRoot`` is set,
+    the workflow may live in a subdirectory of the delivery repository; a relative value is
+    resolved against the workflow home.
+    """
+    configured = _get(state.get("baseline"), "repositoryRoot")
+    if not _is_nonempty_string(configured):
+        return workflow_root.resolve()
+    candidate = Path(configured)
+    if not candidate.is_absolute():
+        candidate = workflow_root / candidate
+    return candidate.resolve()
+
+
+def validate_live_snapshot(workflow_root: Path, state: dict[str, Any]) -> list[str]:
     """Fail closed when recorded post-validation evidence does not match the live Git tree."""
     gates = state.get("gates") if isinstance(state.get("gates"), dict) else {}
     if state.get("status") not in SHIP_STATUSES and gates.get("G5_VALIDATION") != "PASS":
@@ -442,7 +560,8 @@ def validate_live_snapshot(root: Path, state: dict[str, Any]) -> list[str]:
     if not _is_nonempty_string(recorded) or not _is_nonempty_string(base_commit):
         return ["live delivery snapshot cannot be verified without recorded snapshot and base commit"]
     try:
-        live = compute_snapshot(root, base_commit)
+        repository_root = resolve_repository_root(workflow_root, state)
+        live = compute_snapshot(repository_root, base_commit)
     except (OSError, RuntimeError, json.JSONDecodeError) as exc:
         return [f"live delivery snapshot verification failed: {exc}"]
     if live != recorded:
@@ -456,7 +575,7 @@ def default_root() -> Path:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--root", type=Path, default=default_root(), help="installed repository root")
+    parser.add_argument("--root", type=Path, default=default_root(), help="workflow home containing .active and .agent")
     parser.add_argument("--snapshot", action="store_true", help="print current delivery snapshot")
     parser.add_argument("--base-commit", help="override baseline.baseCommit for --snapshot")
     args = parser.parse_args(argv)
@@ -464,7 +583,15 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.snapshot:
         try:
-            print(compute_snapshot(root, args.base_commit))
+            repository_root = root
+            base_commit = args.base_commit
+            state_path = root / ".active" / "STATE.json"
+            if state_path.is_file():
+                state = json.loads(state_path.read_text(encoding="utf-8"))
+                repository_root = resolve_repository_root(root, state)
+                if base_commit is None:
+                    base_commit = _get(state.get("baseline"), "baseCommit")
+            print(compute_snapshot(repository_root, base_commit))
         except (OSError, RuntimeError, json.JSONDecodeError) as exc:
             print(f"SNAPSHOT ERROR: {exc}", file=sys.stderr)
             return 2

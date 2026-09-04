@@ -5,6 +5,10 @@ No feature has been reviewed.
 - Feature: None
 - Builder: None
 - Reviewer: None
+- Review type: NOT_REVIEWED
+- Review tier: UNSET
+- Base approved snapshot: None
+- Changed criteria/invariants: None
 - Reviewed snapshot: None
 - Specification verdict: NOT_REVIEWED
 - Engineering-quality verdict: NOT_REVIEWED

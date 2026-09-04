@@ -24,10 +24,14 @@ A downstream edit or decision invalidates affected gates according to `.agent/WO
 - One coherent feature is identified.
 - Problem, goal, in-scope, and out-of-scope behavior are explicit.
 - Acceptance criteria are observable and testable, including applicable negative/failure behavior.
+- Normal features use 3-7 acceptance criteria unless distinct risk/behavior justifies more.
 - Requirements-quality checklist has no unresolved material ambiguity.
 - Authoritative sources and contradictions are identified.
 - Repository root, base branch/commit, pre-existing changes, and allowed paths are recorded.
-- Risk, roles, specialist review lenses, validation plan, and human checkpoint are decided.
+- Risk, roles, review tier, specialist mode/lenses, positive review budget, validation plan, and human
+  checkpoint are decided.
+- `maxBroadReviewCycles` defaults to 1; a higher value has explicit human
+  `fixCycleOverrideEvidence`.
 - Large work is split into dependency-ordered slices without widening the feature.
 
 Failure action: remain `SCOPING` or set `BLOCKED` for human clarification.
@@ -87,10 +91,13 @@ Failure action: narrow glue correction or return to Design/Build.
 
 - Controller verified the final tree after the last edit; worker reports were not trusted alone.
 - Changed files stay within allowed paths and pre-existing user changes remain intact.
-- Targeted tests pass for the actual behavior.
-- Full relevant repository commands pass with exact exit codes and inspected warnings/skips.
+- Focused checks pass during implementation/fixes and after the last edit for affected behavior.
+- Canonical full project gates ran once after the candidate final product edit with exact exit codes
+  and inspected warnings/skips. A retained result predating a later narrow edit states why that edit
+  cannot affect it; affected canonical gates were rerun.
 - Manual acceptance is recorded for user-visible behavior when applicable.
-- Validation entries are fresh and marked `afterLastEdit: true`.
+- At least one affected validation entry is fresh and marked `afterLastEdit: true`; any retained
+  canonical entry has `unaffectedByLaterEdit: true` plus a concrete `unaffectedRationale`.
 - Current delivery snapshot was computed after validation inputs stabilized.
 - Failures are fixed or the feature is blocked; none are hidden or reclassified for convenience.
 
@@ -100,16 +107,23 @@ Failure action: return to Build/Integrate or set `BLOCKED`.
 
 - Reviewer is independent, fresh-context, and read-only for product code.
 - Review scope is frozen by current snapshot and explicit baseline.
-- Specification-compliance pass checked every acceptance criterion and scope boundary.
-- Engineering-quality pass checked applicable correctness, security, data, compatibility, failure,
-  test, configuration, and maintainability dimensions.
-- Required specialist lenses were applied.
+- Review type is FULL or DELTA, and the selected MECHANICAL/TARGETED/DEEP tier is valid for risk.
+- FULL covers the tier-required specification and engineering rubric. DELTA names a reusable base
+  snapshot, changed criteria/invariants, narrow correction, affected checks, and regression seams.
+- MECHANICAL is LOW-only; TARGETED covers changed criteria/files/evidence and 1-3 risky seams; DEEP
+  performs full specification/engineering review and is required for HIGH.
+- Required specialist lenses were applied INLINE in the same context/artifact by default for
+  LOW/MEDIUM; SEPARATE/NOT_REQUIRED use recorded policy rationale.
+- The reviewer stayed within the selected budget or stopped UNVERIFIABLE/CHANGES_REQUESTED with a
+  concrete escalation reason; budget did not lower the approval standard.
+- Reviewer inspected fresh controller evidence and reran only suspect or missing expensive checks.
 - Candidate findings were verified and classified by severity and origin.
 - `.active/REVIEW.md` and machine state agree.
 - Specification verdict is `PASS`.
 - Engineering-quality verdict is `APPROVE`.
 - Overall verdict is `APPROVE` for the current snapshot.
 - No unresolved BLOCKER/MAJOR remains; accepted MINOR risk is explicit.
+- Output is verdict-first and rubric-delta based without repeating full feature/design prose.
 
 `CHANGES_REQUESTED` and `DO_NOT_MERGE` make this gate `FAIL`, never PASS.
 

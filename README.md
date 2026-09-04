@@ -12,12 +12,6 @@ workflow is a self-contained package installable into a target repository.
 Full feature lifecycle: scope → research → design → build → validate → independent review → bounded
 fix loops → human checkpoint → ship. Agent-agnostic with machine-checked state validation.
 
-### [Gemini Delivery Loop](workflows/gemini-flash-delivery/)
-
-Spec-driven implementation using Gemini Flash, independent Gemini Pro review, bounded fix loops, and
-optional high-risk escalation. Lighter than Feature Delivery — designed for repositories that already
-own their architecture and feature specs.
-
 ## Structure
 
 ```text

@@ -2,124 +2,58 @@
 
 ## Purpose
 
-Independently try to prove that the feature is incomplete, incorrect, unsafe, over-scoped, or
-supported by stale evidence before users encounter it.
+Independently falsify ship readiness at the review tier and budget selected at Scope. Be concise and
+evidence-driven; proportional review does not relax any approval invariant.
 
-## Independence and capability boundary
+## Independence and boundary
 
-- Use a fresh agent/session that did not build the change.
-- Do not receive the Builder's private reasoning or conversation history.
-- Review product code read-only. Do not combine authoritative review and repair.
-- If the runtime cannot enforce read-only tools, compare the reviewed snapshot before and after.
-- The Reviewer may return a completed review artifact; the coordinator may save it unchanged.
+- Use one fresh reviewer context that did not build the change.
+- Review product code read-only and never combine authoritative review with repair.
+- Do not receive Builder private reasoning or trust Builder success summaries.
+- Freeze and verify baseline, allowlist, pre-existing changes, and current snapshot.
+- Use one authoritative artifact. Apply specialist lenses INLINE unless SEPARATE was authorized.
 
-## Required inputs
+## Route before reading broadly
 
-- `AGENTS.md` and `REVIEW.md`;
-- `.active/FEATURE.md` and material decisions;
-- base branch/commit, allowed paths, pre-existing changes, and current snapshot;
-- actual diff plus relevant surrounding code/tests;
-- fresh validation evidence from after the last edit.
+Read `REVIEW.md` and the active `reviewPolicy`, then follow exactly one tier:
 
-Missing or ambiguous scope is an evidence failure, not permission to guess.
+- MECHANICAL: LOW-only compact scope/evidence/change review.
+- TARGETED: changed criteria, changed files, evidence, and 1-3 named risky seams; default MEDIUM.
+- DEEP: full specification/engineering review; mandatory HIGH or explicit escalation.
 
-## Review order
+The initial review is FULL within that tier. Use DELTA only for a narrow named correction or
+human-requested polish with unchanged requirements/contracts, approved files, explicit affected
+criteria, and a named prior snapshot whose unaffected conclusions were marked reusable. Requirement
+change, scope expansion, shared contract, auth/security/data/migration/lifecycle behavior, new
+dependency, broad refactor, or ambiguous evidence requires FULL.
 
-### Pass 1 — Specification compliance
+## Execution
 
-1. Verify each acceptance criterion line by line.
-2. Trace important behavior end to end.
-3. Identify missing requirements, wrong interpretation, and unapproved behavior.
-4. Check changed files against allowed paths and pre-existing changes.
-5. Check docs/config/user-visible claims against implementation.
+1. Put provisional specification, quality, and overall verdicts first.
+2. Verify the exact review scope and materiality classification.
+3. Inspect only the tier-required criteria, files, surrounding context, validation, and seams.
+4. For routed UI, perform browser acceptance; keep LOW/MEDIUM visual/accessibility critique INLINE.
+5. Inspect controller evidence. Rerun only evidence that is missing, inconsistent, stale, or suspect.
+6. Verify each candidate finding against code/tests and report concrete failure impact.
+7. Finalize verdicts, open counts, residual risk, and DELTA-reuse decision.
 
-Do not continue to a positive verdict when the feature contract is not satisfied.
+Use the selected budget (defaults LOW 5, MEDIUM 15, HIGH 30 minutes). A budget overrun cannot approve
+uncertain work: stop with specification UNVERIFIABLE, quality/overall CHANGES_REQUESTED, and a
+concrete escalation reason.
 
-Record a specification verdict: `PASS`, `FAIL`, or `UNVERIFIABLE`.
-
-### Pass 2 — Engineering quality
-
-Inspect applicable dimensions:
-
-- logic and edge-case correctness;
-- authorization/security and trust boundaries;
-- data integrity, migrations, transactions, concurrency, and idempotency;
-- input validation, errors, retries, timeouts, and partial failure;
-- privacy, sensitive output, secrets, and logging;
-- API/schema/backward compatibility;
-- test quality, missing negative cases, and mock-induced false confidence;
-- performance and operational behavior when relevant;
-- maintainability, conventions, docs/config drift, and unrelated changes.
-
-Apply specialist lenses selected by the Router for HIGH-risk work.
-
-Record an engineering-quality verdict: `APPROVE`, `CHANGES_REQUESTED`, or `DO_NOT_MERGE`.
-
-## Candidate verification
-
-Before reporting a finding:
-
-- inspect surrounding code and relevant tests;
-- identify a concrete failure scenario or violated invariant;
-- cite exact evidence;
-- classify origin as `INTRODUCED`, `PRE_EXISTING`, or `UNCLEAR`;
-- avoid duplicates and speculative style noise.
-
-## Finding format
-
-- ID:
-- Severity: BLOCKER / MAJOR / MINOR / NIT
-- Origin: INTRODUCED / PRE_EXISTING / UNCLEAR
-- Acceptance criterion/invariant:
-- Area/file:
-- Evidence:
-- Failure scenario and impact:
-- Required correction or proof:
-- Status: OPEN / FIXED / ACCEPTED / REJECTED_WITH_EVIDENCE
+Return that reason for synchronization into `reviewPolicy.escalationReason`.
 
 ## Verdict rules
 
-### `DO_NOT_MERGE`
+- `DO_NOT_MERGE`: fundamental requirement, safety, scope, snapshot, or evidence failure.
+- `CHANGES_REQUESTED`: bounded correctable findings or insufficient proof remain.
+- `APPROVE`: specification PASS, quality APPROVE, current snapshot, independent reviewer, and no
+  open BLOCKER/MAJOR. Accepted MINOR risk must be explicit and properly owned.
 
-- any BLOCKER;
-- fundamental or multiple MAJOR failures;
-- core requirement not satisfied;
-- diff/snapshot cannot be trusted;
-- validation evidence is stale, incomplete, or unreliable;
-- material redesign is required.
-
-### `CHANGES_REQUESTED`
-
-- fixable MAJOR or unresolved required MINOR findings remain;
-- no fundamental redesign is required.
-
-This verdict never permits shipping.
-
-### `APPROVE`
-
-- specification verdict is `PASS`;
-- engineering-quality verdict is `APPROVE`;
-- every acceptance criterion is satisfied;
-- no unresolved BLOCKER/MAJOR;
-- remaining MINOR risk is fixed or explicitly accepted by the proper human when required;
-- validation and review apply to the current snapshot;
-- required gates are supportable.
-
-Only this verdict may permit shipping.
+The Reviewer may mark unaffected conclusions reusable for one bounded DELTA correction. It does not
+authorize code changes or a second broad cycle.
 
 ## Output
 
-Use `.agent/templates/REVIEW_TEMPLATE.md` and include:
-
-### Review identity and frozen scope
-### Specification-compliance results
-### Engineering-quality assessment
-### Specialist-lens results
-### Findings
-### Validation-evidence assessment
-### Pre-existing observations
-### Residual risk
-### Human checkpoint
-### Verdict
-
-The output must record specification, engineering-quality, and overall verdicts separately.
+Complete `.agent/templates/REVIEW_TEMPLATE.md` with verdicts first and rubric deltas rather than
+repeating the feature/design prose. The coordinator may save the returned artifact unchanged.

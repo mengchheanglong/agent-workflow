@@ -1,9 +1,9 @@
 name: Feature Delivery
 id: feature-delivery
-version: 1.0.0
+version: 2.1.0
 description: >
-  Controlled feature delivery through research, implementation, validation,
-  independent review, and bounded fix loops. Agent-agnostic with
+  Controlled feature delivery through research, implementation, cost-aware validation,
+  tiered independent review, and focused delta corrections. Agent-agnostic with
   machine-checked state validation.
 category: software-engineering
 agents:

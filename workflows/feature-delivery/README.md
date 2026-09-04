@@ -37,6 +37,15 @@ target-repository/
 If the repository already has `AGENTS.md`, `REVIEW.md`, or `.active/`, merge rules and state
 surgically. Never overwrite project-specific policy or user work.
 
+### Subdirectory install
+
+To keep the workflow files out of the target repository's tree (for example, a git-ignored
+`agent-workflow/` folder), install `package/` into that subdirectory and set
+`baseline.repositoryRoot` in `.active/STATE.json` to the delivery repository root relative to the
+workflow home (typically `".."`). The validator then computes the delivery snapshot against the real
+repository while state and evidence stay under the workflow home. When `repositoryRoot` is unset, the
+workflow home is the delivery repository (root install).
+
 ## Start one feature
 
 1. Open `START_FEATURE_PROMPT.md`.
@@ -54,10 +63,20 @@ fix/<short-slug>
 
 Branching, commits, pushes, and merges still follow the repository's own rules and human approval.
 
+### Solo vs group mode
+
+`collaboration` in `.active/STATE.json` is optional and defaults to `SOLO` (single contributor). In a
+multi-contributor repository, set `collaboration.mode` to `GROUP` and record the `owner`, `taskRef`,
+and `featureBranch`; the validator then requires those once scope passes. Group mode also means fixes
+stay on the task-owned branch, shared branches are never rewritten or force-pushed, and independent AI
+review supplements — never replaces — the repository's human PR review. It hardcodes no branch names,
+so `baseBranch` remains whatever the repository uses.
+
 ## Continue review fixes
 
-Use `REVIEW_FIX_PROMPT.md`. The agent must read `.active/REVIEW.md`, fix only validated findings,
-re-run fresh checks after the last edit, compute a new snapshot, and request a new independent review.
+Use `REVIEW_FIX_PROMPT.md`. The agent fixes only validated findings, reruns affected checks after the
+last edit, computes a new snapshot, and requests an independent DELTA review when materiality rules
+permit. A narrow DELTA does not reopen the full rubric or increment `fixCycles`.
 
 ## Validate workflow state
 
@@ -66,8 +85,8 @@ python .agent/scripts/validate_workflow.py
 ```
 
 A valid `IDLE` state confirms package structure. A valid `READY_TO_SHIP` or `SHIPPED` state also
-proves the recorded gate evidence, split review verdicts, snapshot, human approval, fix-cycle
-authorization, and validation invariants are coherent.
+proves schema-v2 review policy, recorded gate evidence, split review verdicts, snapshot, human
+approval, broad-cycle authorization, and validation invariants are coherent.
 
 Run validator tests:
 
@@ -86,15 +105,33 @@ excludes `.active/` so recording evidence does not invalidate itself.
 
 ## Review model
 
-Review is deliberately separate from implementation:
+Review is deliberately separate from implementation but proportional to risk:
 
-1. **Specification compliance** — did the implementation satisfy the feature contract without scope
-   creep? Verdict: `PASS`, `FAIL`, or `UNVERIFIABLE`.
-2. **Engineering quality** — is it correct, safe, tested, maintainable, and operationally sound?
-   Verdict: `APPROVE`, `CHANGES_REQUESTED`, or `DO_NOT_MERGE`.
+- **MECHANICAL** - LOW-only compact scope/evidence review.
+- **TARGETED** - MEDIUM default: changed criteria, changed files, validation, and 1-3 risky seams.
+- **DEEP** - HIGH or explicit escalation: full specification and engineering review.
 
-Overall `APPROVE` requires specification `PASS` and engineering-quality `APPROVE` for the current
-snapshot. `CHANGES_REQUESTED` always requires fix and re-review.
+Specialist critique is INLINE in the same independent context/artifact by default for LOW/MEDIUM.
+SEPARATE is reserved for HIGH, genuinely independent expertise, or explicit human request.
+
+Default budgets are LOW 5, MEDIUM 15, and HIGH 30 minutes. The budget caps review work, not the
+approval standard: insufficient proof at the limit becomes `UNVERIFIABLE` / `CHANGES_REQUESTED` with
+a concrete escalation reason.
+
+The fast path is one FULL review at the selected tier, one bounded narrow correction if needed, then
+a DELTA review anchored to the prior reusable review basis. FULL review reopens only for requirement
+or scope changes, shared contracts, auth/security/data/migration/lifecycle behavior, dependencies,
+broad refactors, or ambiguous evidence. Raising the default one broad-cycle allowance requires
+explicit human evidence.
+
+Overall `APPROVE` still requires specification `PASS` and engineering-quality `APPROVE` for the
+current snapshot, with no open BLOCKER/MAJOR. Browser acceptance remains required when routed for UI.
+Human visual feedback normally receives focused browser/visual DELTA review unless it changes scope
+or requirements.
+
+During implementation/fixes, run focused checks. Run canonical full project gates once after the
+candidate final product edit, then rerun only gates a later narrow edit can affect. The Reviewer
+inspects fresh controller evidence and reruns expensive commands only when it is suspect or missing.
 
 Native review systems can act as the independent engine:
 

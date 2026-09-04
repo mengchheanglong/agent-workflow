@@ -6,6 +6,8 @@
 - Slug:
 - Owner:
 - Branch:
+- Collaboration mode: SOLO (set GROUP in multi-contributor repositories)
+- Team task/issue reference: (GROUP only)
 - Risk: UNASSESSED
 
 ## Change baseline
@@ -45,6 +47,8 @@ What observable outcome must be true when this feature is complete?
 -
 
 ## Acceptance criteria
+
+Prefer 3-7 criteria for a normal feature. Add more only when distinct risk or behavior requires it.
 
 - [ ] AC1 — Given / when / then or equivalent observable behavior:
 - [ ] AC2 — Negative, permission, or failure behavior when applicable:
@@ -88,9 +92,13 @@ Use only when the feature needs more than one implementation slice.
 
 ## Validation plan
 
+Run focused checks during implementation and fixes. Run canonical full project gates once after the
+candidate final product edit; rerun them after a later edit only when that edit can affect them.
+
 - Targeted RED/GREEN command:
-- Focused tests:
-- Full relevant tests:
+- Focused implementation/fix checks:
+- Canonical full project gates:
+- Conditions that require a later canonical rerun:
 - Type/static analysis:
 - Lint:
 - Build:
@@ -101,10 +109,15 @@ Use only when the feature needs more than one implementation slice.
 
 - Independent reviewer identity/session:
 - Review scope: base commit → current working snapshot
-- Specialist lenses:
+- Review tier: MECHANICAL / TARGETED / DEEP
+- Tier rationale:
+- Specialist mode: INLINE / SEPARATE / NOT_REQUIRED
+- Specialist lenses and rationale:
+- Budget minutes: 5 LOW / 15 MEDIUM / 30 HIGH unless project evidence justifies another bound
+- Risky seams (TARGETED: name 1-3):
 - Review artifact: `.active/REVIEW.md`
-- Maximum broad fix cycles: 2
-- Additional-cycle authorization/decision: None
+- Maximum broad review cycles: 1
+- Additional broad-cycle authorization/decision: None
 
 ## Human checkpoint
 

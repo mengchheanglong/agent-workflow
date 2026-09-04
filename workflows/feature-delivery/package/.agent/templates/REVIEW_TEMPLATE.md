@@ -1,114 +1,73 @@
 # Independent Review Report
 
-## Review identity
+## Verdict
+
+- Overall: APPROVE / CHANGES_REQUESTED / DO_NOT_MERGE
+- Specification: PASS / FAIL / UNVERIFIABLE
+- Engineering quality: APPROVE / CHANGES_REQUESTED / DO_NOT_MERGE
+- Review type: FULL / DELTA
+- Review tier: MECHANICAL / TARGETED / DEEP
+- Specialist mode: INLINE / SEPARATE / NOT_REQUIRED
+- Budget: __ minutes; WITHIN_BUDGET / STOPPED_AT_BUDGET
+- Escalation reason: None / concrete reason
+- Open findings: BLOCKER __ / MAJOR __ / MINOR __ / NIT __
+
+Overall `APPROVE` requires specification `PASS`, engineering-quality `APPROVE`, the current
+snapshot, and no open BLOCKER/MAJOR. If the budget expires before proof is sufficient, stop with
+specification `UNVERIFIABLE`, quality/overall `CHANGES_REQUESTED`, and a concrete escalation reason.
+
+## Identity and frozen scope
 
 - Review ID:
 - Feature:
 - Builder:
-- Reviewer:
-- Engine/model/session:
+- Reviewer and engine/session:
 - Independent from Builder: YES / NO
 - Read-only for product code: YES / NO
-- Review date/reference:
-
-## Frozen review scope
-
-- Repository root:
-- Base branch:
-- Base commit:
-- Head commit or working tree:
+- Base branch/commit:
 - Reviewed snapshot:
-- Allowed paths:
-- Pre-existing changes excluded:
+- Allowed paths and pre-existing changes excluded:
 - Diff command/source:
+- Base approved snapshot (DELTA only):
+- Changed criteria/invariants (DELTA only; nonempty):
+- Prior review artifact/basis (DELTA only):
 
-If scope or snapshot is unavailable or changes during review, verdict is `DO_NOT_MERGE` or the review
-is marked stale.
+If scope or snapshot is unavailable or changes during review, do not approve.
 
-## Pass 1 — Specification compliance
+## Rubric delta
 
-- Specification verdict: PASS / FAIL / UNVERIFIABLE
+Record conclusions and new evidence, not repeated PRD/design prose.
 
-| AC | PASS / FAIL / NOT VERIFIED | Evidence | Notes |
-|---|---|---|---|
-| AC1 | | | |
-| AC2 | | | |
-| AC3 | | | |
-
-### Scope assessment
-
-- Missing required behavior:
-- Unapproved behavior/scope creep:
-- Changed paths outside allowance:
-- Documentation/behavior contradictions:
-
-## Pass 2 — Engineering quality
-
-- Engineering-quality verdict: APPROVE / CHANGES_REQUESTED / DO_NOT_MERGE
-
-| Dimension | PASS / FINDING / NOT APPLICABLE | Evidence/notes |
+| Criterion / risky seam / quality dimension | PASS / FINDING / NOT VERIFIED / N/A | Evidence or change from prior review |
 |---|---|---|
-| Logic and edge cases | | |
-| Authorization/security | | |
-| Data/migrations/concurrency | | |
-| Input/error/failure behavior | | |
-| Privacy/secrets/logging | | |
-| API/backward compatibility | | |
-| Tests and false-confidence risk | | |
-| Configuration/operations/docs | | |
-| Maintainability/conventions | | |
-| Unrelated/pre-existing changes | | |
+| | | |
 
-## Specialist lenses
-
-- Required lenses:
-- Results:
-
-## Findings
-
-### FINDING-001
-
-- Severity: BLOCKER / MAJOR / MINOR / NIT
-- Origin: INTRODUCED / PRE_EXISTING / UNCLEAR
-- Acceptance criterion/invariant:
-- Area/file:
-- Evidence:
-- Failure scenario and impact:
-- Required correction or proof:
-- Status: OPEN / FIXED / ACCEPTED / REJECTED_WITH_EVIDENCE
+- Acceptance-criterion deltas checked:
+- Changed files checked:
+- Risky seams checked (TARGETED: 1-3):
+- Scope/allowlist/pre-existing-change result:
+- Specialist lens result (INLINE in this artifact unless SEPARATE was authorized):
+- Reusable as DELTA base: YES / NO - unaffected conclusions that may be carried forward:
 
 ## Validation-evidence assessment
 
-| Command | Exit/result | After last edit? | Reviewer assessment |
-|---|---:|---:|---|
+| Command | Exit/result | Fresh or justified unaffected? | Reviewer assessment |
+|---|---:|---|---|
 | | | | |
 
-- Test selection/skips/warnings checked:
-- Missing or stale evidence:
+- Missing, stale, suspect, skipped, or warning evidence:
+- Reviewer reruns (only suspect/missing evidence):
 
-## Finding counts
+## Findings
 
-- Open BLOCKER: 0
-- Open MAJOR: 0
-- Open MINOR: 0
-- Open NIT: 0
-- Pre-existing observations: 0
+For each finding record ID; BLOCKER/MAJOR/MINOR/NIT; INTRODUCED/PRE_EXISTING/UNCLEAR; affected
+criterion/invariant; file/evidence; failure scenario/impact; required correction/proof; and
+OPEN/FIXED/ACCEPTED/REJECTED_WITH_EVIDENCE status.
 
-## Residual risks and accepted MINOR items
+- None.
 
-For each accepted item record finding ID, owner/approver, rationale, and follow-up if any.
+## Residual risk and human checkpoint
 
--
-
-## Human checkpoint
-
-- REQUIRED / NOT REQUIRED
-- Reason:
+- Accepted MINOR items (ID, owner/approver, rationale, follow-up):
+- Human checkpoint: REQUIRED / NOT_REQUIRED
 - Snapshot approval must name:
-
-## Verdict
-
-`APPROVE` / `CHANGES_REQUESTED` / `DO_NOT_MERGE`
-
-Overall `APPROVE` requires specification `PASS` and engineering-quality `APPROVE`. Only that
-combination for the current snapshot may permit shipping.

@@ -33,9 +33,10 @@ Claude Code reads root `CLAUDE.md` for broad project context and can use root `R
 review-only rules. This package supplies `REVIEW.md`; do not duplicate it into a large vendor-specific
 prompt.
 
-Managed PR review and ultrareview may use multiple specialist agents and verification passes, but
-they are optional. Their neutral GitHub check does not become `G6_REVIEW` automatically. Reconcile
-actual findings and apply this workflow's verdict rules.
+Managed PR review and ultrareview are optional. Do not use duplicate general or specialist agents for
+LOW/MEDIUM work: apply specialist lenses INLINE in the one independent review by default. Use a
+separate specialist only when the recorded policy permits it. A neutral GitHub check does not become
+`G6_REVIEW` automatically; reconcile actual findings and apply this workflow's verdict rules.
 
 ## Custom subagent fallback
 
