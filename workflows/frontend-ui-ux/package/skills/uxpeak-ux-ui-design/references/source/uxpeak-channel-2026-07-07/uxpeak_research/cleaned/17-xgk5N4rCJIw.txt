@@ -1,0 +1,41 @@
+# 17. 3D Carousel in Figma Using Smart Animate | Prototyping Tutorial
+URL: https://www.youtube.com/watch?v=xgk5N4rCJIw
+Type: video
+Duration seconds: 478
+Views: 531593
+Upload date: 20230701
+Transcript words: 934
+
+## Description
+🚀 Learn how to design beautiful UI designs: https://www.uxpeak.com/pages/playbook
+
+UI/UX Playbook is top UI design Playbook rated 5 ⭐️⭐️⭐️⭐️⭐️ with over 17,000 downloads. 
+
+-
+
+Welcome to our Figma tutorial where we dive into the creation of a captivating 3D carousel using Figma's Smart Animate feature! If you've ever wanted to elevate your web design skills and create eye-catching, interactive elements, this tutorial is perfect for you.
+
+In this step-by-step guide, we'll walk you through the process of designing a 3D carousel from scratch. You'll learn how to craft a visually stunning carousel of smoothie bowls, with a seamless flow of changing visuals that is sure to engage any viewer. 
+
+Don't forget to hit the subscribe button for more design tutorials and inspiration. Happy designing!
+
+✨ UX/UI Playbook: https://www.uxpeak.com/pages/playbook
+
+💎 Uxpeak+ Platform: https://www.uxpeak.com 
+
+🚀  UX/UI Design Mastery Course: https://www.uxpeak.com/pages/course
+
+⚡️ Try Mobbin for free and get 20% off for your first year's subscription: https://mobbin.com/uxpeak
+
+Join our community 
+Top UI design resources: https://www.uxpeak.com/pages/resources
+Instagram - https://www.instagram.com/uxpeak_/ 
+Twitter - https://twitter.com/uxpeak_  
+Linkedin - https://www.linkedin.com/company/uxpeak/
+
+
+
+#Figma #prototyping #animation #uidesign
+
+## Transcript
+[Music] hi everyone welcome back to our Channel today we have a unique figma tutorial ready for you we're going to create a circular slider for a website's hero section so get your figma file ready and let's dive in here we have our basic layout for the hero section already set up just beneath that you'll see we have a few images of smoothie bowls and fruits ready to go the first step is to create a circle that is going to serve as the base for our rotating Carousel of smoothie bowls now let's go ahead and copy all the Smoothie Bowl images into our circle make sure to distribute them evenly around the circle so we can create a good flow for our slider all right once we have all our bowls nicely placed around the circle we're going to select all these images along with the circle itself and create a group now move this group into the hero section frame carefully position it so that we're only able to see the pink bowl at the Forefront next we're going to give our Circle a bit of color let's go with a vibrant pink now let's go back to our collection of smoothie Bowl images copy all of them and scale them down a bit once that's done we'll place these images right below the paragraph these will serve as our handy selectors to switch between the bowls to help our viewers know which smoothie bowl is currently in the spotlight We'll add a white rectangle just below the pink Bowl finally We'll add some drop Shadows to all the bowl images this will give our design a more 3D and interactive feel [Music] now we're going to duplicate the frame select the circle with all the bowls and rotate it just enough so that you can see the next bulb that's to the right of the currently displayed Bowl you might need to play around with the positioning a bit to get it just right and here's a little trick let's also rotate the individual Bowl this will give the effect of the bowl also turning as it moves into view now we're going to tweak the colors and visuals a bit to bring everything together first let's adjust the colors of our page to match the new smoothie Bowl this can really tie the design together and create a cohesive look and feel next we'll play around with the Shadows a bit we're also going to change the color of the paragraph with our light background we want to make sure the text has enough contrast to be easily readable for the Final Touch let's switch out the fruit in the background we'll replace it with these mango pieces to match our smoothie change the pass-through property to 20 so that the fruit doesn't overshadow the text foreign moving forward duplicate the frame we've just created select the circle that includes all the bowls and once again rotate it just enough to bring the next bowl from the right into view let's match the page colors to this new bowl and move the rectangle indicating the selected Bowl under the next Bowl [Music] tweak the Shadows a bit to ensure they match with the new color changes foreign ly replace the background fruit to match the Smoothie Bowl currently displayed now repeat the entire process for the last frame with a blue smoothie Bowl foreign don't forget to adjust the color shadows and background fruit accordingly [Music] fantastic to make our design even more vibrant let's apply a drop shadow to all the bowls currently in view this will give us a nice 3d effect [Music] and now on to our final and most exciting part where we'll be creating interactions between frames this is where we truly bring our design to life switch over to the Prototype tab in the first frame select the second bowl click on the plus sign and drag it to connect it with the second frame choose on click as the trigger smart animate for the animation ease out for the easing and set the duration to 600 milliseconds let's ensure that our users can also go back to the previous Bowl not just forward use the same details as before enabling our design to move both ways let's continue by creating an interaction between the second and third frames keep the interaction details consistent with what we used before and for our final interaction let's connect the third and the last frames in the same way now let's preview our prototype and see how it performs the Smoothie bowls are rotating beautifully when we're moving forward but not when we're going back but we can fix this easily the trick here is to adjust the positions of bowls in subsequent frames for instance if we want the pink Bowl to rotate when going back we need to rotate it slightly in this Frame now when we preview the Prototype again it works as expected repeat this process for all the bowls to ensure a smooth rotation in both directions with that final tweak we've created a beautiful engaging animation that will truly bring your designs to life don't forget to subscribe to our channel for more creative content and inspiring design ideas

@@ -1,0 +1,32 @@
+# 19. Horizontal and Vertical Scroll in Figma - Quick Prototyping Tutorial
+URL: https://www.youtube.com/watch?v=6lSvKk7lTl0
+Type: video
+Duration seconds: 265
+Views: 749808
+Upload date: 20230619
+Transcript words: 660
+
+## Description
+🔥 Learn how to design beautiful UI designs: https://www.uxpeak.com
+
+⚡️ Try Mobbin for free and get 20% off for your first year's subscription: https://mobbin.com/uxpeak
+
+Hello and welcome to our channel. In this quick step-by-step tutorial, we are going to show you how to prototype horizontal and vertical scrolls in Figma. 
+
+Enjoyed this tutorial? Learn more about UX/UI Design through our comprehensive UX/UI Design Mastery Course. It's a one-course you'll need to kickstart your UX/UI design career, packed with in-depth lessons, practical hands-on exercises, and invaluable tips straight from industry professionals. 
+
+✨ UX/UI Playbook: https://www.uxpeak.com/pages/playbook
+
+💎 Uxpeak+ Platform: https://www.uxpeak.com 
+
+🚀  UX/UI Design Mastery Course: https://www.uxpeak.com/pages/course
+
+Feel free to join our community 
+Instagram - https://www.instagram.com/uxpeak_/ 
+Twitter - https://twitter.com/uxpeak_  
+Linkedin - https://www.linkedin.com/company/uxpeak/
+
+#Figma #UXDesign #FigmaTutorial #uidesign #ui #prototyping #horizontalscroll
+
+## Transcript
+[music] Hey there. Welcome to our hands-on tutorial. Today, we're going to guide you through setting up both horizontal and vertical scrolling in a mobile design. First, let's jump into our Figma file where the mobile design lives. We'll tackle the horizontal scroll feature for our quick recipe filters first. [music] We've used auto layout for each filter item to keep everything organized and well aligned. [music] Here's how you do it. Select all filter items and create an auto layout. You might be tempted to use a regular frame, but auto layout is a more efficient option. We then establish a horizontal space of 20 pixels between items. Next, [music] we're going to dive into the crucial part of creating this horizontal scroll. Hold down the command key and then [music] left click on the container and drag it until it fits within the dimensions of our phone frame. In simpler terms, we're adjusting the container to only show the content that fits within the phone [music] screen. Don't worry, all your content is still there. We've just resized the container. [music] The following step is to activate the clip content feature. This ensures that content doesn't spill [music] out of our phone frame. After that, it's essential to navigate to the prototype section. Here, we're keeping the position the same [music] but changing the overflow to horizontal scroll. Now, we can test our work by previewing our prototype. As you can see, our horizontal scroll function is working like a charm. If you're interested in enhancing this further, there are additional [music] tweaks you can make for a smoother experience, but we'll save that for another session. Moving on, we're now going [music] to set up scrollable recipes while keeping everything else in place. We'll do this [music] by resizing our frame to match the dimensions of our prototype. For this tutorial, we're using the iPhone [music] mini, which is 375 by 812 pixels. Let's temporarily remove the bottom navigation. Now, adjust the height to 812 pixels. Great. We can now bring back the navigation and align it to the bottom of the frame. But, as we shrunk our frame, [music] our content now overflows beyond the main frame. Select all recipe boxes, create an auto layout, and then choose clip content. [music] We'll also apply clip content to the phone frame to prevent content from spilling out of our main frame. With everything now clipped, let's preview our prototype. You might notice that the content isn't yet scrollable. That's because we need to take a few more steps to get it to scroll as desired. In a similar fashion to our setup for the horizontal scroll, we'll crop our content area and align it with the bottom of our phone frame. Hold down the command key, left click and drag with your mouse until the container is perfectly aligned. Now, we'll head back to the prototype section. We'll leave the position as is and change the overflow to vertical. Let's preview our prototype once more to see the outcome. Awesome. Our vertical scroll is now working flawlessly. And there you have it. That's how you easily create simple horizontal and vertical scrolls in Figma. If you found this tutorial helpful and are eager to learn more, remember to hit the subscribe button to stay updated our future content. But, why stop here? If you're serious about leveling up your skills and taking your designs to new heights, we highly recommend checking out our UXUI Design Mastery course. This comprehensive course is designed to equip you with the tools, techniques, and industry insights you need to create stunning and user-friendly designs that stand out in today's competitive digital landscape. I'm only one away from you baby.
