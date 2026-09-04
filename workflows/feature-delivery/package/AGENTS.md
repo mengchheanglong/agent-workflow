@@ -23,6 +23,77 @@ Never let generic workflow text override project-specific product facts. When in
 into a repository that already has an instruction file, merge the mandatory feature-delivery rules;
 do not replace stronger or more specific project rules.
 
+## Available skills
+
+All skills live under `skills/` relative to this workflow's `package/` directory:
+
+| Skill | When to use |
+|-------|-------------|
+| `test-driven-development` | Build with tests — RED → GREEN → REFACTOR |
+| `github-code-review` | Review PRs: diffs, inline comments |
+| `requesting-code-review` | Pre-commit review: security scan, quality gates, auto-fix |
+| `github-pr-workflow` | GitHub PR lifecycle: branch, commit, open, CI, merge |
+| `github-repo-management` | Clone/create/fork repos; manage remotes, releases |
+| `github-auth` | GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login |
+| `systematic-debugging` | 4-phase root cause debugging |
+| `spec-driven-development` | Write specification before any code |
+| `incremental-implementation` | Build in thin vertical slices |
+| `doubt-driven-development` | Adversarial fresh-context review for non-trivial decisions |
+| `simplify-code` | Parallel cleanup of recent code changes |
+| `context-engineering` | Curate what the agent sees |
+| `cost-aware-execution-router` | Choose cheapest effective execution path |
+| `cost-control-agent-workflow` | Cost-optimized workflow with implementation worker |
+| `durable-workflow-evidence-gates` | Evidence-gated TDD and pre-commit verification |
+| `subagent-driven-development` | Execute plans via delegate_task subagents |
+| `writing-plans` | Write implementation plans |
+| `implementation-reconciliation` | Reconcile code against approved architecture spec |
+| `code-traced-qa` | QA traces prototype source |
+| `dogfood` | Exploratory QA of web apps |
+| `web-form-flow-debugging` | Debug and verify web form flows |
+| `web-app-route-testing` | Batch HTTP route testing for web apps |
+| `stateful-web-admin-qa` | Stateful web/admin QA and mutation verification |
+| `authenticated-web-smoke` | Authenticated browser smoke tests |
+| `document-to-action-items` | Extract cited obligations, deadlines, tasks from documents |
+| `stakeholder-product-requirements` | Stakeholder PRDs from context and decisions |
+| `project-second-brain` | Design and maintain file-first AI second brains |
+| `skill-router` | Route ambiguous requests to the best skill |
+
+## Skill routing
+
+Use `skill-router` to determine which skill fits a request. For ambiguous requests, run:
+
+```bash
+python skills/skill-router/scripts/route_skills.py "<request>"
+```
+
+Then load the top-ranked skill with its full `SKILL.md` before acting.
+
+### Fast routes (common patterns)
+
+| Request pattern | Skill |
+|-----------------|-------|
+| "Build with tests" / "TDD" | `test-driven-development` |
+| "Review this PR" / "code review" | `github-code-review` or `requesting-code-review` |
+| "Open a PR" / "git workflow" | `github-pr-workflow` |
+| "Debug this bug" / "root cause" | `systematic-debugging` |
+| "Write a spec" / "specification first" | `spec-driven-development` |
+| "Build in slices" / "thin vertical slices" | `incremental-implementation` |
+| "Review this decision" / "challenge this" | `doubt-driven-development` |
+| "Simplify this code" / "cleanup" | `simplify-code` |
+| "Manage context" / "curate context" | `context-engineering` |
+| "Cheapest path" / "cost aware" | `cost-aware-execution-router` |
+| "Execute via subagents" | `subagent-driven-development` |
+| "Write a plan" | `writing-plans` |
+| "Reconcile with spec" | `implementation-reconciliation` |
+| "QA this web app" / "find bugs" | `dogfood` or `code-traced-qa` |
+| "Debug form flow" | `web-form-flow-debugging` |
+| "Test routes" | `web-app-route-testing` |
+| "Admin QA" / "stateful QA" | `stateful-web-admin-qa` |
+| "Authenticated smoke test" | `authenticated-web-smoke` |
+| "Extract tasks from doc" | `document-to-action-items` |
+| "Stakeholder requirements" | `stakeholder-product-requirements` |
+| "Second brain" / "project memory" | `project-second-brain` |
+
 ## Required startup sequence
 
 Before editing:
